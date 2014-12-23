@@ -785,6 +785,13 @@ $green : #6bbb6f;
 			@include transform(translate(-50%,0));
 			position: relative;
 			left: 50%;
+
+			@include breakpoint(1000px) {
+
+				border:none;
+				padding-top:0;
+
+			}
 		}	
 
 	}
@@ -817,6 +824,15 @@ $green : #6bbb6f;
 
 	&:last-child {
 		padding:0 0 40px 80px;
+
+	}
+
+	@include breakpoint(1000px) {
+
+		float:none;
+		width:100%;
+		padding: 0 !important;
+		border:none !important;
 
 	}
 
