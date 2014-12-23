@@ -140,12 +140,23 @@ var Mast = {
 		var _ = this;
 		var containerOffset = 45.5;
 
-		_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
+		
 		_.logo.attr('src', 'img/logo-white.svg');
 		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
 		_.element.addClass('full-height opened green');
 		_.title.hide();
-		cancelAnimationFrame(Mast.loop);
+
+		if (!mobile()) {
+
+			cancelAnimationFrame(Mast.loop);
+			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
+
+		} else {
+
+
+
+		}
+		
 		_.bottomContainer.fadeIn();
 		_.getThicker();
 
