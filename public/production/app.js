@@ -57,20 +57,37 @@ var Mast = {
 
 		Mast.loop = requestAnimationFrame(Mast.sizing);
 
-		_.navButton.click(function() {
+		if (mobile()) {
 
-			if (_.element.hasClass('opened')) {
+			_.navButton.on('touchstart', function() {
 
-				_.close();
+				if (_.element.hasClass('opened')) {
 
-			} else {
+					_.close();
 
-				_.open();
+				} else {
 
-			}
+					_.open();
 
-		});
+				}
+			});
+			
+		} else {
 
+			_.navButton.click(function() {
+
+				if (_.element.hasClass('opened')) {
+
+					_.close();
+
+				} else {
+
+					_.open();
+
+				}
+
+			});
+		}
 	},
 
 	element : $(".mast"),
@@ -254,7 +271,7 @@ var ProcessLine = {
 
 
 
-var MediumStory = {
+var MediumPosts = {
 
 	init : function() {
 
@@ -266,7 +283,7 @@ var MediumStory = {
 
 	setWidth : function() {
 
-		var loadedElements = $(".medium-container > iframe");
+		var loadedElements = $(".medium-container iframe");
 
 		if ($(window).width() > 1000) {
 
@@ -303,9 +320,13 @@ var MediumStory = {
 $(document).ready(function() {
 
 	Mast.init();
-	MediumStory.init();
 	squarify();
 
+	if (thisPage === '/' || thisPage === 'blog') {
+
+		MediumPosts.init();
+
+	}
 
 	if (thisPage === 'team') {
 
@@ -324,7 +345,12 @@ $(document).ready(function() {
 $(window).resize(function() {
 
 	squarify();
-	MediumStory.init();
+
+	if (thisPage === '/' || thisPage === 'blog') {
+
+		MediumPosts.init();
+
+	}
 
 });
 
