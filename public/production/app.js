@@ -55,6 +55,7 @@ var Mast = {
 
 		var _ = this;
 
+		Mast.loop = requestAnimationFrame(Mast.sizing);
 
 		if (mobile()) {
 
@@ -70,10 +71,8 @@ var Mast = {
 
 				}
 			});
-
+			
 		} else {
-
-			if($(window).width() < 1000) { Mast.loop = requestAnimationFrame(Mast.sizing) }
 
 			_.navButton.click(function() {
 
@@ -141,25 +140,17 @@ var Mast = {
 		var _ = this;
 		var containerOffset = 45.5;
 
-		
+		_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
 		_.logo.attr('src', 'img/logo-white.svg');
 		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
 		_.element.addClass('full-height opened green');
 		_.title.hide();
-
-		if (!mobile() || $(window).width() < 1000) { 
-
-			cancelAnimationFrame(Mast.loop);
-			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
-
-		} else {
-
-			_.topContainer.css({ top : '15px', transform : 'translate(-50%, 0%)' });
-
-		}
-
+		cancelAnimationFrame(Mast.loop);
 		_.bottomContainer.fadeIn();
 		_.getThicker();
+
+		
+		
 
 	},
 
@@ -169,17 +160,13 @@ var Mast = {
 		_.logo.attr('src', 'img/logo-green.svg');
 		_.navButton.css('color', 'black').removeClass('fa-close').addClass('fa-bars');
 		_.element.removeClass('full-height opened green');
-		_.bottomContainer.fadeOut(100);
 		_.topContainer.addClass('quick-transition');
+		_.bottomContainer.fadeOut(100);
 		_.title.fadeIn('fast');
 		setTimeout(function(){_.topContainer.attr('style', '').removeClass('quick-transition')}, 100);
-	
-		if (!mobile()) { 
+		// _.container.attr('style', '').removeClass('quick-transition');
 
-			Mast.loop = requestAnimationFrame(Mast.sizing) ;
-			
-
-		}
+		Mast.loop = requestAnimationFrame(Mast.sizing);
 	}
 
 }
