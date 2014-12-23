@@ -27,7 +27,7 @@ var Mast = {
 
 		var _ = this;
 
-		Mast.loop = requestAnimationFrame(Mast.sizing);
+		
 
 		if (mobile()) {
 
@@ -45,6 +45,8 @@ var Mast = {
 			});
 			
 		} else {
+
+			Mast.loop = requestAnimationFrame(Mast.sizing);
 
 			_.navButton.click(function() {
 
@@ -112,28 +114,24 @@ var Mast = {
 		var _ = this;
 		var containerOffset = 45.5;
 
-		
 		_.logo.attr('src', 'img/logo-white.svg');
 		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
 		_.element.addClass('full-height opened green');
 		_.title.hide();
 
-		if (!mobile()) {
+		if (mobile()) {
 
-			cancelAnimationFrame(Mast.loop);
-			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
+			_.topContainer.css({ top : '12px', transform : 'translate(-50%, 0%)' });
 
 		} else {
 
-
-
+			cancelAnimationFrame(Mast.loop);
+			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
+			
 		}
 		
 		_.bottomContainer.fadeIn();
 		_.getThicker();
-
-		
-		
 
 	},
 
@@ -147,9 +145,14 @@ var Mast = {
 		_.bottomContainer.fadeOut(100);
 		_.title.fadeIn('fast');
 		setTimeout(function(){_.topContainer.attr('style', '').removeClass('quick-transition')}, 100);
-		// _.container.attr('style', '').removeClass('quick-transition');
 
-		Mast.loop = requestAnimationFrame(Mast.sizing);
+		if (!mobile()) {
+
+			Mast.loop = requestAnimationFrame(Mast.sizing);
+
+		}
+
+		
 	}
 
 }
