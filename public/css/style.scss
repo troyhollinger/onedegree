@@ -408,13 +408,13 @@ $green : #6bbb6f;
 
 			@include breakpoint(1000px) {
 
-				left:40px;
+				left:20px;
 
 			}
 		}
 
 		@include breakpoint(1000px) {
-			padding: 40px 40px;
+			padding: 20px;
 			border:none;
 
 		}
@@ -427,7 +427,7 @@ $green : #6bbb6f;
 
 		@include breakpoint(1000px) {
 
-			padding: 40px 40px;
+			padding: 20px;
 			border:none;
 
 		}
@@ -437,6 +437,7 @@ $green : #6bbb6f;
 
 		width:100%;
 		float:none;
+		padding:20px;
 
 	}
 
@@ -487,6 +488,12 @@ $green : #6bbb6f;
 
 	}
 
+	@include breakpoint(1000px) {
+
+		left:20px;
+
+	}
+
 }
 
 .footer {
@@ -500,17 +507,48 @@ $green : #6bbb6f;
 		overflow: auto;
 		height:100%;
 
+		@include breakpoint(1000px) {
+
+			padding: 40px 0;
+			position: static;
+			@include transform(none);
+
+		}
+
 	}
 
 	.footer-details {
 		@include centerLeft;
 		@extend .details;
+
+		@include breakpoint(1000px) {
+
+			position: static;
+			@include transform(none);
+			margin-top: 30px;
+			font-size: .7rem !important;
+
+		}
+	}
+
+	@include breakpoint(1000px) {
+
+		height:auto;
+
 	}
 }
 
 .footer-logo {
 	@include center;
 	width:160px;
+
+	@include breakpoint(1000px) {
+
+		position: static;
+		@include transform(none);
+		width:80%;
+
+	}
 }
 
 .details {
@@ -529,6 +567,8 @@ $green : #6bbb6f;
 
 	}
 
+
+
 }
 
 .footer-nav {
@@ -540,6 +580,12 @@ $green : #6bbb6f;
 
 	ul {
 		text-align: right;
+	}
+
+	@include breakpoint(1000px) {
+
+		display: none;
+
 	}
 
 }
