@@ -188,7 +188,7 @@ $green : #6bbb6f;
 		font-size: 2.2rem;
 		@include centerRight;
 		cursor:pointer;
-		color:$text-color;
+		color:$green;
 	}
 
 	@include breakpoint(1000px) {
@@ -307,7 +307,7 @@ $green : #6bbb6f;
 
 	@include breakpoint(1000px) {
 
-		height:100vh;
+		height:80vh;
 
 	}
 	

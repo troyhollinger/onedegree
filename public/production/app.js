@@ -167,7 +167,7 @@ var Mast = {
 
 		var _ = this;
 		_.logo.attr('src', 'img/logo-green.svg');
-		_.navButton.css('color', 'black').removeClass('fa-close').addClass('fa-bars');
+		_.navButton.css('color', '#6bbb6f').removeClass('fa-close').addClass('fa-bars');
 		_.element.removeClass('full-height opened green');
 		_.topContainer.addClass('quick-transition');
 		_.bottomContainer.fadeOut(100);
