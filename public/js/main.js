@@ -320,7 +320,7 @@ $(document).ready(function() {
 
 	}
 
-	if (thisPage === 'process') {
+	if (thisPage === 'process' && $(window).width() > 1000) {
 
 		ProcessLine.init();
 
