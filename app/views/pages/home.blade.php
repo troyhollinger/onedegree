@@ -39,9 +39,9 @@
 
         <p class="section-title">Latest Posts</p><br>
         
-        <script async src="https://static.medium.com/embed.js"></script><a class="m-story"  data-collapsed="true" href="https://medium.com/@wallstsurvivor/93e515ff1b2a">Explain Stock Quotes Like I’m Five</a>
-        <script async src="https://static.medium.com/embed.js"></script><a class="m-story"  data-collapsed="true" href="https://medium.com/@vivekhurry/73bbb9ecc662">Asset allocation simplified</a>
-        <script async src="https://static.medium.com/embed.js"></script><a class="m-story"  data-collapsed="true" href="https://medium.com/@shamoons/d5b45540d817">Striking GoLD: Part 1</a>
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/87709bfc4d0b">A Spending Plan</a>
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/4827ec319f97">A Game Plan for 2015</a>
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/ed143692496c">Conquer the Clutter</a>
        
     </div>
    
