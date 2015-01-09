@@ -1010,9 +1010,6 @@ $green : #6bbb6f;
 		}
 
 	}
-
-
-
 }
 
 .process-module-icon {
@@ -1029,7 +1026,7 @@ $green : #6bbb6f;
 
 	@include breakpoint(1000px) {
 
-		color:$green;
+		display: none;
 
 	}
 
@@ -1110,16 +1107,6 @@ $green : #6bbb6f;
 	margin-bottom: 10px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
