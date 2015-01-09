@@ -10,7 +10,19 @@
 @section('content')
 
 
-<div class="banner home-banner"></div>
+<div class="home-banner">
+
+    <div id="skippr-targer">
+
+        <div style="background-image:url({{ asset('img/tiles-large.jpg') }})"></div>
+        <div style="background-image:url({{ asset('img/slide-test-1.jpg') }})"></div>
+        <div style="background-image:url({{ asset('img/slide-test-2.jpg') }})"></div>
+        <div style="background-image:url({{ asset('img/slide-test-3.jpg') }})"></div>
+        <div style="background-image:url({{ asset('img/slide-test-4.jpg') }})"></div>
+       
+    </div>
+
+</div>
 
 <div class="container content">
 

@@ -301,12 +301,50 @@ var MediumPosts = {
 	}
 }
 
+var HomeBanner = {
 
+	init : function() {
+
+		this.sizing();
+		this.slideshow();
+
+	},
+
+	element : $(".home-banner"),
+
+	sizing : function() {
+
+		var windowHeight = $(window).height();
+		var mastHeight = 160;
+		var bannerHeight = windowHeight - mastHeight - ( mastHeight * 0.666);
+
+		this.element.css('height', bannerHeight + 'px' );
+
+	},
+
+	slideshow : function() {
+
+		$("#skippr-targer").skippr({
+
+			transition : 'fade',
+			arrows : false
+
+		});
+
+	}
+
+}
 
 $(document).ready(function() {
 
 	Mast.init();
 	squarify();
+
+	if (thisPage === '/') {
+
+		HomeBanner.init();
+
+	}
 
 	if (thisPage === '/' || thisPage === 'blog') {
 
@@ -331,6 +369,12 @@ $(document).ready(function() {
 $(window).resize(function() {
 
 	squarify();
+
+	if (thisPage === '/') {
+
+		HomeBanner.init();
+
+	}
 
 	if (thisPage === '/' || thisPage === 'blog') {
 
