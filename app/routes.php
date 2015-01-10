@@ -34,3 +34,31 @@ Route::get('blog', ['as' => 'blog', function() {
 
 }]);
 
+Route::get('videos', ['as' => 'videos', function() {
+
+	return View::make('pages.videos');
+
+}]);
+
+
+
+
+Route::get('api/videos', ['as' => 'getVideos', function() {
+
+
+	try {
+	
+		$videos = Video::all();
+
+	} catch (Exception $e) {
+
+		return Response::json(['message' => 'Sorry, videos could not be retrived'], 404);
+		
+	}
+
+	Log::info($videos);
+
+	return Response::json(['data' => $videos], 200);
+
+
+}]);

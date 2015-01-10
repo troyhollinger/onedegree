@@ -4,6 +4,69 @@ var requestAnimationFrame = window.requestAnimationFrame ||
                             window.webkitRequestAnimationFrame ||
                             window.msRequestAnimationFrame;
 
+var app = angular.module(['onedegree'], []);
+
+app.factory('Video', function($http) {
+
+	return {
+
+		get : function() {
+
+			return $http.get('/api/videos');
+
+		}
+
+	}
+
+});
+
+
+app.controller('VideoController', function($scope, Video, $sce) {
+
+	$scope.videos = [];
+
+	$scope.activeVideo = {};
+
+	$scope.SetActiveVideo = function(index) {
+
+		$scope.activeVideo = $sce.trustAsHtml($scope.videos[index]);
+
+	}
+
+	$scope.getVideos = function() {
+
+		console.log("this is happening");
+
+		Video.get().success(function(response) {
+
+			$scope.videos = response.data;
+			squarify();
+			ResponsiveVideo.init();
+			$scope.SetActiveVideo(0);	
+
+			console.log($scope.videos);
+			
+
+		}).error(function(response) {
+
+			console.log('something is going wrong');
+
+		});
+	}
+
+	$scope.getVideos();
+
+
+
+
+});
+
+
+
+
+
+
+
 
 function mobile() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -18,6 +81,8 @@ function squarify() {
 	$('.square').each(function() {
 		$(this).height($(this).width());
 	});
+
+	requestAnimationFrame(squarify);
 }
 
 
@@ -335,6 +400,24 @@ var HomeBanner = {
 
 }
 
+var ResponsiveVideo = {
+
+	init : function() {
+
+		this.responsive();
+
+	},
+
+	responsive : function() {
+
+		$(".active-video-container").fitVids();
+
+		requestAnimationFrame(ResponsiveVideo.responsive);
+
+	}
+
+}
+
 $(document).ready(function() {
 
 	Mast.init();
@@ -361,6 +444,12 @@ $(document).ready(function() {
 	if (thisPage === 'process' && $(window).width() > 1000) {
 
 		ProcessLine.init();
+
+	}
+
+	if (thisPage === 'videos') {
+
+		// Video.init();
 
 	}
 

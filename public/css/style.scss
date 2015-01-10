@@ -1221,11 +1221,88 @@ $green : #6bbb6f;
 
 
 
+.active-video-container {
+
+	width:100%;
+	margin-bottom: 30px;
+
+}
 
 
+.active-video-title {
+
+	font-family: $georgia;
+	font-weight: bold;
+	color:$text-color;
+	font-size: 1.5rem;
+
+}
+
+.active-video-description {
+
+	font-family: $verdana;
+	color:$text-color;
+	font-size: .8rem;
+
+}
 
 
+.video-thumbnail-container {
 
+	width:100%;
+	position: relative;
+	overflow: auto;
+	margin:30px 0 250px 0;
+
+}
+
+.video-thumbnail {
+
+	position: relative;
+	width:20%;
+	float:left;
+	background-color: $green;
+	@include box-sizing(border-box);
+	padding: 7px;
+	background-clip: content-box;
+	color:white;
+
+
+	i {
+
+		@include center;
+		color:white;
+		font-size: 3rem;
+
+	}
+
+}
+
+.video-thumbnail-info-container {
+
+	position: absolute;
+	bottom: 0;
+	@include box-sizing(border-box);
+	padding: 0 10px 20px 10px;
+	
+
+
+}
+
+.video-thumbnail-title {
+
+	font-family: $georgia;
+	font-weight: bold;
+	font-size: .9rem;
+
+}
+
+.video-thumbnail-description {
+
+	font-family: $verdana;
+	font-size: .7rem;
+
+}
 
 
 
