@@ -12,7 +12,7 @@ app.factory('Video', function($http) {
 
 		get : function() {
 
-			return $http.get('/api/videos');
+			return $http.get(base + '/api/videos');
 
 		}
 
