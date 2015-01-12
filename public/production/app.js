@@ -672,9 +672,14 @@ app.controller('VideoController', function($scope, Video, $sce) {
 
 	$scope.activeVideo = {};
 
-	$scope.SetActiveVideo = function(index) {
+	$scope.setActiveVideo = function(index) {
 
-		$scope.activeVideo = $sce.trustAsHtml($scope.videos[index]);
+		var embedToBeTrusted = String($scope.videos[index].link);
+
+		$scope.activeVideo = $scope.videos[index];
+		$scope.activeVideo.link = $sce.trustAsResourceUrl(embedToBeTrusted);
+
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 	}
 
@@ -687,7 +692,7 @@ app.controller('VideoController', function($scope, Video, $sce) {
 			$scope.videos = response.data;
 			squarify();
 			ResponsiveVideo.init();
-			$scope.SetActiveVideo(0);	
+			$scope.setActiveVideo(0);	
 
 			console.log($scope.videos);
 			
@@ -700,9 +705,6 @@ app.controller('VideoController', function($scope, Video, $sce) {
 	}
 
 	$scope.getVideos();
-
-
-
 
 });
 

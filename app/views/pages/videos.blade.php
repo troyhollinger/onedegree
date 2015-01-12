@@ -15,9 +15,7 @@ Videos
 
 	<div class="active-video-container">
 
-		<!-- <iframe src="" frameborder="0" allowfullscreen></iframe> -->
-
-		@{{ activeVideo.link }}
+		<iframe ng-src="@{{ activeVideo.link }}" frameborder="0" allowfullscreen></iframe>
 
 	</div>
 
