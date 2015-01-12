@@ -149,18 +149,17 @@ $green : #6bbb6f;
 .mast {
 	position: fixed;
 	width:100%;
-	height:160px;
+	height:120px;
 	min-height: 60px !important;
-	background-color: white;
-	// @include boxShadow;
-	z-index: 20;
+	background-color: transparent;
+	z-index: 9999;
 	@include transition(all .1s ease);
 	overflow: visible;
 
 
 	.top-container {
 		@include center;
-		width:95%;
+		width:93%;
 	}
 
 	.container {
@@ -192,12 +191,19 @@ $green : #6bbb6f;
 		color:$green;
 	}
 
+	i.above-fold {
+
+		color:white;
+
+	}
+
 	@include breakpoint(1000px) {
 
 		height:60px;
 
 	}
 
+	
 
 }
 
@@ -277,7 +283,7 @@ $green : #6bbb6f;
 }
 
 .mast-logo {
-	width:130px;
+	width:160px;
 	min-width: 70px !important;
 	float: left;
 	@include transition(width .1s linear);
@@ -290,9 +296,23 @@ $green : #6bbb6f;
 
 }
 
+.mast-logo-letters {
+
+	fill: $green;
+
+	&.above-fold {
+
+		fill: white;
+
+	}
+
+}
+
+
+
 .spacer {
 	width:100%;
-	height:160px;
+	height:120px;
 
 	@include breakpoint(1000px) {
 
@@ -313,9 +333,9 @@ $green : #6bbb6f;
 .home-banner {
 
 	position: relative;
-	width:95%;
+	width:100%;
 	margin:0 auto;
-	height:28vw;
+	height:82vh;
 	// background-image: url(../img/tiles-large.jpg);
 	// background-position: center;
 	// background-size: cover;
@@ -509,11 +529,18 @@ $green : #6bbb6f;
 	width:100%;
 	height:275px;
 	position: relative;
+	color:white;
+	// @include box-sizing(border-box);
+
+
+	@extend .details;
 
 	.container {
 		@include center;
 		overflow: auto;
-		height:100%;
+		width:93%;
+		// height:100%;
+		height:auto;
 
 		@include breakpoint(1000px) {
 
@@ -526,8 +553,13 @@ $green : #6bbb6f;
 	}
 
 	.footer-details {
-		@include centerLeft;
-		@extend .details;
+		
+		float:left;
+		margin-right: 50px;
+
+		p {
+			margin-bottom: 3px;
+		}
 
 		@include breakpoint(1000px) {
 
@@ -539,6 +571,13 @@ $green : #6bbb6f;
 		}
 	}
 
+
+	li {
+
+		margin-bottom: 3px;
+
+	}
+
 	@include breakpoint(1000px) {
 
 		height:auto;
@@ -546,9 +585,32 @@ $green : #6bbb6f;
 	}
 }
 
+.footer-title {
+
+	font-weight: bold;
+	color:$green;
+
+
+}
+
+.footer-links {
+
+	float:left;
+	margin-right: 50px;
+
+}
+
+.portal-links {
+
+	float:left;
+
+}
+
 .footer-logo {
-	@include center;
-	width:160px;
+	float:none;
+	display: block;
+	width:240px;
+	margin-bottom: 17px;
 
 	@include breakpoint(1000px) {
 
@@ -581,7 +643,7 @@ $green : #6bbb6f;
 
 .footer-nav {
 
-	@include centerRight;
+	float:right;
 	font-family: $verdana;
 	color:white;
 	font-size: .8rem;
