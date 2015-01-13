@@ -92,7 +92,7 @@ Team
 			<div class="overlay">
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Linda Jillson</p>
-					<p class="secondary-team-member-position">Administration</p>
+				<p class="secondary-team-member-position">Administration</p>
 				</div>
 			</div>
 			

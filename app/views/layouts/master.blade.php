@@ -122,7 +122,6 @@
                 <img class="footer-logo" src="{{ asset('img/footer-logo.svg') }}">
 
                 <div class="footer-details">
-                    <p>One Degeee Advisors</p>
                     <p>3131 Camino Del Rio N #1010</p>
                     <p>San Diego, CA 92108</p>
                     <br>

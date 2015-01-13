@@ -141,7 +141,8 @@ var Mast = {
 		var _ = this;
 		var containerOffset = 36;
 
-		// _.logo.attr('src', 'img/logo-white.svg');
+		
+		$(".mast-logo-letters").attr('class', 'mast-logo-letters above-fold');
 		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
 		_.element.addClass('full-height opened green');
 		// _.title.hide();
@@ -166,7 +167,7 @@ var Mast = {
 
 		var _ = this;
 
-		// _.logo.attr('src', 'img/logo-green.svg');
+		$(".mast-logo-letters").attr('class', 'mast-logo-letters');
 		_.navButton.removeClass('fa-close').addClass('fa-bars');
 		_.element.removeClass('full-height opened green');
 		// _.topContainer.addClass('quick-transition');
