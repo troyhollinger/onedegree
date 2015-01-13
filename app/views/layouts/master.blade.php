@@ -152,7 +152,7 @@
                         <li>TD Ameritrade - Custodian</li>
                         <li>Evestnet - Report</li>
                         <li>eMoney - Plan</li>
-                        <li><span class="bold">Financial Help / Resources</span>: Dave Ramsey | Crown Financial |<br> Christian Credit Counselors</li>
+                        <li><span class="bold">Financial Resources</span>: Dave Ramsey |<br> Crown Financial | Christian Credit Counselors</li>
                         
                     </ul>
 

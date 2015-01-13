@@ -165,11 +165,10 @@ $green : #6bbb6f;
 
 	.top-container {
 		@include center;
-		width:93%;
+		width:95%;
 	}
 
 	.container {
-		
 		overflow: visible;
 	}
 
@@ -177,7 +176,7 @@ $green : #6bbb6f;
 
 		position: absolute;
 		bottom:20%;
-		left:3.5%;
+		left:2.5%;
 		// @include transform(translate(-50%, 0));
 		display: none;
 
@@ -294,6 +293,12 @@ $green : #6bbb6f;
 	float: left;
 	@include transition(width .1s linear);
 
+	@include breakpoint(1500px) {
+
+		width:120px;
+
+	}
+
 	@include breakpoint(1000px) {
 
 		width:70px;
@@ -383,21 +388,49 @@ $green : #6bbb6f;
 
 }
 
-.intro-blurb {
-	color:$text-color;
-	font-family: $georgia;
-	font-style:italic;
-	font-size: 1.4rem;
-	text-align: center;
-	padding: 70px 0 70px 0;
-	line-height: 2rem;
+.intro-blurb-container {
+	
+	width:100%;
+	overflow: auto;
+	margin: 50px 0 100px 0;
 
-	@include breakpoint(500px) {
+}
 
-		font-size: 1rem;
+.intro-blurb-column {
+
+	float:left;
+	width:50%;
+	@include box-sizing(border-box);
+	padding:10px 40px 40px 40px;
+	text-align: right;
+
+	&:last-child {
+
+		text-align: left;
+		border-left:2px solid #d1d1d1;
 
 	}
+
+	.section-title {
+
+		border:none;
+		font-style: normal;
+		font-family: $verdana;
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+
+	}
+
+
+	.text {
+
+		font-family: $verdana;
+
+	}
+
 }
+
+
 
 .divider {
 	height:2px;
@@ -666,7 +699,7 @@ $green : #6bbb6f;
 
 	font-family: $verdana;
 	color:white;
-	font-size: .7rem;
+	font-size: .8rem;
 
 	a {
 		color:white;
