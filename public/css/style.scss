@@ -962,6 +962,7 @@ $green : #6bbb6f;
 	font-size: 1.5rem;
 	// text-align: center;
 	display:block;
+	font-style: normal;
 }
 
 .service-modules-container {
@@ -1029,11 +1030,16 @@ $green : #6bbb6f;
 
 	@extend .service-modules-container;
 	overflow: auto;
+	margin-top: 120px;
+	margin-bottom: 200px;
+
 
 	.info-module {
 
+		position: relative;
 		font-size: .8rem;
 		@include box-sizing(border-box);
+		overflow: auto;
 
 		.section-title {
 
@@ -1041,13 +1047,15 @@ $green : #6bbb6f;
 			border:none;
 			font-style: normal;	
 			text-transform: uppercase;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
+			color:#919394;
 		}
 
 		.text {
 
 			font-family: $verdana;
 			line-height: 1.2rem;
+			color:#919394;
 
 		}
 
@@ -1065,8 +1073,9 @@ $green : #6bbb6f;
 			width:68%;
 			float:left;
 			padding-left: 40px;
-
 			border-left:2px solid #d1d1d1;
+
+
 
 		}
 
@@ -1075,7 +1084,22 @@ $green : #6bbb6f;
 
 }
 
+.faq-column {
 
+	width:50%;
+	float:left;
+	@include box-sizing(border-box);
+	padding: 0 40px 0 0;
+
+
+	&:last-child {
+
+		padding: 0 0 0 40px;
+
+	}
+
+
+}
 
 
 .process-line {
