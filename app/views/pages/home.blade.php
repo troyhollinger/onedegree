@@ -40,7 +40,7 @@
 
             <div class="photo-content-container">
 
-                <p class="photo-content-title"><span class='bold'>We are here to help you answer</span><br>These kinds of questions</p>
+                <p class="photo-content-title"><span class='bold'>We are here to help you answer</span><br>These kinds of questions.</p>
                 <p class="photo-content-text">Do you have a financial plan that accomplishes your goals?
                 <br>Are you using tax savings strategies?
                 <br>Are you on track for retirement?
