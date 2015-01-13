@@ -89,6 +89,15 @@
 
 </div> 
 
-<div class="banner footer-banner"></div>
+<div class="banner footer-banner">
+
+    <div class="container">
+
+        <p class="banner-quote">The Longer you Travel off Course,<br> The Further you Will Be from your Intended Destination. <br> <span class="bold">Every Degree Counts</span></p>
+        <p class="banner-quote-source">One Degree Advisors</p>
+
+    </div>
+
+</div>
 
 @stop

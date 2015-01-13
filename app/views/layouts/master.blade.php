@@ -128,7 +128,7 @@
                     <br>
                     <p>Phone : 619.282.3288</p>
                     <p>Fax : 619.280.9553</p>
-                    <p>Email : <a href="mailto:admin@onedegreeadvisors.com">admin@onedegreeadivsors.com</a> </p>
+                    <p>Email : <a href="mailto:admin@onedegreeadvisors.com" class="green-text">admin@onedegreeadvisors.com</a> </p>
 
                 </div>
 
@@ -153,20 +153,53 @@
                         <li>TD Ameritrade - Custodian</li>
                         <li>Evestnet - Report</li>
                         <li>eMoney - Plan</li>
-                        <li>Financial Help / Resources: Dave Ramsey | Crown Financial | Christian Credit Counselors</li>
+                        <li><span class="bold">Financial Help / Resources</span>: Dave Ramsey | Crown Financial |<br> Christian Credit Counselors</li>
                         
                     </ul>
 
                 </div>
 
+                <div class="footer-next-page">
+
+                    @if (Route::currentRouteName() == 'home') 
+                    <a href="{{ route('services') }}">
+                    @elseif(Route::currentRouteName() == 'services')
+                    <a href="{{ route('team') }}">
+                    @elseif(Route::currentRouteName() == 'team')
+                    <a href="{{ route('process') }}">
+                    @elseif(Route::currentRouteName() == 'process')
+                    <a href="{{ route('blog') }}">
+                    @elseif(Route::currentRouteName() == 'blog')
+                    <a href="{{ route('videos') }}">
+                    @elseif(Route::currentRouteName() == 'videos')
+                    <a href="{{ route('home') }}">
+                    @endif
+
+                        <i class="fa fa-angle-right"></i>
+
+                    </a>
+
+                </div>
+
                 <div class="footer-nav footer-module">
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Team</li>
-                        <li>Process</li>
-                        <li>Resources</li>
-                        <li>FAQ's</li>
+                        <a href="{{ route('home') }}"><li>Home</li></a>
+                        <a href="{{ route('services') }}"><li>Services</li></a>
+                        <a href="{{ route('team') }}"><li>Team</li></a>
+                        <a href="{{ route('process') }}"><li>Process</li></a>
+                        <a href="{{ route('blog') }}"><li>Columns</li></a>
+                        <a href="{{ route('videos') }}"><li>Videos</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-nav footer-module">
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Compliance</li>
+                        <li>CFP&reg;</li>
+                        <li>FPA&reg;</li>
+                        <li>FAQ</li>
                     </ul>
                 </div>
 
