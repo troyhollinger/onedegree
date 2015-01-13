@@ -1016,7 +1016,8 @@ var HomeBanner = {
 		$("#skippr-targer").skippr({
 
 			transition : 'fade',
-			arrows : false
+			arrows : false,
+			autoPlay : true
 
 		});
 
