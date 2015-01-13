@@ -43,7 +43,16 @@ Videos
 
 </div>
 
-<div class="banner footer-banner"></div>
+<div class="banner footer-banner">
+
+	<div class="container">
+
+		<p class="banner-quote">Quote to come...</p>
+		<p class="banner-quote-source">ONE DEGREE ADVISORS</p>
+
+	</div>
+
+</div>
 
 
 @stop

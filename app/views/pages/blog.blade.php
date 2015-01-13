@@ -79,6 +79,15 @@ Blog
 
 	</div>
 
-	<div class="banner footer-banner"></div>
+	<div class="banner footer-banner">
+
+		<div class="container">
+
+			<p class="banner-quote">360 Degrees <span class="bold">and Every One of them Counts.</span></p>
+			<p class="banner-quote-source">ONE DEGREE ADVISORS</p>
+
+		</div>
+
+	</div>
 
 @stop

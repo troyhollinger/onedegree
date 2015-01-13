@@ -180,7 +180,7 @@ var Mast = {
 
 	coloring : function() {
 
-		var bannerHeight = $('.home-banner').height();
+		var bannerHeight = $('.top-banner').height();
 
 		if ($(window).scrollTop() > (bannerHeight - 60)) {
 
@@ -405,6 +405,12 @@ $(document).ready(function() {
 	if (thisPage === '/') {
 
 		HomeBanner.init();
+		Mast.coloring();
+
+	}
+
+	if (thisPage === 'inquiry') {
+
 		Mast.coloring();
 
 	}

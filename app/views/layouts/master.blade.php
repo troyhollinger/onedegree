@@ -107,7 +107,7 @@
 
         </div>
 
-        @if(Route::currentRouteName() != 'home' && Route::currentRouteName() != 'process') 
+        @if(Route::currentRouteName() != 'home' && Route::currentRouteName() != 'process' && Route::currentRouteName() != 'inquiry')
         <div class="spacer"></div>
         @endif
 

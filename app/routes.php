@@ -41,6 +41,11 @@ Route::get('videos', ['as' => 'videos', function() {
 }]);
 
 
+Route::get('inquiry', ['as' => 'inquiry', function() {
+
+	return View::make('pages.inquiry');
+
+}]);
 
 
 Route::get('api/videos', ['as' => 'getVideos', function() {
