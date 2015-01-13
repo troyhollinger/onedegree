@@ -9,24 +9,6 @@ Team
 
 <div class="container">
 
-	<div class="team-member">
-
-		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url( {{ asset('img/person1.jpg') }} )"></div>
-		</div>
-
-		<div class="team-member-info-container">
-
-			<p class="team-member-name"><span>Anthony Saffer, CFP</span><span>Financial Advisor</span></p>
-
-			<p class="team-member-description">
-				Anthony earned his degree in Business Economics from the University of San Diego. He received his CERTIFIED FINANCIAL PLANNER™ designation from the Certified Financial Planner Board of Standards. After beginning his financial planning career with Waddell &amp; Reed, Inc. in 1999, Anthony developed a successful personalized financial planning process designed to address clients’ most-valued priorities. Anthony is a director with Kingdom Advisors in San Diego. He authors the Principles of Prosperity newspaper column. In addition to financial education, Anthony has a passion for training and coaching children. He serves kids and teens in his church and also coaches soccer. Along with his wife, Robin, Anthony enjoys spending time with their three children, Jake, Gianna &amp; Henry. He also enjoys sports and traveling. CA Life Insurance License # 0C43243
-			</p>
-
-		</div>
-
-	</div>
-
 
 	<div class="team-member">
 
@@ -39,6 +21,24 @@ Team
 			<p class="team-member-name"><span>Audrey Coleman, CFP, AIF</span><span>President</span></p>
 			<p class="team-member-description">
 				A native of New York and a longtime resident of California, Audrey began her career in financial services with Bank of America before starting her financial planning practice with John Hancock Financial Services in 1985. She also gained experience in advanced estate planning at CIGNA (now Sagemark) Financial Advisors. She formed Coleman &amp; Johnson Financial Advisors with Roy Johnson in 2001. In 2014 she merged her practice with Janice Thompson and jointly they formed One Degree Advisors. Audrey earned the CERTIFIED FINANCIAL PLANNER® designation from the College for Financial Planning in Denver, Colorado. . Away from the office, Audrey enjoys hiking, canoeing and golfing. The Accredited Fiduciary Standard of Care applies to advisory services only. CA Life Insurance License # 0690605
+			</p>
+
+		</div>
+
+	</div>
+
+
+	<div class="team-member">
+
+		<div class="team-member-image-container">
+			<div class="team-member-image" style="background-image:url({{ asset('img/person4.jpg') }})"></div>
+		</div>
+
+		<div class="team-member-info-container">
+
+			<p class="team-member-name"><span>Janice Thompson, CFP, MSFS</span><span>CEO</span></p>
+			<p class="team-member-description">
+				Janice’s interest in all things financial go back to her earliest childhood memory. After years of counseling people in financial basics, she began to focus on a career in the industry in 1993. During the next decade she earned a Master’s Degree in Financial Services, the CFP® designation, and launched Strategic Financial Solutions, Inc. In 2014 she merged her practice with Audrey Coleman and jointly they formed One Degree Advisors.She is passionate about assisting affluent families with meaningful gift planning and legacy wealth transfer as well as working with women going through transitions. Janice enjoys speaking on various financial topics as well as mentoring other financial professionals. She and her husband, Tom, have two grown children and are actively involved with several non-profit organizations. Janice also currently serves on the Board of Directors for Kingdom Advisors. CA Life Insurance License # 0B67613
 			</p>
 
 		</div>
@@ -67,14 +67,15 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/person4.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url( {{ asset('img/person1.jpg') }} )"></div>
 		</div>
 
 		<div class="team-member-info-container">
 
-			<p class="team-member-name"><span>Janice Thompson, CFP, MSFS</span><span>CEO</span></p>
+			<p class="team-member-name"><span>Anthony Saffer, CFP</span><span>Financial Advisor</span></p>
+
 			<p class="team-member-description">
-				Janice’s interest in all things financial go back to her earliest childhood memory. After years of counseling people in financial basics, she began to focus on a career in the industry in 1993. During the next decade she earned a Master’s Degree in Financial Services, the CFP® designation, and launched Strategic Financial Solutions, Inc. In 2014 she merged her practice with Audrey Coleman and jointly they formed One Degree Advisors.She is passionate about assisting affluent families with meaningful gift planning and legacy wealth transfer as well as working with women going through transitions. Janice enjoys speaking on various financial topics as well as mentoring other financial professionals. She and her husband, Tom, have two grown children and are actively involved with several non-profit organizations. Janice also currently serves on the Board of Directors for Kingdom Advisors. CA Life Insurance License # 0B67613
+				Anthony earned his degree in Business Economics from the University of San Diego. He received his CERTIFIED FINANCIAL PLANNER™ designation from the Certified Financial Planner Board of Standards. After beginning his financial planning career with Waddell &amp; Reed, Inc. in 1999, Anthony developed a successful personalized financial planning process designed to address clients’ most-valued priorities. Anthony is a director with Kingdom Advisors in San Diego. He authors the Principles of Prosperity newspaper column. In addition to financial education, Anthony has a passion for training and coaching children. He serves kids and teens in his church and also coaches soccer. Along with his wife, Robin, Anthony enjoys spending time with their three children, Jake, Gianna &amp; Henry. He also enjoys sports and traveling. CA Life Insurance License # 0C43243
 			</p>
 
 		</div>
@@ -83,13 +84,15 @@ Team
 
 
 
+
+
 	<div class="secondary-team">
 
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Jonathan Doe</p>
-					<p class="secondary-team-member-position">Call Support</p>
+					<p class="secondary-team-member-name">Linda Jillson</p>
+					<p class="secondary-team-member-position">Administration</p>
 				</div>
 			</div>
 			
@@ -98,7 +101,7 @@ Team
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person2.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Marcy Baker</p>
+					<p class="secondary-team-member-name">Courtney Daus</p>
 					<p class="secondary-team-member-position">Administration</p>
 				</div>
 			</div>
@@ -108,32 +111,14 @@ Team
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person3.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Bill Harper</p>
+					<p class="secondary-team-member-name">Jane Smith</p>
 					<p class="secondary-team-member-position">Accounting</p>
 				</div>
 			</div>
 			
 		</div>
 
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person1.jpg') }})">
-			<div class="overlay">
-				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Srirda Volsum</p>
-					<p class="secondary-team-member-position">Assistant</p>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person4.jpg') }})">
-			<div class="overlay">
-				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Stacey Banes</p>
-					<p class="secondary-team-member-position">Intern</p>
-				</div>
-			</div>
-			
-		</div>
+		
 
 	</div>
 
