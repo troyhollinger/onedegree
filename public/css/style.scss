@@ -5,6 +5,7 @@ $georgia : 'Georgia', serif;
 $verdana : 'Verdana', 'Helvetica', 'Arial', sans-serif;
 $text-color : #404649;
 $green : #6bbb6f;
+$blue : #5fa8dc;
 
 //Mixins
 @mixin center {
@@ -456,6 +457,18 @@ $green : #6bbb6f;
 
 	}
 
+	.section-title {
+
+		border:none;
+		font-style: normal;
+		font-family: $verdana;
+		font-size: 1.5rem;
+		margin-bottom: 40px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #d1d1d1;
+
+	}
+
 }
 
 .section-title {
@@ -476,27 +489,27 @@ $green : #6bbb6f;
 	height:auto;
 	position: relative;
 	overflow: auto;
-	margin: 55px 0 125px 0;
+	margin: 70px 0 125px 0;
 }
 
 
 .twitter-block {
 
-	width:33%;
-	height:300px;
+	width:46%;
+	height:350px;
 	float: left;
 	@include box-sizing(border-box);
-	padding: 40px 40px;
+	padding: 40px 60px;
 	position: relative;
 
 
 	&:first-child {
-		border-right: 2px solid #d1d1d1;
-		padding-left: 0;
+		border-left: 2px solid #d1d1d1;
+		// padding-left: 0;
 
 
 		.tweet-handle-container {
-			left: 0;
+			// left: 0;
 
 			@include breakpoint(1000px) {
 
@@ -513,9 +526,10 @@ $green : #6bbb6f;
 
 	}
 
-	&:last-child {
+	&:nth-child(2) {
 		border-left: 2px solid #d1d1d1;	
-		padding-right: 0;
+		border-right: 2px solid #d1d1d1;	
+		// padding-right: 0;
 
 		@include breakpoint(1000px) {
 
@@ -535,12 +549,45 @@ $green : #6bbb6f;
 
 }
 
+.twitter-see-more {
+
+	float:left;
+	height:350px;
+	width:8%;
+	overflow: hidden;
+	position: relative;
+
+
+}
+
+.twitter-circle {
+
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	background-color: $blue;
+	@include center;
+	left:0%;
+
+	i {
+
+		color:white;
+		@include centerRight;
+		font-size: 3rem;
+		right:20px;
+
+	}
+
+}
+
 .tweet-text {
 
 	font-family: $georgia;
 	font-style: italic;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin-bottom: 5px;
+	color:$blue;
+	font-weight: bold;
 
 	@include breakpoint(1000px) {
 
@@ -552,7 +599,7 @@ $green : #6bbb6f;
 
 .tweet-time {
 	font-family: $verdana;
-	color:$green;
+	color: lighten($text-color, 50%);
 	font-size: .8rem;
 
 }
@@ -577,6 +624,7 @@ $green : #6bbb6f;
 		font-size: .8rem;
 		float:left;
 		line-height: 2rem;
+		color:lighten($text-color, 50%);
 
 	}
 
