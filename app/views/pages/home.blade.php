@@ -14,15 +14,108 @@
 
     <div id="skippr-targer">
 
-        <div style="background-image:url({{ asset('img/tiles-large.jpg') }})"></div>
-        <div style="background-image:url({{ asset('img/slide-test-5.jpg') }})"></div>
-        <div style="background-image:url({{ asset('img/slide-test-6.jpg') }})"></div>
-        <div style="background-image:url({{ asset('img/slide-test-7.jpg') }})"></div>
-        <div style="background-image:url({{ asset('img/slide-test-4.jpg') }})"></div>
+        
+        <div style="background-image:url({{ asset('img/tiles-large.jpg') }})">
+
+            <div class="photo-content-container">
+
+                <p class="photo-content-title">Thinking for Tomorrow, <br><span class='bold'>Today.</span></p>
+                <p class="photo-content-text"><span class="bold">What is important to you?</span><br>
+                One Degree Advisors are experienced
+                in providing personalized wealth solutions
+                for select families and organizations.
+                We offer guidance, clarity and wisdom...
+                </p>
+
+                <a href="{{ route('services') }}"><div class="photo-content-button">
+                
+                                    <p>Learn More</p>
+                
+                                </div></a>
+
+            </div>
+
+        </div>
+        <div style="background-image:url({{ asset('img/slide-test-5.jpg') }})">
+
+            <div class="photo-content-container">
+
+                <p class="photo-content-title"><span class='bold'>We are here to help you answer</span><br>These kinds of questions</p>
+                <p class="photo-content-text">Do you have a financial plan that accomplishes your goals?
+                <br>Are you using tax savings strategies?
+                <br>Are you on track for retirement?
+                </p>
+
+                <div class="photo-content-button">
+
+                    <p>Learn More</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div style="background-image:url({{ asset('img/gray-slide.jpg') }})">
+
+            <div class="photo-content-container">
+
+                <p class="photo-content-title"><span class='bold'>What is a</span><br>CERTIFIED FINANCIAL PLANNER</p>
+                <p class="photo-content-text">View this video and many <br>other tutorial videos <br> in our video section.
+                </p>
+
+                <a href="{{ route('videos') }}"><div class="photo-content-button">
+                
+                                    <p>Watch Video</p>
+                
+                                </div></a>
+
+            </div>
+
+        </div>
+        <div style="background-image:url({{ asset('img/slide-test-6.jpg') }})">
+
+            <div class="photo-content-container">
+
+                <p class="photo-content-title"><span class='bold'>A Game Plan for 2015</span><br>By Janice Thompson</p>
+                <p class="photo-content-text">While I cannot predict the economic events
+ ahead, without question your preparedness for
+ the ups and down of uncertainty will play a major
+ role in...
+                </p>
+
+                <a href="https://medium.com/@janicethompson/a-game-plan-for-2015-4827ec319f97"><div class="photo-content-button">
+                
+                    <p>Read Column</p>
+                
+                </div></a>
+
+            </div>
+
+        </div>
+        <div style="background-image:url({{ asset('img/slide-test-7.jpg') }})">
+
+           <div class="photo-content-container">
+
+               <p class="photo-content-title">Details Matter, <br><span class='bold'>even to the smallest degree.</span></p>
+               <p class="photo-content-text">Erica called me several months after her husband’s
+                tragic death in a work-related accident. Within minutes...
+               </p>
+
+               <a href="{{ route('blog') }}"><div class="photo-content-button">
+               
+                   <p>Read More</p>
+               
+               </div></a>
+
+           </div>
+
+        </div>
        
     </div>
 
 </div>
+
+<a class="inquire-link" href="{{ route('inquiry') }}">INQUIRE</a>
 
 <div class="container content">
 
