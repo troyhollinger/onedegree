@@ -145,7 +145,7 @@ var Mast = {
 		$(".mast-logo-letters").attr('class', 'mast-logo-letters above-fold');
 		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
 		_.element.addClass('full-height opened green');
-		// _.title.hide();
+		_.title.hide();
 
 		if (mobile()) {
 
@@ -172,7 +172,7 @@ var Mast = {
 		_.element.removeClass('full-height opened green');
 		// _.topContainer.addClass('quick-transition');
 		_.bottomContainer.fadeOut(100);
-		// _.title.fadeIn('fast');
+		_.title.fadeIn('fast');
 
 		setTimeout(function(){_.topContainer.attr('style', '').removeClass('quick-transition')}, 100);
 	
@@ -185,12 +185,14 @@ var Mast = {
 		if ($(window).scrollTop() > (bannerHeight - 60)) {
 
 			$(".mast-logo-letters").attr('class', 'mast-logo-letters');
+			$(".title").removeClass('above-fold');
 			$("#nav-button").removeClass("above-fold");
 
 		} else {
 
 			$(".mast-logo-letters").attr('class', 'mast-logo-letters above-fold');
 			$("#nav-button").addClass('above-fold');
+			$(".title").addClass('above-fold');
 
 		}
 

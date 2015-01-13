@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Blog
+Columns
 @stop
 
 @section('content')

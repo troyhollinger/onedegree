@@ -75,7 +75,7 @@
                 </a>
 
                 <p class="title">
-                   {{-- @yield('title') --}} 
+                     @yield('title')
                 </p>
                         
                 <i class="fa fa-bars" id="nav-button"></i>

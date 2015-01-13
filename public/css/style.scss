@@ -265,13 +265,20 @@ $blue : #5fa8dc;
 .title {
 
 	display: inline;
-	@include center;
-	font-family: $georgia;
-	color:$text-color;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 3rem;
-	@include transition(all .25s ease);
+	@include centerRight;
+	margin-right: 40px;
+	margin-top: 2px;
+	font-family: $verdana;
+	color:$green;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	// @include transition(all .25s ease);
+
+	&.above-fold {
+
+		color:white;
+
+	}
 
 	@include breakpoint(1000px) {
 
@@ -280,6 +287,8 @@ $blue : #5fa8dc;
 	}
 
 }
+
+
 
 .nav-details {
 	margin-top: 60px;
