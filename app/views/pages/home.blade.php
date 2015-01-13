@@ -15,7 +15,7 @@
     <div id="skippr-targer">
 
         
-        <div style="background-image:url({{ asset('img/tiles-large.jpg') }})">
+        <div style="background-image:url({{ asset('img/tiles-large-1.jpg') }})">
 
             <div class="photo-content-container">
 
