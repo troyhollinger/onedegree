@@ -137,13 +137,15 @@ $blue : #5fa8dc;
 		vertical-align: top;
 		@include box-sizing(border-box);
 	}
+
+	overflow: visible;
 }
 
 .container {
 	width:1100px;
 	height:auto;
 	margin:0 auto;
-	overflow: auto;
+	overflow: visible;
 	position: relative;
 
 	@include breakpoint(1000px) {
@@ -491,6 +493,12 @@ $blue : #5fa8dc;
 		text-align: left;
 		border-left:2px solid #d1d1d1;
 
+		@include breakpoint(1000px) {
+
+			border:none;
+
+		}
+
 	}
 
 	.section-title {
@@ -510,6 +518,16 @@ $blue : #5fa8dc;
 
 	}
 
+	@include breakpoint(1000px) {
+
+		float: none;
+		width:100%;
+		text-align: left;
+		padding: 10px 0px;
+		border:none;
+
+	}
+
 }
 
 
@@ -525,9 +543,10 @@ $blue : #5fa8dc;
 
 .medium-container {
 
+	position: relative;
 	width:100%;
 	height:auto;
-	overflow: auto;
+	overflow: visible;
 	position: relative;
 	margin-top: 75px;
 	margin-bottom: 100px;
@@ -547,6 +566,27 @@ $blue : #5fa8dc;
 		margin-bottom: 40px;
 		padding-bottom: 10px;
 		border-bottom: 2px solid #d1d1d1;
+
+		&:last-child {
+
+			position: absolute;
+			right:0;
+			top:110%;
+			border:none;
+			border-top: 2px solid #d1d1d1;
+			padding-top: 10px;
+			margin-bottom: 0;
+
+			i {
+
+				position: absolute;
+				@include centerLeft;
+				left:105%;
+				font-size: 3rem;
+
+			}
+
+		}
 
 	}
 
@@ -636,8 +676,7 @@ $blue : #5fa8dc;
 	height:350px;
 	width:8%;
 	overflow: hidden;
-	position: relative;
-
+	position: relative; 
 
 }
 
@@ -672,7 +711,7 @@ $blue : #5fa8dc;
 
 	@include breakpoint(1000px) {
 
-		font-size: .9rem;
+		// font-size: .9rem;
 
 	}
 
@@ -1216,7 +1255,8 @@ $blue : #5fa8dc;
 
 	@extend .service-modules-container;
 	overflow: auto;
-	margin-top: 120px;
+	// margin-top: 120px;
+	padding-top: 120px;
 	margin-bottom: 200px;
 
 
@@ -1225,6 +1265,7 @@ $blue : #5fa8dc;
 		position: relative;
 		font-size: .8rem;
 		@include box-sizing(border-box);
+		// padding-top: 30px;
 		overflow: auto;
 
 		.section-title {

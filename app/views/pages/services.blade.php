@@ -53,9 +53,9 @@ Services
 
 	</div>
 
-	<div class="info-modules-container">
+	<div class="info-modules-container" id="info">
 
-		<div class="info-module">
+		<div class="info-module" id="compliance">
 
 			<p class="section-title">
 				Compliance
@@ -75,7 +75,7 @@ Services
 
 		</div>
 
-		<div class="info-module">
+		<div class="info-module" id="faq">
 
 			<p class="section-title">Frequently Asked Questions</p>
 

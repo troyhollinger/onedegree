@@ -78,9 +78,9 @@ Menu
 
                 <p class="photo-content-title"><span class='bold'>A Game Plan for 2015</span><br>By Janice Thompson</p>
                 <p class="photo-content-text">While I cannot predict the economic events
- ahead, without question your preparedness for
- the ups and down of uncertainty will play a major
- role in...
+                    ahead, without question your preparedness for
+                    the ups and down of uncertainty will play a major
+                    role in...
                 </p>
 
                 <a href="https://medium.com/@janicethompson/a-game-plan-for-2015-4827ec319f97"><div class="photo-content-button">
@@ -126,7 +126,7 @@ Menu
             <p class="section-title">FINANCIAL PLANNING</p>
             <p class="text">We take a comprehensive approach to
                 managing your wealth. By incorporating
-                the six-step Financial Planning process
+                the <span class="green-text">six-step Financial Planning process</span>
                 recognized by the CFP® Board, your initial
                 plan is developed over the course of
                 several meetings. We also coordinate with
@@ -134,7 +134,7 @@ Menu
                 planning attorneys, CPAs, and insurance
                 specialists as needed. If you don’t have
                 this team in place, we can provide
-                recommendations. Read more...
+                recommendations. <a href="{{ route('services') }}"><span class="green-text bold">Read more...</span></a>
             </p>
 
         </div>
@@ -153,7 +153,7 @@ Menu
                 to focus on leaving a legacy? Once we 
                 understand your values, we then work on 
                 building an all-weather portfolio designed to 
-                accomplish these goals. Read more... 
+                accomplish these goals. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a>
             </p>
 
         </div>
@@ -171,6 +171,8 @@ Menu
         <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/4827ec319f97">A Game Plan for 2015</a>
         <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/ed143692496c">Conquer the Clutter</a>
        
+        <a href="{{ route('blog') }}"><p class="section-title">All Columns <i class="fa fa-angle-right"></i></p></a>
+
     </div>
    
     <div class="divider"></div>

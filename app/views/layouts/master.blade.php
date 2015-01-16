@@ -122,8 +122,10 @@
                 <img class="footer-logo" src="{{ asset('img/footer-logo.svg') }}">
 
                 <div class="footer-details">
-                    <p>3131 Camino Del Rio N #1010</p>
-                    <p>San Diego, CA 92108</p>
+                    <a href="https://www.google.com/maps/place/3131+Camino+Del+Rio+N+%231010,+San+Diego,+CA+92108/@32.7751506,-117.1270346,17z/data=!3m1!4b1!4m2!3m1!1s0x80d955a7fe9ffd0b:0x4a6d5c2f86006b14" target="_blank">
+                        <p>3131 Camino Del Rio N #1010</p>
+                        <p>San Diego, CA 92108</p>
+                    </a>
                     <br>
                     <p>Phone : 619.282.3288</p>
                     <p>Fax : 619.280.9553</p>
@@ -182,23 +184,23 @@
 
                 <div class="footer-nav footer-module">
                     <ul>
-                        <a href="{{ route('home') }}"><li>Home</li></a>
-                        <a href="{{ route('services') }}"><li>Services</li></a>
-                        <a href="{{ route('team') }}"><li>Team</li></a>
-                        <a href="{{ route('process') }}"><li>Process</li></a>
-                        <a href="{{ route('blog') }}"><li>Columns</li></a>
-                        <a href="{{ route('videos') }}"><li>Videos</li></a>
+                         <a href="{{ route('home') }}"><li class="{{ Route::currentRouteName() == 'home' ? 'bold': ''}}" >Home</li></a>
+                         <a href="{{ route('services') }}"><li class="{{ Route::currentRouteName() == 'services' ? 'bold': ''}}" >Services</li></a>
+                         <a href="{{ route('team') }}"><li class="{{ Route::currentRouteName() == 'team' ? 'bold': ''}}" >Team</li></a>
+                         <a href="{{ route('process') }}"><li class="{{ Route::currentRouteName() == 'process' ? 'bold': ''}}" >Process</li></a>
+                         <a href="{{ route('blog') }}"><li class="{{ Route::currentRouteName() == 'blog' ? 'bold': ''}}" >Columns</li></a>
+                         <a href="{{ route('videos') }}"><li class="{{ Route::currentRouteName() == 'videos' ? 'bold': ''}}" >Videos</li></a>
                     </ul>
                 </div>
 
                 <div class="footer-nav footer-module">
                     <ul>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                        <li>Compliance</li>
-                        <li>CFP&reg;</li>
-                        <li>FPA&reg;</li>
-                        <li>FAQ</li>
+                        <a href="https://twitter.com/onedegreetweets" target="_blank"><li>Twitter</li></a>
+                        <a href="https://www.facebook.com/pages/ONE%C2%BA/652730311451932" target="_blank"><li>Facebook</li></a>
+                        <a href="{{ route('services') }}/#info"><li>Compliance</li></a>
+                        <a href="http://www.letsmakeaplan.org/home" target="_blank"><li>CFP&reg;</li></a>
+                        <a href="http://www.plannersearch.org/Pages/Home.aspx" target="_blank"><li>FPA&reg;</li></a>
+                        <a href="{{ route('services') }}/#info"><li>FAQ</li></a>
                     </ul>
                 </div>
 
