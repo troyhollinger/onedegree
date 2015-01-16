@@ -85,12 +85,12 @@
            <div class="container bottom-container">
 
                 <ul class="nav">
-                    <a href="{{ route('home') }}"><li>Home{{ Route::currentRouteName() == 'home' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-                    <a href="{{ route('services') }}"><li>Services{{ Route::currentRouteName() == 'services' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-                    <a href="{{ route('team') }}"><li>Team{{ Route::currentRouteName() == 'team' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-                    <a href="{{ route('process') }}"><li>Process{{ Route::currentRouteName() == 'process' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-                    <a href="{{ route('blog') }}"><li>Columns{{ Route::currentRouteName() == 'blog' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-                    <a href="{{ route('videos') }}"><li>Videos{{ Route::currentRouteName() == 'videos' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
+                    <a href="{{ route('home') }}"><li>{{ Route::currentRouteName() == 'home' ? '<div class="nav-indicator"></div>': ''}}Home</li></a><br>
+                    <a href="{{ route('services') }}"><li>{{ Route::currentRouteName() == 'services' ? '<div class="nav-indicator"></div>': ''}}Services</li></a><br>
+                    <a href="{{ route('team') }}"><li>{{ Route::currentRouteName() == 'team' ? '<div class="nav-indicator"></div>': ''}}Team</li></a><br>
+                    <a href="{{ route('process') }}"><li>{{ Route::currentRouteName() == 'process' ? '<div class="nav-indicator"></div>': ''}}Process</li></a><br>
+                    <a href="{{ route('blog') }}"><li>{{ Route::currentRouteName() == 'blog' ? '<div class="nav-indicator"></div>': ''}}Columns</li></a><br>
+                    <a href="{{ route('videos') }}"><li>{{ Route::currentRouteName() == 'videos' ? '<div class="nav-indicator"></div>': ''}}Videos</li></a><br>
                 </ul>
 
                 <div class="nav-details">

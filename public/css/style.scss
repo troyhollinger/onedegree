@@ -179,9 +179,9 @@ $blue : #5fa8dc;
 
 		position: absolute;
 		bottom:20%;
-		left:2.5%;
-		// @include transform(translate(-50%, 0));
+		right:2.5%;
 		display: none;
+		text-align: right;
 
 		@include breakpoint(1500px) {
 
@@ -249,7 +249,7 @@ $blue : #5fa8dc;
 
 	position: absolute;
 	top:5px;
-	left:100%;
+	right:100%;
 	width:20px;
 	height:20px;
 	background-color: white;

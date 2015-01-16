@@ -813,7 +813,7 @@ var Mast = {
 		var _ = this;
 
 		$(".mast-logo-letters").attr('class', 'mast-logo-letters');
-		_.navButton.removeClass('fa-close').addClass('fa-bars');
+		_.navButton.attr('style', '').removeClass('fa-close').addClass('fa-bars');
 		_.element.removeClass('full-height opened green');
 		// _.topContainer.addClass('quick-transition');
 		_.bottomContainer.fadeOut(100);

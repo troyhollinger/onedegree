@@ -16,13 +16,13 @@ Services
 		<div class="service-module">
 			<p class="section-title">Financial Planning</p>
 			<p class="text">We take a comprehensive approach to managing your wealth. By incorporating the <span class="green-text">six-step Financial Planning process</span> recognized by the CFP® Board, your initial plan is developed over the course of several meetings. We also coordinate with your other professionals, such as estate planning attorneys, CPAs, and insurance specialists as needed. If you don’t have this team in place, we can provide recommendations.</p><br>
-			<p class="text">Financial plans are monitored and updated on a regular basis to ensure that as your life changes, your plan stays current. For affluent families and complex issues, we offer advanced planning to help address estate tax issues, charitable giving, business planning and legacy topics that often require special attention. <span class="green-text">Wealth Management Video Explainer</span> or  <a href="{{ route('inquiry') }}">INQUIRE</a></p>
+			<p class="text">Financial plans are monitored and updated on a regular basis to ensure that as your life changes, your plan stays current. For affluent families and complex issues, we offer advanced planning to help address estate tax issues, charitable giving, business planning and legacy topics that often require special attention. <span class="green-text">Wealth Management Video Explainer</span> or  <a href="{{ route('inquiry') }}">Inquire...</a></p>
 		</div>
 
 		<div class="service-module">
 			<p class="section-title">Investment Management</p>
 			<p class="text">We use a purpose allocation approach to determine the proper asset allocation of your investments. What is important to you? Are you trying to save for retirement? Do you need an income distribution strategy? Would you like to buy a second home? Do you want to be able to give more money to charity now? Would you like to focus on leaving a legacy?  Once we understand your values, we then work on building an all-weather portfolio designed to accomplish these goals. </p><br>
-			<p class="text">Our research incorporates a variety of asset management strategies. We select and monitor premier money managers that are incorporated into your customized portfolio. In this ever-changing world it is important to build a broadly diversified portfolio using sound principles with the flexibility to capture opportunity and/or reduce risk. <a href="{{ route('inquiry') }}">INQUIRE</a></p>
+			<p class="text">Our research incorporates a variety of asset management strategies. We select and monitor premier money managers that are incorporated into your customized portfolio. In this ever-changing world it is important to build a broadly diversified portfolio using sound principles with the flexibility to capture opportunity and/or reduce risk. <a href="{{ route('inquiry') }}">Inquire...</a></p>
 
 		</div>
 
@@ -46,7 +46,7 @@ Services
 				Perhaps we can even aim to make it as long as the other 
 				two topics as viewed to the left. And it would be cool to 
 				do <span class="green-text">Video Explanations of all three Services</span> listed.
-				 <a href="{{ route('inquiry') }}">INQUIRE</a>
+				 <a href="{{ route('inquiry') }}">Inquire...</a>
 			</p>
 
 		</div>
