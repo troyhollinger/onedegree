@@ -992,7 +992,13 @@ var HomeBanner = {
 	init : function() {
 
 		// this.sizing();
-		this.slideshow();
+
+		if (!mobile() && $(window).width() > 1000) {
+
+			this.slideshow();
+
+		}
+		
 
 	},
 
@@ -1010,7 +1016,7 @@ var HomeBanner = {
 
 	slideshow : function() {
 
-		$("#skippr-targer").skippr({
+		$("#skippr-target").skippr({
 
 			transition : 'fade',
 			arrows : false,

@@ -12,7 +12,31 @@ Menu
 
 <div class="home-banner top-banner">
 
-    <div id="skippr-targer">
+    <div class="mobile-home-banner" style="background-image:url({{ asset('img/tiles-large-1.jpg') }})">
+
+        <div class="photo-content-container">
+
+            <p class="photo-content-title">Thinking for Tomorrow, <br><span class='bold'>Today.</span></p>
+            <p class="photo-content-text"><span class="bold">What is important to you?</span><br>
+            One Degree Advisors are experienced
+            in providing personalized wealth solutions
+            for select families and organizations.
+            We offer guidance, clarity and wisdom...
+            </p>
+
+            <a href="{{ route('services') }}"><div class="photo-content-button">
+            
+                <p>Learn More</p>
+            
+            </div></a>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="skippr-target">
 
         
         <div style="background-image:url({{ asset('img/tiles-large-1.jpg') }})">
