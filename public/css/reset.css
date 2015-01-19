@@ -25,7 +25,9 @@ body {
 	width:100%;
 	height:auto;
 	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 div, span, p, a{
 	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }

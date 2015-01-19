@@ -53,6 +53,67 @@ Services
 
 	</div>
 
+	<div class="affiliations-module-container">
+
+		<p class="section-title">Affiliations</p>
+		<br>
+
+		<div class="affiliations-module">
+			<span class="bold">CFP®</span> - CERTIFIED FINANCIAL PLANNER 
+			The mission of Certified Financial Planner 
+			Board of Standards Inc. (CFP Board) is to 
+			benefit the public by granting the CFP® 
+			certification and upholding it as the recognized 
+			standard of excellence for personal financial 
+			planning.
+		</div>
+		<div class="affiliations-module">
+			<span class="bold">FPA</span> - FINANCIAL PLANNING ASSOCIATION 
+			FPA members are those who commit to the 
+			highest standards of professional competence, 
+			ethical conduct and clear, complete disclosure 
+			to those they serve. They deliver advice using 
+			an objective, client-centered, ethical process.
+		</div>
+		<div class="affiliations-module">
+			<span class="bold">Kingdom Advisors</span> - With a focus on serving 
+			the financial professional community, Kingdom 
+			Advisors continues to strive to expand the 
+			knowledge and understanding of biblical financial 
+			wisdom so that Christian financial professionals are 
+			prepared and resourced to integrate these 
+			principles in their practices and client counsel.
+		</div>
+
+
+	</div>
+
+	<div class="ethics-module-container">
+
+		<p class="section-title">Code of Ethics</p>
+
+		<p class="text">We adhere to a Code of Ethics that reflects our commitment to help clients 
+			acheive their life goals. This code of ethics is mandated by the <span class="green-text">Financial Planning 
+			Association (FPA)</span> and adopted by the <span class="green-text">Certified Financial Planner Board (CFP)</span>. You
+			can expect from us the following:</p>
+
+
+		<div class="ethics-slideshow">
+
+			<p class="ethics-slide ethics-slide-visible">Integrity.</p>
+			<p class="ethics-slide">Objectivity.</p>
+			<p class="ethics-slide">Competence.</p>
+			<p class="ethics-slide">Fairness.</p>
+			<p class="ethics-slide">Confidentiality.</p>
+			<p class="ethics-slide">Professionalism.</p>
+			<p class="ethics-slide">Diligence.</p>
+
+		</div>
+
+		<p class="ethics-slideshow-title">Principles we operate by</p>
+
+	</div>
+
 	<div class="info-modules-container" id="info">
 
 		<div class="info-module" id="compliance">

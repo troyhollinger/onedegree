@@ -40,8 +40,6 @@ app.controller('VideoController', function($scope, Video, $sce) {
 
 	$scope.getVideos = function() {
 
-		console.log("this is happening");
-
 		Video.get().success(function(response) {
 
 			$scope.videos = response.data;
@@ -54,7 +52,6 @@ app.controller('VideoController', function($scope, Video, $sce) {
 
 		}).error(function(response) {
 
-			console.log('something is going wrong');
 
 		});
 	}
@@ -62,8 +59,6 @@ app.controller('VideoController', function($scope, Video, $sce) {
 	$scope.getVideos();
 
 });
-
-
 
 
 
@@ -400,6 +395,56 @@ var ResponsiveVideo = {
 
 }
 
+
+var EthicsSlideshow  = {
+
+	init : function() {
+
+		this.slideshow();
+
+	},
+
+	elements : $(".ethics-slide"),
+
+	slideshow : function() {
+
+		var i = 0;
+
+		setInterval(function() {
+
+			if (i >= EthicsSlideshow.elements.length) {
+
+				i = 0;
+
+			}
+
+			for(var e = 0; e < EthicsSlideshow.elements.length; e++) {
+
+				if (e === i) {
+
+					EthicsSlideshow.elements.eq(e).addClass('ethics-slide-visible');
+
+				} else {
+
+					EthicsSlideshow.elements.eq(e).removeClass('ethics-slide-visible');
+
+				}
+
+			}
+
+			i++;
+
+		}, 3000);
+
+	}
+
+
+
+}
+
+
+
+
 $(document).ready(function() {
 
 	Mast.init();
@@ -421,6 +466,12 @@ $(document).ready(function() {
 	if (thisPage === '/' || thisPage === 'blog') {
 
 		MediumPosts.init();
+
+	}
+
+	if (thisPage === 'services') {
+
+		EthicsSlideshow.init();
 
 	}
 

@@ -169,6 +169,12 @@ $blue : #5fa8dc;
 	.top-container {
 		@include center;
 		width:95%;
+
+		@include breakpoint(1000px) {
+
+			width:85%;
+
+		}
 	}
 
 	.container {
@@ -284,7 +290,7 @@ $blue : #5fa8dc;
 
 	@include breakpoint(1000px) {
 
-		font-size: 1.5rem;
+		font-size: .9rem;
 
 	}
 
@@ -461,6 +467,13 @@ $blue : #5fa8dc;
 	font-size: 2rem;
 	letter-spacing: -3px;
 
+	@include breakpoint(1000px) {
+
+		font-size: 1.2rem;
+		letter-spacing: -1px;
+
+	}
+
 }
 
 .banner-quote-source {
@@ -469,6 +482,12 @@ $blue : #5fa8dc;
 	text-transform: uppercase;
 	font-size: 1rem;
 	margin-top: 20px;
+
+	@include breakpoint(1000px) {
+
+		font-size: .8rem;
+
+	}
 
 }
 
@@ -677,6 +696,12 @@ $blue : #5fa8dc;
 	width:8%;
 	overflow: hidden;
 	position: relative; 
+
+	@include breakpoint(1000px) {
+
+		display: none;
+
+	}
 
 }
 
@@ -1199,7 +1224,7 @@ $blue : #5fa8dc;
 	
 
 	.text {
-		font-size: .8rem;
+		font-size: .9rem;
 		line-height: 1.5rem;
 	}
 
@@ -1210,21 +1235,21 @@ $blue : #5fa8dc;
 
 	}
 
-	&:first-child {
+	&:first-of-type {
 		width:32%;
 		padding:0 40px 0px 0;
 		
 
 	}
 
-	&:nth-child(2) {
+	&:nth-of-type(2) {
 		border-right:2px solid #d1d1d1;
 		padding:0 40px 0 40px;
 		border-left:2px solid #d1d1d1;
 
 	}
 
-	&:last-child {
+	&:last-of-type {
 
 		width:32%;
 		padding:0 0 0px 40px;
@@ -1243,9 +1268,10 @@ $blue : #5fa8dc;
 	@include breakpoint(1000px) {
 
 		float:none;
-		width:100%;
+		width:100% !important;
 		padding: 0 !important;
 		border:none !important;
+		margin-bottom: 40px;
 
 	}
 
@@ -1327,6 +1353,110 @@ $blue : #5fa8dc;
 
 
 }
+
+
+.affiliations-module-container {
+
+	@extend .service-modules-container;
+
+	.section-title {
+
+		display: inline-block;
+		font-family: $verdana;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 1.5rem;
+		padding-bottom: 10px;
+
+	}
+
+	border-top: 2px solid #d1d1d1;
+	border-bottom: 2px solid #d1d1d1;
+	@include box-sizing(border-box);
+	padding: 125px 0;
+	margin: 100px 0;
+
+}
+
+.affiliations-module {
+
+	@extend .service-module;
+
+	font-family: $verdana;
+	color:$text-color;
+	font-size: .8rem;
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
+	line-height: 1.5rem;
+
+}
+
+
+.ethics-module-container {
+
+	@extend .affiliations-module-container;
+
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 20px;
+
+	.text {
+
+		font-family: $verdana;
+		font-size: .8rem;
+		width:60%;
+		line-height: 1.5rem;
+
+	}
+
+}
+
+.ethics-slideshow {
+
+	position: relative;
+	margin: 15px 0;
+	height:7rem;
+	overflow: hidden;
+
+}
+
+.ethics-slide {
+
+	position: absolute;
+	@include transform(translate(-100%, 0));
+	font-family: $verdana;
+	font-weight: bold;
+	font-size: 5.5rem;
+	background-color: white;
+	letter-spacing: -5px;
+	color:$green;
+	@include transition(all .5s ease);
+
+
+}
+
+.ethics-slide-visible {
+
+	@include transform(translate(0%, 0))
+
+}
+
+.ethics-slideshow-title {
+
+	display: inline-block;
+	font-family: $verdana;
+	text-transform: uppercase;
+	font-size: 1rem;
+	@include box-sizing(border-box);
+	border-top: 2px solid lighten($text-color, 55%);
+	padding-top: 10px;
+	margin-top: 10px;
+	color:lighten($text-color, 55%);
+
+}
+
+
+
 
 
 .process-line {
@@ -1726,6 +1856,7 @@ $blue : #5fa8dc;
 
 	@extend .home-banner;
 	background-color: $green;
+	height:100vh;
 
 }
 

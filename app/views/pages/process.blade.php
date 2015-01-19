@@ -89,7 +89,7 @@ Process
 
 	<div class="container">
 
-		<p class="banner-quote">To Be Smart, <span class="bold">Spend Carefully.</span> To Be Wise, <span class="bold">Save Regularly. <br>To Be Genius, <span class="bold">Give Extravagantly.</span></span></p>
+		<p class="banner-quote">To Be Smart, <span class="bold">Spend Carefully.</span> To Be Wise, Save Regularly. <br>To Be Genius, <span class="bold">Give Extravagantly.</span></span></p>
 		<p class="banner-quote-source">CHIP INGRAM</p>
 
 	</div>
