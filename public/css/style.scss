@@ -205,6 +205,12 @@ body , html{
 
 			bottom: 7%;
 
+		} 
+
+		@include breakpoint(1000px) {
+
+			text-align: left;
+
 		}
 
 	}
