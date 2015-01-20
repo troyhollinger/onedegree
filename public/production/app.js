@@ -792,7 +792,7 @@ var Mast = {
 
 		if (mobile()) {
 
-			_.topContainer.css({ top : '12px', transform : 'translate(-50%, 0%)' });
+			_.topContainer.css({ top : '18px', transform : 'translate(-50%, 0%)' });
 
 		} else {
 
