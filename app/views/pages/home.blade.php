@@ -139,7 +139,7 @@ Menu
 
 </div>
 
-<a class="inquire-link" href="{{ route('inquiry') }}">INQUIRE</a>
+<a href="{{ route('inquiry') }}"><div class="inquire-link">INQUIRE</div></a>
 
 <div class="container content">
 

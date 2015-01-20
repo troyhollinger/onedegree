@@ -125,37 +125,6 @@ Team
 	</div>
 
 
-	<div class="affiliations">
-		<p class="section-title">Affiliations</p>
-		<p class="text"><span class="bold">Certified Financial Planner Board of Standards, Inc. (CFP®)</span> - are experienced in providing personalized wealth solutions for select families and organizations. We offer guidance, clarity and wisdom to help our clients gain confidence in their financial future.
-		We are independent, fee-based financial professionals who build long term, trusted relationships focused on solutions, not products. As fiduciaries, we make sure that our clients' interests always come first. </p>
-		<br>
-		<p class="text"><span class="bold">Financial Planning Association (FPA)</span> - are experienced in providing personalized wealth solutions for select families and organizations. We offer guidance, clarity and wisdom to help our clients gain confidence in their financial future.
-		We are independent, fee-based financial professionals who build long term, trusted relationships focused on solutions, not products. As fiduciaries, we make sure that our clients' interests always come first. </p>
-		<br>
-		<p class="text"><span class="bold">Kingdom Advisors </span>- are experienced in providing personalized wealth solutions for select families and organizations. We offer guidance, clarity and wisdom to help our clients gain confidence in their financial future.
-		We are independent, fee-based financial professionals who build long term, trusted relationships focused on solutions, not products. As fiduciaries, we make sure that our clients' interests always come first. </p>
-	</div>
-
-	<div class="ethics">
-
-		<p class="section-title">Code Of Ethics</p>
-
-		<p class="text">We adhere to a Code of Ethics that reflects our cimmitment to help clients acheive their life goals. This code of ethics is mandated by the Financial Planning Association (FPA) and adopted by the Certified Financial Planner Board (CFP).</p>
-
-		<ul>
-			<li>Principle 1 - <span>Integrity</span></li><br>
-			<li>Principle 2 - <span>Objectivity</span></li><br>
-			<li>Principle 3 - <span>Competence</span></li><br>
-			<li>Principle 4 - <span>Fairness</span></li><br>
-			<li>Pricinple 5 - <span>Confidentiality</span></li><br>
-			<li>Principle 6 - <span>Professionalism</span></li><br>
-			<li>Principle 7 - <span>Diligence</span></li><br>
-		</ul>
-
-	</div>
-
-
 
 
 </div>

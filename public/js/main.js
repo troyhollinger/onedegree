@@ -83,6 +83,11 @@ function squarify() {
 }
 
 
+
+
+
+
+
 var Mast = {
 
 	init : function() {
@@ -105,8 +110,6 @@ var Mast = {
 			});
 			
 		} else {
-
-			// Mast.loop = requestAnimationFrame(Mast.sizing);
 
 			_.navButton.click(function() {
 
@@ -148,13 +151,11 @@ var Mast = {
 
 		} else {
 
-			// cancelAnimationFrame(Mast.loop);
 			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
 			
 		}
 		
 		_.bottomContainer.fadeIn();
-		// _.getThicker();
 
 	},
 
@@ -165,15 +166,20 @@ var Mast = {
 		$(".mast-logo-letters").attr('class', 'mast-logo-letters');
 		_.navButton.attr('style', '').removeClass('fa-close').addClass('fa-bars');
 		_.element.removeClass('full-height opened green');
-		// _.topContainer.addClass('quick-transition');
 		_.bottomContainer.fadeOut(100);
 		_.title.fadeIn('fast');
 
-		setTimeout(function(){_.topContainer.attr('style', '').removeClass('quick-transition')}, 100);
+		setTimeout(function(){
+
+			_.topContainer.attr('style', '').removeClass('quick-transition')
+
+		}, 100);
 	
 	},
 
 	coloring : function() {
+
+		var _ = this;
 
 		var bannerHeight = $('.top-banner').height();
 
@@ -182,12 +188,21 @@ var Mast = {
 			$(".mast-logo-letters").attr('class', 'mast-logo-letters');
 			$(".title").removeClass('above-fold');
 			$("#nav-button").removeClass("above-fold");
+			Mast.element.attr('style', '');
+
+			if ($(window).width() < 1000) {
+
+				Mast.element.addClass('white');
+
+			}
 
 		} else {
 
 			$(".mast-logo-letters").attr('class', 'mast-logo-letters above-fold');
 			$("#nav-button").addClass('above-fold');
 			$(".title").addClass('above-fold');
+			Mast.element.css('background-color', 'transparent')
+			Mast.element.removeClass('white');
 
 		}
 
@@ -196,6 +211,12 @@ var Mast = {
 	}
 
 }
+
+
+
+
+
+
 
 
 var SecondaryTeamMemberOverlay = {

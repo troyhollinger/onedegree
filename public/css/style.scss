@@ -223,9 +223,16 @@ body , html{
 
 	}
 
+	&.white {
+
+		background-color: white;
+
+	}
+
 	@include breakpoint(1000px) {
 
 		height:60px;
+		background-color: white;
 
 	}
 
@@ -2015,6 +2022,23 @@ body , html{
 	font-family: $verdana;
 	color: lighten($text-color, 25%);
 	z-index: 4;
+
+	@include breakpoint(1000px) {
+
+		position: static;
+		width:85%;
+		height:50px;
+		margin: 20px auto 0 auto;
+		background-color: $green;
+		text-align: center;
+		color:white;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		line-height: 3rem;
+
+
+	}
 
 }
 
