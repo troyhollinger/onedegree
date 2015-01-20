@@ -1041,7 +1041,7 @@ var HomeBanner = {
 
 			transition : 'fade',
 			arrows : false,
-			autoPlay : true
+			autoPlay : false
 
 		});
 
