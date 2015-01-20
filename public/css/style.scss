@@ -1383,6 +1383,14 @@ body , html{
 			float:left;
 			padding-right: 40px;
 
+			@include breakpoint(1000px) {
+
+				width:100%;
+				float:none;
+				padding-right:0;
+
+			}
+
 		}
 
 
@@ -1393,10 +1401,31 @@ body , html{
 			padding-left: 40px;
 			border-left:2px solid #d1d1d1;
 
+			@include breakpoint(1000px) {
+
+				width:100%;
+				float:none;
+				padding-left:0;
+				border:0
+
+			}
 
 
 		}
 
+		@include breakpoint(1000px) {
+
+			margin-bottom: 70px;
+
+		}
+
+
+	}
+
+	@include breakpoint(1000px) {
+
+		padding-top: 20px;
+		margin-top: 20px;
 
 	}
 
@@ -1413,6 +1442,22 @@ body , html{
 	&:last-child {
 
 		padding: 0 0 0 40px;
+
+		@include breakpoint(1000px) {
+
+			padding-left: 0;
+			margin-top: 10px;
+
+		}
+
+	}
+	
+
+	@include breakpoint(1000px) {
+
+		width:100%;
+		float:none;
+
 
 	}
 
@@ -1472,6 +1517,12 @@ body , html{
 		width:60%;
 		line-height: 1.5rem;
 
+		@include breakpoint(1000px) {
+
+			width:100%;
+
+		}
+
 	}
 
 }
@@ -1482,6 +1533,12 @@ body , html{
 	margin: 15px 0;
 	height:7rem;
 	overflow: hidden;
+
+	@include breakpoint(1000px) {
+
+		height:3rem;
+
+	}
 
 }
 
@@ -1497,6 +1554,13 @@ body , html{
 	color:$green;
 	@include transition(all .5s ease);
 
+
+	@include breakpoint(1000px) {
+
+		font-size: 2rem;
+		letter-spacing: -1px;
+
+	}
 
 }
 
