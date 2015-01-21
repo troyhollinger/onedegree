@@ -130,6 +130,12 @@ body , html{
 
 	text-align: right;
 
+	@include breakpoint(1000px) {
+
+		text-align: left;
+
+	}
+
 }
 
 .align-left {
@@ -1612,6 +1618,7 @@ body , html{
 	@include breakpoint(1000px) {
 
 		position: static;
+		margin:50px 0;
 
 	}
 
@@ -1633,6 +1640,12 @@ body , html{
 
 	.process-module-text {
 		width:50%;
+
+		@include breakpoint(1000px) {
+
+			width:100%;
+
+		}
 	}
 
 	i {
@@ -1646,11 +1659,24 @@ body , html{
 	.process-module-icon {
 		width:15%;
 		float:right;
+
+		@include breakpoint(1000px) {
+
+			float:none;
+
+		}
 	}
 
 	.process-module-text {
 		width:55%;
 		float:right;
+
+		@include breakpoint(1000px) {
+
+			width:100%;
+			float:none;
+
+		}
 	}
 
 	i {
@@ -1670,6 +1696,12 @@ body , html{
 		width:100%;
 		text-align: center;
 
+		@include breakpoint(1000px) {
+
+			text-align: center;
+
+		}
+
 	}
 
 	.process-module-text {
@@ -1682,6 +1714,13 @@ body , html{
 		.section-title {
 
 			margin:20px 0;
+
+		}
+
+		@include breakpoint(1000px) {
+
+			width:100%;
+			text-align: left;
 
 		}
 
@@ -1735,6 +1774,12 @@ body , html{
 
 	top:230px;
 
+	@include breakpoint(1000px) {
+
+		margin-top: 80px;
+
+	}
+
 }
 
 .process-analyze {
@@ -1761,6 +1806,12 @@ body , html{
 
 	direction:rtl;
 
+	@include breakpoint(1000px) {
+
+		direction: ltr;
+
+	}
+
 }
 
 #implement-title {
@@ -1771,6 +1822,20 @@ body , html{
 	p {
 
 		@include center;
+
+		@include breakpoint(1000px) {
+
+			position: static;
+			@include transform(translate(0,0));
+
+
+		}
+
+	}
+
+	@include breakpoint(1000px) {
+
+		overflow: visible;
 
 	}
 
