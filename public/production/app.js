@@ -711,11 +711,22 @@ app.controller('VideoController', function($scope, Video, $sce) {
 
 
 function mobile() {
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// 	return true;
+	// } else {
+	// 	return false;
+	// }
+
+	if ($(window) < 1100) {
+
 		return true;
+
 	} else {
+
 		return false;
+
 	}
+
 }
 
 
@@ -835,7 +846,7 @@ var Mast = {
 			$("#nav-button").removeClass("above-fold");
 			Mast.element.attr('style', '');
 
-			if ($(window).width() < 1000) {
+			if ($(window).width() < 1100) {
 
 				Mast.element.addClass('white');
 
@@ -978,7 +989,7 @@ var MediumPosts = {
 
 		var loadedElements = $(".medium-container iframe");
 
-		if ($(window).width() > 1000) {
+		if ($(window).width() > 1100) {
 
 			this.initialElements.each(function() {
 
@@ -1014,7 +1025,7 @@ var HomeBanner = {
 
 		// this.sizing();
 
-		if (!mobile() && $(window).width() > 1000) {
+		if (!mobile() && $(window).width() > 1100) {
 
 			this.slideshow();
 
@@ -1153,7 +1164,7 @@ $(document).ready(function() {
 
 	}
 
-	if (thisPage === 'process' && $(window).width() > 1000) {
+	if (thisPage === 'process' && $(window).width() > 1100) {
 
 		ProcessLine.init();
 

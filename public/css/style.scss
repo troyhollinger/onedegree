@@ -69,6 +69,9 @@ $blue : #5fa8dc;
 	@else if $point == medium {
     	@media (max-width: 1250px) { @content; }
 	}
+	@else if $point == mobile {
+		@media (max-width: 1100px) { @content; }
+	}
 	@else {
 		@media (max-width: $point) { @content; }
 	}
@@ -85,7 +88,7 @@ $blue : #5fa8dc;
 
 body , html{
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		max-width: 100%;
 		overflow-x:hidden;
@@ -119,7 +122,7 @@ body , html{
 	color:$text-color;
 	line-height: 1.75rem;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		// padding:0 10px;
 
@@ -130,7 +133,7 @@ body , html{
 
 	text-align: right;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		text-align: left;
 
@@ -166,7 +169,7 @@ body , html{
 	overflow: visible;
 	position: relative;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:85%;
 
@@ -188,7 +191,7 @@ body , html{
 		@include center;
 		width:95%;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:85%;
 
@@ -213,7 +216,7 @@ body , html{
 
 		} 
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			text-align: left;
 
@@ -241,7 +244,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		height:60px;
 		background-color: white;
@@ -270,7 +273,7 @@ body , html{
 
 		}
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			font-size: 2rem;
 
@@ -292,7 +295,7 @@ body , html{
 	background-color: white;
 	border-radius: 50%;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:10px;
 		height:10px;
@@ -319,7 +322,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: .9rem;
 
@@ -334,7 +337,7 @@ body , html{
 
 	@extend .details;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		margin-top: 30px;
 
@@ -354,7 +357,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:70px;
 
@@ -380,7 +383,7 @@ body , html{
 	width:100%;
 	height:120px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		height:60px;
 
@@ -406,7 +409,7 @@ body , html{
 	// background-position: center;
 	// background-size: cover;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		height:100vh;
 
@@ -420,7 +423,7 @@ body , html{
 	background-size: cover;
 	background-position: center;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: block;
 		position: relative;
@@ -441,7 +444,7 @@ body , html{
 	overflow: auto;
 
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		@include box-sizing(border-box);
 		padding: 0 4%;
@@ -461,7 +464,7 @@ body , html{
 	letter-spacing: -1px;
 	margin-bottom: 20px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: 1.5rem;
 
@@ -475,7 +478,7 @@ body , html{
 	color:white;
 	font-size: 1.1rem;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: .9rem;
 
@@ -538,7 +541,7 @@ body , html{
 	font-size: 2rem;
 	letter-spacing: -3px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: 1.2rem;
 		letter-spacing: -1px;
@@ -554,7 +557,7 @@ body , html{
 	font-size: 1rem;
 	margin-top: 20px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: .8rem;
 
@@ -583,7 +586,7 @@ body , html{
 		text-align: left;
 		border-left:2px solid #d1d1d1;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			border:none;
 
@@ -599,7 +602,7 @@ body , html{
 		font-size: 1.5rem;
 		margin-bottom: 20px;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			font-size: 1.2rem;
 			text-align: center;
@@ -613,7 +616,7 @@ body , html{
 
 		font-family: $verdana;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			font-size: .9rem;
 
@@ -621,7 +624,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		float: none;
 		width:100%;
@@ -654,7 +657,7 @@ body , html{
 	margin-top: 75px;
 	margin-bottom: 100px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		margin:30px 0 100px 0;
 
@@ -689,7 +692,7 @@ body , html{
 
 			}
 
-			@include breakpoint(1000px) {
+			@include breakpoint(mobile) {
 
 				top:103%;
 				right:5%;
@@ -742,14 +745,14 @@ body , html{
 		.tweet-handle-container {
 			// left: 0;
 
-			@include breakpoint(1000px) {
+			@include breakpoint(mobile) {
 
 				left:20px;
 
 			}
 		}
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 			padding: 20px;
 			border:none;
 
@@ -762,7 +765,7 @@ body , html{
 		border-right: 2px solid #d1d1d1;	
 		// padding-right: 0;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			padding: 20px;
 			border:none;
@@ -770,7 +773,7 @@ body , html{
 		}
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:100%;
 		float:none;
@@ -788,7 +791,7 @@ body , html{
 	overflow: hidden;
 	position: relative; 
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: none;
 
@@ -825,7 +828,7 @@ body , html{
 	color:$blue;
 	font-weight: bold;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		// font-size: .9rem;
 
@@ -864,7 +867,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		left:20px;
 
@@ -890,7 +893,7 @@ body , html{
 		// height:100%;
 		height:auto;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			padding: 40px 0;
 			position: static;
@@ -909,7 +912,7 @@ body , html{
 			margin-bottom: 3px;
 		}
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			position: static;
 			@include transform(none);
@@ -936,7 +939,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		height:auto;
 
@@ -970,7 +973,7 @@ body , html{
 	width:240px;
 	margin-bottom: 17px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		position: static;
 		@include transform(none);
@@ -989,7 +992,7 @@ body , html{
 		color:white;
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: .5rem;
 
@@ -1011,7 +1014,7 @@ body , html{
 		text-align: right;
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: none;
 
@@ -1050,7 +1053,7 @@ body , html{
 
 		padding-top: 75px;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			padding-top: 30px;
 
@@ -1071,7 +1074,7 @@ body , html{
 	float:left;
 	width: 8%;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		float:none;
 		width:80%;
@@ -1089,7 +1092,7 @@ body , html{
 	background-size: cover;
 	background-position: center;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		margin: 0 auto;
 
@@ -1101,7 +1104,7 @@ body , html{
 	float:right;
 	width:80%;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		float:none;
 		width:100%;
@@ -1123,7 +1126,7 @@ body , html{
 		border-right: 4px solid $green;
 		padding-right: 20px;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			font-size: 1.5rem;
 
@@ -1140,7 +1143,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		text-align: center;
 
@@ -1158,7 +1161,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		
 		font-size: .9rem;
@@ -1188,7 +1191,7 @@ body , html{
 	float:left;
 	overflow: hidden;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:50%;
 
@@ -1261,7 +1264,7 @@ body , html{
 		font-size: 1.3rem;
 		padding:30px;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:100%;
 			font-size: 1rem;
@@ -1297,7 +1300,7 @@ body , html{
 	display:block;
 	font-style: normal;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		text-align: center;
 
@@ -1362,7 +1365,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		float:none;
 		width:100% !important;
@@ -1415,7 +1418,7 @@ body , html{
 			float:left;
 			padding-right: 40px;
 
-			@include breakpoint(1000px) {
+			@include breakpoint(mobile) {
 
 				width:100%;
 				float:none;
@@ -1433,7 +1436,7 @@ body , html{
 			padding-left: 40px;
 			border-left:2px solid #d1d1d1;
 
-			@include breakpoint(1000px) {
+			@include breakpoint(mobile) {
 
 				width:100%;
 				float:none;
@@ -1445,7 +1448,7 @@ body , html{
 
 		}
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			margin-bottom: 70px;
 
@@ -1454,7 +1457,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		padding-top: 20px;
 		margin-top: 20px;
@@ -1475,7 +1478,7 @@ body , html{
 
 		padding: 0 0 0 40px;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			padding-left: 0;
 			margin-top: 10px;
@@ -1485,7 +1488,7 @@ body , html{
 	}
 	
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		width:100%;
 		float:none;
@@ -1550,7 +1553,7 @@ body , html{
 		width:60%;
 		line-height: 1.5rem;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:100%;
 
@@ -1567,7 +1570,7 @@ body , html{
 	height:7rem;
 	overflow: hidden;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		height:3rem;
 
@@ -1588,7 +1591,7 @@ body , html{
 	@include transition(all .5s ease);
 
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		font-size: 2rem;
 		letter-spacing: -1px;
@@ -1626,7 +1629,7 @@ body , html{
 	width:98%;
 	height:auto;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: none;
 
@@ -1641,7 +1644,7 @@ body , html{
 	height:auto;
 	position: absolute;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		position: static;
 		margin:50px 0;
@@ -1667,7 +1670,7 @@ body , html{
 	.process-module-text {
 		width:50%;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:100%;
 
@@ -1686,7 +1689,7 @@ body , html{
 		width:15%;
 		float:right;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			float:none;
 
@@ -1697,7 +1700,7 @@ body , html{
 		width:55%;
 		float:right;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:100%;
 			float:none;
@@ -1722,7 +1725,7 @@ body , html{
 		width:100%;
 		text-align: center;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			text-align: center;
 
@@ -1743,7 +1746,7 @@ body , html{
 
 		}
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			width:100%;
 			text-align: left;
@@ -1765,7 +1768,7 @@ body , html{
 		@include transition(all .25s ease);
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: none;
 
@@ -1792,7 +1795,7 @@ body , html{
 		font-family: $verdana;
 		font-size: .9rem;
 		line-height: 1.4rem;
-		
+
 
 	}
 
@@ -1803,7 +1806,7 @@ body , html{
 
 	top:230px;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		margin-top: 80px;
 
@@ -1835,7 +1838,7 @@ body , html{
 
 	direction:rtl;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		direction: ltr;
 
@@ -1852,7 +1855,7 @@ body , html{
 
 		@include center;
 
-		@include breakpoint(1000px) {
+		@include breakpoint(mobile) {
 
 			position: static;
 			@include transform(translate(0,0));
@@ -1862,7 +1865,7 @@ body , html{
 
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		overflow: visible;
 
@@ -2188,7 +2191,7 @@ body , html{
 	color: lighten($text-color, 25%);
 	z-index: 4;
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		position: static;
 		width:85%;
@@ -2210,7 +2213,7 @@ body , html{
 
 #skippr-target {
 
-	@include breakpoint(1000px) {
+	@include breakpoint(mobile) {
 
 		display: none;
 
