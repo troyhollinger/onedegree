@@ -112,10 +112,13 @@
         @endif
 
 
+
         @yield('content')
 
 
         <div class="footer">
+
+            <script src="https://www.riskalyze.com/hosted/d796c4e20cf97ca5b48a/rq/lt/lg/btn.js" type="text/javascript" data-logo="1" data-button-title="Free Portfolio Risk Analysis"></script>
 
             <div class="container">
 
