@@ -97,6 +97,11 @@ body , html{
 
 }
 
+.smaller {
+
+	font-size: .9em;
+
+}
 
 .green {
 	background-color: $green !important;
@@ -110,6 +115,12 @@ body , html{
 
 .bold {
 	font-weight: bold;
+}
+
+.uppercase {
+
+	text-transform: uppercase;
+
 }
 
 .full-height {
@@ -127,6 +138,12 @@ body , html{
 		// padding:0 10px;
 
 	}
+}
+
+.faded {
+
+	opacity: .5;
+
 }
 
 .align-right {
@@ -176,13 +193,30 @@ body , html{
 	}
 }
 
+.outer-container {
+
+	position: relative;
+	width:100%;
+	height:auto;
+	z-index: 10;
+	background-color: white;
+	@include transition(all .25s ease);
+
+	&.shifted {
+
+		@include transform(translate(-22%, 0));
+
+	}
+
+}
+
 .mast {
 	position: fixed;
 	width:100%;
 	height:120px;
 	min-height: 60px !important;
 	background-color: transparent;
-	z-index: 9999;
+	z-index: 11;
 	@include transition(all .1s ease);
 	overflow: visible;
 
@@ -224,15 +258,29 @@ body , html{
 
 	}
 
-	i {
-		
-		font-size: 2.2rem;
-		@include centerRight;
-		cursor:pointer;
-		color:$green;
+
+	@include breakpoint(mobile) {
+
+		height:60px;
+		background-color: white;
+
 	}
 
-	i.above-fold {
+
+}
+
+#nav-button {
+
+	font-size: 2.2rem;
+	position: fixed;
+	cursor:pointer;
+	color:$green;
+	top:5%;
+	right:3%;
+	z-index: 15;
+	// @include transition(color .1s linear);
+
+	&.above-fold {
 
 		color:white;
 
@@ -244,19 +292,45 @@ body , html{
 
 	}
 
-	@include breakpoint(mobile) {
+}
 
-		height:60px;
-		background-color: white;
+.nav-container {
+
+	background-color: $green;
+	position: fixed;
+	right:0;
+	// left:100%;
+	top:0;
+	z-index:9;
+	width:22%;
+	width: 22vw;
+	height:100%;
+	height:100vh;
+	// @include transform(translate(0,0));
+	// @include transition(all .25s ease);
+	
+	// padding:70px;
+
+	&.open {
+
+		// @include transform(translate(-100%, 0));
 
 	}
 
-	
+}
+
+.nav-positioner {
+
+	position: absolute;
+	bottom:70px;
+	right:70px;
 
 }
 
 .nav {
 	
+	text-align: right;
+
 	li {
 
 		font-family: $georgia;
@@ -289,7 +363,7 @@ body , html{
 
 	position: absolute;
 	top:5px;
-	right:100%;
+	left:100%;
 	width:20px;
 	height:20px;
 	background-color: white;
@@ -308,7 +382,7 @@ body , html{
 
 	display: inline;
 	@include centerRight;
-	margin-right: 40px;
+	margin-right: 50px;
 	margin-top: 2px;
 	font-family: $verdana;
 	color:$green;
@@ -333,7 +407,9 @@ body , html{
 
 
 .nav-details {
+
 	margin-top: 60px;
+	text-align: right;
 
 	@extend .details;
 
@@ -2220,3 +2296,30 @@ body , html{
 	}
 
 }
+
+.home-service-modules-container {
+
+	@extend .service-modules-container;
+
+	padding-bottom: 50px;
+
+	.section-title {
+
+		font-family: $verdana;
+		font-size: 1.2rem;
+
+	}
+
+	.service-module {
+
+		border:none;
+
+	}
+
+}
+
+
+
+
+
+

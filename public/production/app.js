@@ -740,11 +740,7 @@ function squarify() {
 
 
 
-
-
-
-
-var Mast = {
+var Navigation = {
 
 	init : function() {
 
@@ -754,7 +750,7 @@ var Mast = {
 
 			_.navButton.on('touchstart', function() {
 
-				if (_.element.hasClass('opened')) {
+				if (_.element.hasClass('open')) {
 
 					_.close();
 
@@ -769,7 +765,7 @@ var Mast = {
 
 			_.navButton.click(function() {
 
-				if (_.element.hasClass('opened')) {
+				if (_.element.hasClass('open')) {
 
 					_.close();
 
@@ -781,6 +777,56 @@ var Mast = {
 
 			});
 		}
+
+	},
+
+	navButton : $("#nav-button"),
+	element : $(".nav-container"),
+	outerContainer : $('#outer-container'),
+
+	open : function() {
+
+		var _ = this;
+
+		_.element.removeClass('closed').addClass('open');
+		_.navButton.removeClass('fa-bars').addClass('fa-close');
+		_.outerContainer.addClass('shifted');
+
+		setTimeout(function() {
+
+			_.navButton.css('color', 'white');
+
+		}, 50);
+		
+
+	},
+
+	close : function() {
+
+		var _ = this;
+
+		_.element.removeClass('open').addClass('closed');
+		_.navButton.removeClass('fa-close').addClass('fa-bars');
+		_.outerContainer.removeClass('shifted');
+
+		setTimeout(function() {
+
+			_.navButton.attr('style', '')
+
+		}, 200)
+		
+
+	}
+
+}
+
+
+
+var Mast = {
+
+	init : function() {
+
+		
 	},
 
 	element : $(".mast"),
@@ -789,49 +835,6 @@ var Mast = {
 	topContainer : $(".mast").children('.top-container'),
 	bottomContainer : $(".mast").children('.bottom-container'),
 	title : $('.title'),
-
-	open : function() {
-
-		var _ = this;
-		var containerOffset = 36;
-
-		
-		$(".mast-logo-letters").attr('class', 'mast-logo-letters above-fold');
-		_.navButton.css('color', 'white').removeClass('fa-bars').addClass('fa-close');
-		_.element.addClass('full-height opened green');
-		_.title.hide();
-
-		if (mobile()) {
-
-			_.topContainer.css({ top : '18px', transform : 'translate(-50%, 0%)' });
-
-		} else {
-
-			_.topContainer.css({ top : containerOffset + 'px', transform : 'translate(-50%, 0%)' });
-			
-		}
-		
-		_.bottomContainer.fadeIn();
-
-	},
-
-	close : function() {
-
-		var _ = this;
-
-		$(".mast-logo-letters").attr('class', 'mast-logo-letters');
-		_.navButton.attr('style', '').removeClass('fa-close').addClass('fa-bars');
-		_.element.removeClass('full-height opened green');
-		_.bottomContainer.fadeOut(100);
-		_.title.fadeIn('fast');
-
-		setTimeout(function(){
-
-			_.topContainer.attr('style', '').removeClass('quick-transition')
-
-		}, 100);
-	
-	},
 
 	coloring : function() {
 
@@ -867,13 +870,6 @@ var Mast = {
 	}
 
 }
-
-
-
-
-
-
-
 
 var SecondaryTeamMemberOverlay = {
 
@@ -1052,7 +1048,8 @@ var HomeBanner = {
 
 			transition : 'fade',
 			arrows : false,
-			autoPlay : false
+			autoPlay : true,
+			autoPlayDuration : 3000
 
 		});
 
@@ -1121,17 +1118,13 @@ var EthicsSlideshow  = {
 
 	}
 
-
-
 }
-
-
-
 
 $(document).ready(function() {
 
 	Mast.init();
 	squarify();
+	Navigation.init();
 
 	if (thisPage === '/') {
 
