@@ -13,7 +13,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/person3.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/audrey-2.jpg') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -31,7 +31,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/person4.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/janice-1.jpg') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -49,7 +49,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/person2.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/blake-1.jpg') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -67,7 +67,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url( {{ asset('img/person1.jpg') }} )"></div>
+			<div class="team-member-image" style="background-image:url( {{ asset('img/anthony-1.jpg') }} )"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -90,7 +90,7 @@ Team
 
 		<div class="secondary-team-member square"></div>
 
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person1.jpg') }})">
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/linda-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Linda Jillson</p>
@@ -100,7 +100,7 @@ Team
 			
 		</div>
 		
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person2.jpg') }})">
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/courtney-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Courtney Daus</p>
@@ -110,11 +110,11 @@ Team
 			
 		</div>
 
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/person3.jpg') }})">
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/angela-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Jane Smith</p>
-					<p class="secondary-team-member-position">Accounting</p>
+					<p class="secondary-team-member-name">Angela De Palo</p>
+					<p class="secondary-team-member-position">Administration</p>
 				</div>
 			</div>
 			

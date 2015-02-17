@@ -125,7 +125,7 @@
 
             if(_.settings.autoPlay == true) {
                 _.autoPlay();
-                _.autoPlayPause();
+                // _.autoPlayPause();
             }
 
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -760,6 +760,16 @@ var Navigation = {
 
 				}
 			});
+
+			_.outerContainer.on('touchstart', function() {
+
+				if (_.element.hasClass('open')) {
+
+					_.close();
+
+				} 
+
+			});
 			
 		} else {
 
@@ -774,6 +784,16 @@ var Navigation = {
 					_.open();
 
 				}
+
+			});
+
+			_.outerContainer.click(function() {
+
+				if (_.element.hasClass('open')) {
+
+					_.close();
+
+				} 
 
 			});
 		}
@@ -1114,7 +1134,7 @@ var EthicsSlideshow  = {
 
 			i++;
 
-		}, 3000);
+		}, 2000);
 
 	}
 

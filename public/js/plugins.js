@@ -125,7 +125,7 @@
 
             if(_.settings.autoPlay == true) {
                 _.autoPlay();
-                _.autoPlayPause();
+                // _.autoPlayPause();
             }
 
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {

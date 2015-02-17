@@ -115,6 +115,16 @@ var Navigation = {
 
 				}
 			});
+
+			_.outerContainer.on('touchstart', function() {
+
+				if (_.element.hasClass('open')) {
+
+					_.close();
+
+				} 
+
+			});
 			
 		} else {
 
@@ -129,6 +139,16 @@ var Navigation = {
 					_.open();
 
 				}
+
+			});
+
+			_.outerContainer.click(function() {
+
+				if (_.element.hasClass('open')) {
+
+					_.close();
+
+				} 
 
 			});
 		}
@@ -469,7 +489,7 @@ var EthicsSlideshow  = {
 
 			i++;
 
-		}, 3000);
+		}, 2000);
 
 	}
 
