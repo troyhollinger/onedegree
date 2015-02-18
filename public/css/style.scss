@@ -1467,6 +1467,17 @@ body , html{
 
 }
 
+.services-banner {
+
+	.banner-quote, .banner-quote-source {
+
+		width:70%;
+		margin:0 auto;
+
+	}
+
+}
+
 .ethics-slideshow {
 
 	position: relative;
@@ -2130,8 +2141,8 @@ body , html{
 	@extend .service-modules-container;
 
 	width:100%;
-
 	padding-bottom: 50px;
+	margin-top: 60px;
 
 	.section-title {
 

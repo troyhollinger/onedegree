@@ -228,7 +228,7 @@ Services
 
 </div>	
 
-<div class="banner footer-banner">
+<div class="banner footer-banner services-banner">
 
 	<div class="container">
 
