@@ -76,6 +76,82 @@ Services
 
 	<div class="service-modules-container">
 
+		<p class="section-title">What is our purpose</p>
+
+		<p class="text">Timeless financial wisdom. We educate, equip, and empower our clients to be all they are...Build on this ^ from this -</p>
+
+		<ol type="1">
+			<li>Disciple people with timeless financial wisdom. </li>
+			<li>Make meaningful life impact and eternal impact</li>
+			<li>Provide dedicated service for clients to make purposeful decisions that will serve them and their families for generations.</li>
+			<li>Achieve purpose</li>
+			<li>Take things off clients ‘plate</li>
+			<li>Help them fulfill their passion</li>
+			<li>Educate, equip and empower people to be all they are designed to be by aligning their financial life to support their values.</li>
+		</ol>
+
+	</div>
+
+	<div class="service-modules-container">
+
+		<p class="section-title">Compelling Value</p>
+
+		<ol>
+			<li>One Degree, keep you on course</li>
+			<li>Purpose allocation (define my goals and values first before you 
+				deal with my assets) before asset allocation</li>		
+			<li>Trust and offering multiple solutions</li>
+			<li>High level of personal service</li>
+			<li>Sound advice and principled wisdom</li>
+			<li>Help clients establish purposeful decisions that benefit their families 
+				for generations to come.</li>		
+			<li>Work with intergenerational planning as the family’s trusted advisor 
+				across multiple generations</li>		
+			<li>Charitable planning that goes beyond ourselves</li>
+			<li>Wisdom before wealth transfer</li>
+			<li>The importance of asking the right questions</li>
+			<li>We answer the “Why” before the “How”</li>
+		</ol>
+
+	</div>
+
+	<div class="service-modules-container">
+
+		<p class="section-title">Choose Us Because</p>
+
+		<p class="text">Navigating life’s transitions: widowhood, business sale, sound investments, preserving wealth and/or... Build on this ^ from this -</p>
+
+		<ol>	
+			<p class="text">What are the top things our ideal clients are concerned about? (4)</p>
+			<li>Navigating life’s transitions: widowhood, business sale</li>
+			<li>Make sound investment decisions to grow and preserve wealth</li>
+			<li>Motivated to use their resources to support charitable causes.</li>
+			<li>Meeting their needs!</li>
+			<li>Have time, talent, treasure margin and want to maximize its impact</li>
+			<li>Running out of money</li>
+		</ol>
+
+		<ol>	
+			<p class="text">Why does it matter? (2)</p>
+			<li>Because God calls us to be faithful stewards. We have opportunity to 
+				influence our families and communities.</li>
+			<li>Because true freedom and maximum fulfillment is achieved when you 
+				are all you can be.</li>
+			<li>Financial information is overwhelming and often alarming. Knowing how 
+				to use this information involves a disciplined process to make sound 
+				decisions and get the right results. </li>
+			<li>Because there is a need to make complex things simple.</li>
+			<li>Keep you on a path. People need accountability to make meaningful 
+				decisions and see effective life change.</li>
+			<li>Our expertise will make it happen, may not without us.</li>
+			<li>We get results.</li>
+		</ol>
+
+
+	</div>
+
+	<div class="service-modules-container">
+
 		<p class="section-title">Affiliations</p>
 		
 
@@ -136,6 +212,87 @@ Services
 
 	</div>
 
+	<div class="service-modules-container">
+
+		<p class="section-title">Here is what to expect</p>
+
+		<p class="text">Multiple Solutions with a plan that is flexible a life changes. Use our knowledge to meet your...
+			Build on this ^ from this -</p>
+
+		<ol>
+			<p class="text">What is our compelling value? (6)</p>
+			<li>One Degree, keep you on course</li>
+			<li>Purpose allocation (define my goals and values first before you 
+				deal with my assets) before asset allocation</li>		
+			<li>Trust and offering multiple solutions</li>
+			<li>High level of personal service</li>
+			<li>Sound advice and principled wisdom</li>
+			<li>Help clients establish purposeful decisions that benefit their families 
+				for generations to come.</li>		
+			<li>Work with intergenerational planning as the family’s trusted advisor 
+				across multiple generations</li>			
+			<li>Charitable planning that goes beyond ourselves</li>
+			<li>Wisdom before wealth transfer</li>
+			<li>The importance of asking the right questions</li>
+			<li>We answer the “Why” before the “How” </li>
+		</ol>
+
+		<ol>
+			<p class="text">What outcomes can our clients expect from working with us? (7)</p>
+			<li>Clarity from confusion/noise</li>
+			<li>Defined priorities, goals, and values.</li>
+			<li>Roadmap (find another word for this, but it says what we want) 
+				for your future – where are you going? </li>		
+			<li>A plan that is flexible as life changes. We are a Financial GPS!</li>
+			<li>We will use our knowledge and experience to meet their objectives 
+				only after listening to their concerns. We listen!!!</li>	
+		</ol>
+
+		<ol>
+			<p class="text">What does a successful relationship look like to our clients? (8)</p>
+			<li>They are free to pursue their life’s dreams</li>
+			<li>Someone is watching out for them</li>
+			<li>Clients are confident we identify with their concerns for their families, 
+				share their commitment to family and values</li>
+			<li>They enjoy (or some type of positive word) working with us</li>
+		</ol>
+
+	</div>
+
+	<div class="service-modules-container">
+
+		<p class="section-title">Who is our ideal client</p>
+
+		<p class="text">Affluent clients that know the importance of evaluating financial strategy, who desire...Build on this ^ from this -</p>
+
+		<ol>
+			<p class="text">Who is our ideal client? (3)</p>
+			<li>Desire long term relationship and want someone to walk 
+				this journey with them</li>
+			<li>Affluent clients that know the importance of evaluating 
+				financial strategies that best serve their families.</li>
+			<li>See value in what we do and are willing to pay for it</li>
+			<li>Value trusted relationships and importance of seeking 
+				advice over a lifetime</li>	
+			<li>Willing to delegate</li>
+			<li>Desires to live beyond themselves and want influence in 
+				their family, faith &amp; community.</li>	
+			<li>People in transition</li>
+			<li>Business Owners</li>
+			<li>Providing wisdom before wealth</li>
+		</ol>
+
+		<ol>
+			<p class="text">What does a successful relationship look like to us? (9)</p>
+			<li>We enjoy the relationship</li>
+			<li>We can make a meaningful difference and they value it</li>
+			<li>Clients agree that the relationship is built on trust and 
+				commitment.</li>
+
+		</ol>
+
+	</div>
+
 	<div class="service-modules-container" id="faq">
 
 		<p class="section-title">Frequently Asked Questions</p>
@@ -153,8 +310,8 @@ Services
 		</p>
 		<br>
 		<p class="text">
-			Income in excess of $150,000/year
-			Investable assets of $350,000 or greater
+			Income in excess of $150,000/year<br>
+			Investable assets of $350,000 or greater<br>
 			A net worth of $1M or greater
 		</p>
 		<br>
