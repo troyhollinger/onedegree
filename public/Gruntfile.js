@@ -7,6 +7,7 @@ module.exports = function(grunt) {
         concat: {
             dist : {
                 src : [
+                    'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
                     'js/plugins.js',
                     'js/main.js'
                 ],
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
         cssmin : {
             combine : {
                 files : {
-                    'production/app.css' : ['css/style.css', 'css/reset.css']
+                    'production/app.css' : ['css/style.css', 'css/reset.css', 'bower_components/angularjs-datepicker/src/css/angular-datepicker.css']
                 }
             }
         },

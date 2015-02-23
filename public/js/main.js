@@ -5,7 +5,7 @@ var requestAnimationFrame = window.requestAnimationFrame ||
                             window.msRequestAnimationFrame;
 
 
-var app = angular.module(['onedegree'], ['angularLoad']);
+var app = angular.module(['onedegree'], ['angularLoad', '720kb.datepicker', 'dnTimepicker']);
 
 app.factory('Video', function($http) {
 
@@ -20,6 +20,12 @@ app.factory('Video', function($http) {
 	}
 
 });
+
+app.controller('SpeakerFormController', ['$scope', function($scope) {
+
+
+
+}]);
 
 
 app.controller('VideoController', function($scope, Video, $sce) {
@@ -719,7 +725,15 @@ $(document).ready(function() {
 
 		}
 
-		
+	}
+
+	if (thisPage === 'speaker' || thisPage === 'inquiry') {
+
+		if (Modernizr.input.placeholder) {
+
+			$("label:not(.input-tab)").hide();
+
+		}
 
 	}
 

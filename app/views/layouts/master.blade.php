@@ -12,9 +12,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <!-- <link rel="stylesheet" href="{{ asset('css/reset.css') }}"> -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('production/app.css') }}">
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script src="{{ asset('js/vendor/angular.min.js') }}"></script>
 
@@ -40,7 +40,7 @@
 
         <div class="outer-container" id="outer-container">
 
-            @if(Route::currentRouteName() != 'home' && Route::currentRouteName() != 'process' && Route::currentRouteName() != 'inquiry')
+            @if(Route::currentRouteName() != 'home' && Route::currentRouteName() != 'process' && Route::currentRouteName() != 'inquiry' && Route::currentRouteName() != 'speaker')
             <div class="spacer"></div>
             @endif
             
@@ -59,6 +59,10 @@
 
         </script>
         <script src="{{ asset('bower_components/angular-load/angular-load.js') }}"></script>
+        <script src="{{ asset('bower_components/angularjs-datepicker/dist/angular-datepicker.min.js') }}"></script>
+        <script src="{{ asset('bower_components/angular-ui-bootstrap/src/position/position.js') }}"></script>
+        <script src="{{ asset('bower_components/angular-dateparser/dist/angular-dateparser.js') }}"></script>
+        <script src="{{ asset('bower_components/angular-timepicker/dist/angular-timepicker.js') }}"></script>
         <script src="{{ asset('js/plugins.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
         <script>
