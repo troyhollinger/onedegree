@@ -80,7 +80,7 @@ Services
 
 	</div>
 
-	<div class="service-section indicator-parent" data-indicator="Our Purpose">
+	<div class="service-section indicator-parent" data-indicator="Our Purpose" id="purpose">
 
 		<p class="section-title">What is our purpose</p>
 
@@ -121,7 +121,7 @@ Services
 
 	</div>
 
-	<div class="service-section indicator-parent" data-indicator="Why One Degree" >
+	<div class="service-section indicator-parent" data-indicator="Why One Degree" id="why-one-degree">
 
 		<p class="section-title">Choose Us Because</p>
 
@@ -218,7 +218,7 @@ Services
 
 	</div>
 
-	<div class="service-section indicator-parent" data-indicator="What To Expect">
+	<div class="service-section indicator-parent" data-indicator="What To Expect" id="expect">
 
 		<p class="section-title">Here is what to expect</p>
 
@@ -265,9 +265,7 @@ Services
 
 	</div>
 
-	<div class="service-section indicator-parent" data-indicator="Ideal Client">
-
-
+	<div class="service-section indicator-parent" data-indicator="Ideal Client" id="ideal-client">
 
 		<p class="section-title">Who is our ideal client</p>
 

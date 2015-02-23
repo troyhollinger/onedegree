@@ -4,6 +4,7 @@ var requestAnimationFrame = window.requestAnimationFrame ||
                             window.webkitRequestAnimationFrame ||
                             window.msRequestAnimationFrame;
 
+
 var app = angular.module(['onedegree'], ['angularLoad']);
 
 app.factory('Video', function($http) {
@@ -170,12 +171,7 @@ app.controller('MediumController', ['$scope', 'angularLoad', function($scope, an
 
 
 function mobile() {
-	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	// 	return true;
-	// } else {
-	// 	return false;
-	// }
-
+	
 	if ($(window) < 1100) {
 
 		return true;
@@ -627,14 +623,13 @@ var SectionIndicators = {
 		SectionIndicators.elements.each(function() {
 
 			var text = $(this).attr('data-indicator');
+			var anchor = $(this).attr('id');
 			
-			html += '<p class="indicator-element">' + text + '</p>';
+			html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';
 
 		});
 
 		document.getElementById('outer-container').innerHTML += html;
-
-		console.log(html);
 
 		SectionIndicators.indicatorElements = $(".indicator-element");
 
@@ -646,7 +641,7 @@ var SectionIndicators = {
 
 		$(".indicator-parent").each(function(index) {
 
-			var position = $(this).offset().top;
+			var position = $(this).offset().top + parseInt($(this).css('padding-top'));
 			var indicatorLockPosition = parseInt(SectionIndicators.inquireLink.css('top')) + (SectionIndicators.inquireLink.height() * (index + 1));
 			var lockPoint = position - indicatorLockPosition;
 
@@ -727,6 +722,28 @@ $(document).ready(function() {
 		
 
 	}
+
+
+	// Smooth scrolling to anchor tag
+	$('a[href*=#]:not([href=#])').on('click', function() {
+
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+			var target = $(this.hash);
+
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+			if (target.length) {
+
+				$('html,body').animate({ scrollTop: target.offset().top }, 1000);
+
+	        	return false;
+
+			}
+
+	    }
+
+	});
 
 });
 
