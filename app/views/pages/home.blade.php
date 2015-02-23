@@ -1,5 +1,8 @@
 @extends('layouts.master')
 
+@section('tab')
+One Degree Advisors - San Diego based financial planning and investment services
+@stop
 
 @section('title')
 Menu
@@ -127,88 +130,28 @@ Menu
 
 </div>
 
-<a href="{{ route('inquiry') }}"><div class="inquire-link">INQUIRE</div></a>
+
 
 <div class="container content">
-
-    <!-- <div class="intro-blurb-container">
-       
-        <div class="intro-blurb-column">
-
-            <p class="section-title">FINANCIAL PLANNING</p>
-            <p class="text">We take a comprehensive approach to
-                managing your wealth. By incorporating
-                the <span class="green-text">six-step Financial Planning process</span>
-                recognized by the CFP® Board, your initial
-                plan is developed over the course of
-                several meetings. We also coordinate with
-                your other professionals, such as estate
-                planning attorneys, CPAs, and insurance
-                specialists as needed. If you don’t have
-                this team in place, we can provide
-                recommendations. <a href="{{ route('services') }}"><span class="green-text bold">Read more...</span></a>
-            </p>
-
-        </div>
-        <div class="intro-blurb-column">
-
-            <p class="section-title">INVESTMENT MANAGEMENT</p>
-
-            <p class="text">
-                We use a purpose allocation approach to 
-                determine the proper asset allocation of your 
-                investments. What is important to you? Are you 
-                trying to save for retirement? Do you need an 
-                income distribution strategy? Would you like to 
-                buy a second home? Do you want to be able to 
-                give more money to charity now? Would you like 
-                to focus on leaving a legacy? Once we 
-                understand your values, we then work on 
-                building an all-weather portfolio designed to 
-                accomplish these goals. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a>
-            </p>
-
-        </div>
-
-    </div> -->
 
     <div class="home-service-modules-container">
 
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>
             <p class="text">We take a comprehensive approach to managing your wealth. By incorporating the <span class="green-text">six-step Financial Planning process</span> recognized by the CFP® Board, your initial plan is developed over the course of several meetings. We also coordinate with your other professionals, such as estate planning attorneys, CPAs, and insurance specialists as needed. If you don’t have this team in place, we can provide recommendations. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
-            <!-- <p class="text">Financial plans are monitored and updated on a regular basis to ensure that as your life changes, your plan stays current. For affluent families and complex issues, we offer advanced planning to help address estate tax issues, charitable giving, business planning and legacy topics that often require special attention. <span class="green-text">Wealth Management Video Explainer</span> or  <a href="{{ route('inquiry') }}">Inquire...</a></p> -->
+           
         </div>
 
         <div class="service-module">
             <p class="section-title uppercase">Investment Management</p>
             <p class="text">We use a purpose allocation approach to determine the proper asset allocation of your investments. What is important to you? Are you trying to save for retirement? Do you need an income distribution strategy? Would you like to buy a second home? Do you want to be able to give more money to charity now? Would you like to focus on leaving a legacy?  Once we understand your values, we then work on building an all-weather portfolio designed to accomplish these goals. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
-            <!-- <p class="text">Our research incorporates a variety of asset management strategies. We select and monitor premier money managers that are incorporated into your customized portfolio. In this ever-changing world it is important to build a broadly diversified portfolio using sound principles with the flexibility to capture opportunity and/or reduce risk. <a href="{{ route('inquiry') }}">Inquire...</a></p> -->
-
+    
         </div>
 
         <div class="service-module">
 
             <p class="section-title uppercase">Stewardship Coaching</p>
-            <p class="text">Many families and business owners are experienced 
-                stewards and they have a vision to go over the top. They 
-                know that generosity is really the key to success and 
-                brings great joy with it. We encourage families to build 
-                plans inspired by their life’s purpose and passion. It 
-                involves a purposeful desire to take conflict and 
-                confusion so typical in life and replace it with clarity. 
-                Financial wealth, planning and confidence can make it 
-                happen. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a>
-            </p>
-
-           <!--  <p class="text">Let’s add another paragraph here about this topic so we
-                achieve symmetry and more importantly supply a more
-                expanded scope of information on this lovely topic. 
-                Perhaps we can even aim to make it as long as the other 
-                two topics as viewed to the left. And it would be cool to 
-                do <span class="green-text">Video Explanations of all three Services</span> listed.
-                 <a href="{{ route('inquiry') }}">Inquire...</a>
-            </p> -->
+            <p class="text">Many families and business owners are experienced stewards and they have a vision to go over the top. They know that generosity is really the key to success and brings great joy with it. We encourage families to build plans inspired by their life’s purpose and passion. It involves a purposeful desire to take conflict and confusion so typical in life and replace it with clarity. Financial wealth, planning and confidence can make it happen. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p>
 
         </div>
 

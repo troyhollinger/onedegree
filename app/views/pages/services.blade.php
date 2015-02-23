@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('tab')
+Services - One Degree Advisors | Your help in navigating finances with a kingdom mindset
+@stop
+
 @section('title')
 Services
 @stop
@@ -7,11 +11,13 @@ Services
 
 @section('content')
 
+<!-- <p class="indicator-element">Ideal Client</p> -->
 
 <div class="container">
 
 
-	<div class="service-modules-container">
+
+	<div class="service-section">
 
 		
 		<p class="section-title">Financial Planning</p>
@@ -20,7 +26,7 @@ Services
 	
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section">
 
 		<p class="section-title">Investment Management</p>
 		<p class="text">We use a purpose allocation approach to determine the proper asset allocation of your investments. What is important to you? Are you trying to save for retirement? Do you need an income distribution strategy? Would you like to buy a second home? Do you want to be able to give more money to charity now? Would you like to focus on leaving a legacy?  Once we understand your values, we then work on building an all-weather portfolio designed to accomplish these goals. </p><br>
@@ -29,7 +35,7 @@ Services
 	</div>
 
 		
-	<div class="service-modules-container">
+	<div class="service-section">
 		<p class="section-title">Stewardship Coaching</p>
 		<p class="text">Many families and business owners are experienced 
 			stewards and they have a vision to go over the top. They 
@@ -53,7 +59,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section">
 
 		<p class="section-title">Public Speaking</p>
 		<p class="text">Are you looking for a speaker for your community group, church, classroom, charity, or 
@@ -63,8 +69,8 @@ Services
 			and enjoy making complex topics easy to understand. 
 		</p>
 		<br>
-		<p class="text">For more information or to schedule a speaker on a topic of interest to you, complete this 
-			form or contact our office at 619-282-3288. 
+		<p class="text">For more information or to schedule a speaker on a topic of interest to you, <a href="{{ route('speaker') }}"><span class="green-text">complete this 
+		form</span></a> or contact our office at 619-282-3288. 
 		</p>
 		<br>
 		<p class="text">Please note that we may not be able to fulfill all requests. 
@@ -74,7 +80,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section indicator-parent" data-indicator="Our Purpose">
 
 		<p class="section-title">What is our purpose</p>
 
@@ -92,7 +98,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section">
 
 		<p class="section-title">Compelling Value</p>
 
@@ -115,7 +121,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section indicator-parent" data-indicator="Why One Degree" >
 
 		<p class="section-title">Choose Us Because</p>
 
@@ -150,7 +156,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section">
 
 		<p class="section-title">Affiliations</p>
 		
@@ -186,7 +192,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section">
 
 		<p class="section-title">Code of Ethics</p>
 
@@ -212,7 +218,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section indicator-parent" data-indicator="What To Expect">
 
 		<p class="section-title">Here is what to expect</p>
 
@@ -259,7 +265,9 @@ Services
 
 	</div>
 
-	<div class="service-modules-container">
+	<div class="service-section indicator-parent" data-indicator="Ideal Client">
+
+
 
 		<p class="section-title">Who is our ideal client</p>
 
@@ -293,7 +301,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container" id="faq">
+	<div class="service-section" id="faq">
 
 		<p class="section-title">Frequently Asked Questions</p>
 		<p class="text">
@@ -363,7 +371,7 @@ Services
 
 	</div>
 
-	<div class="service-modules-container" id="info">
+	<div class="service-section" id="info">
 
 		<p class="section-title">
 			Compliance

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('tab')
+Team - One Degree Advisors - Experienced financial planners based in San Diego
+@stop
+
 @section('title')
 Team
 @stop
@@ -13,7 +17,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/audrey-2.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/audrey-1.jpg') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -31,7 +35,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/janice-1.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/janice-2.jpg') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -67,7 +71,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url( {{ asset('img/anthony-1.jpg') }} )"></div>
+			<div class="team-member-image" style="background-image:url( {{ asset('img/anthony-2.jpg') }} )"></div>
 		</div>
 
 		<div class="team-member-info-container">

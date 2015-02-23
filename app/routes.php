@@ -67,3 +67,9 @@ Route::get('api/videos', ['as' => 'getVideos', function() {
 
 
 }]);
+
+Route::get('speaker', ['as' => 'speaker', function() {
+
+	return View::make('pages.speaker');
+
+}]);

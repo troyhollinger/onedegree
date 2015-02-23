@@ -13,7 +13,12 @@ Inquiry
 
 		<div class="inquiry-form-container">
 
+
 			{{ Form::open(['class' => 'inquiry-form']) }}
+
+				<h2 class="form-title"><span class="bold">Hello,</span><br>Thank you for your interest in One Degree. To start the process, please fill out the form below.</h2>
+				<h3 class="form-secondary-title">We will then contact you to schedule a 15 min phone call to get acquainted and determine if we are a good fit for your needs.</h3>
+
 
 				<div>
 
@@ -58,11 +63,11 @@ Inquiry
 				</div>
 				
 
-				<div class="inquiry-form-button">
+				<!-- <div class="inquiry-form-button">
 
 					<p>CANCEL</p>
 
-				</div>
+				</div> -->
 				<div class="inquiry-form-button ">
 
 					<p>SEND INQUIRY</p>

@@ -37,7 +37,9 @@
                 <li>TD Ameritrade - Custodian</li>
                 <li>Evestnet - Report</li>
                 <li>eMoney - Plan</li>
-                <li><span class="bold">Financial Resources</span>: Dave Ramsey |<br> Crown Financial | Christian Credit Counselors</li>
+                <br>
+                <!-- // <script src="https://www.riskalyze.com/hosted/d796c4e20cf97ca5b48a/rq/lt/lg/btn.js" type="text/javascript" data-logo="1" data-button-title="Free Portfolio Risk Analysis"></script> -->
+                <a href="https://pro.riskalyze.com/embed/d796c4e20cf97ca5b48a" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a>
                  
             </ul>
 

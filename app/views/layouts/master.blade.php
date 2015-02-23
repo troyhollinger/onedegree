@@ -6,7 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>
+            @yield('tab')
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,9 +28,15 @@
 
         <i class="fa fa-bars" id="nav-button"></i>
 
+        @if(Route::currentRouteName() !== 'inquiry')
+        <a href="{{ route('inquiry') }}"><div class="inquire-link" id="inquire-link">Inquire</div></a>
+        @endif
+
         @include('partials.nav')
 
         @include('partials.mast')
+
+
 
         <div class="outer-container" id="outer-container">
 
@@ -50,6 +58,7 @@
         var base = '{{ URL::to("/") }}';
 
         </script>
+        <script src="{{ asset('bower_components/angular-load/angular-load.js') }}"></script>
         <script src="{{ asset('js/plugins.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
         <script>

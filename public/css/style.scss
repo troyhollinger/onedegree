@@ -6,6 +6,7 @@ $verdana : 'Verdana', 'Helvetica', 'Arial', sans-serif;
 $text-color : #404649;
 $green : #6bbb6f;
 $blue : #5fa8dc;
+$light : #e1e1e1;
 
 //Mixins
 @mixin center {
@@ -261,6 +262,12 @@ body , html{
 			text-align: left;
 
 		}
+
+	}
+
+	&.opaque {
+
+		background-color: white;
 
 	}
 
@@ -595,7 +602,7 @@ body , html{
 
 		p {
 
-			color:$green;
+			color:$text-color;
 
 		}
 
@@ -1392,12 +1399,13 @@ body , html{
 	}
 }
 
-.service-modules-container {
+.service-section {
 
 	width:70%;
 	overflow: auto;
 	margin:0 auto;
 	margin-top: 100px;
+	position: relative;
 
 	.text {
 
@@ -2028,34 +2036,38 @@ body , html{
 .inquiry-banner {
 
 	@extend .home-banner;
-	background-color: $green;
-	height:100vh;
+	// background-color: $green;
+	margin:0 auto;
+	height:auto;
 
 }
 
 .inquiry-form-container {
 
-	@include center;
-
+	// @include center;
+	margin:0 auto;
 	overflow: auto;
+	@include box-sizing(border-box);
+	padding:100px 0;
+	font-family: $verdana;
 
 }
 
 
 .inquiry-form {
 
-	width:400px;
-	
+	width:380px;
+	margin:0 auto;
 
 	& > div {
 
 		margin-bottom: 20px;
 
-		&:nth-child(6) {
+		// &:nth-child(6) {
 
-			margin-bottom: 40px;
+		// 	margin-bottom: 40px;
 
-		}
+		// }
 
 	}
 
@@ -2065,11 +2077,13 @@ body , html{
 
 		background-color: transparent;
 		border:none;
-		border-bottom: 1px solid white;
+		border: 1px solid $light;
 		width:100%;
 		font-family: $verdana;
-		color:white;
-		font-size: .9rem;
+		color:$text-color;
+		font-size: 1rem;
+		@include box-sizing(border-box);
+		padding:5px 10px;
 
 		&:focus {
 
@@ -2088,17 +2102,34 @@ body , html{
 	label {
 
 		font-family: $verdana;
-		color:white;
+		color:$text-color;
 		font-size: .7rem;		
 
 	}
 
 }
 
+.form-title {
+
+	color:$green;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	margin-bottom: 20px;
+
+}
+
+.form-secondary-title {
+
+	color:$text-color;
+	font-size: 1rem;
+	margin-bottom: 20px;
+
+}
+
 .inquiry-form-button {
 	margin-top: 40px;
 	height:50px;
-	width:50%;
+	width:100%;
 	float:left;
 	@include box-sizing(border-box);
 	border:1px solid white;
@@ -2108,8 +2139,8 @@ body , html{
 
 	&:last-child {
 
-		background-color: white;
-		color:$green;
+		background-color: $green;
+		color:white;
 
 	}
 
@@ -2126,30 +2157,45 @@ body , html{
 }
 
 
-.inquire-link {
+.indicator {
+
+	font-size: 1.2rem;
+	font-family: $verdana;
+	font-weight: bold;
+	color: $light;
+	z-index: 15;
+
+}
+
+.indicator-element {
+
+	@extend .indicator;
 
 	position: absolute;
+	left: 2.5vw;
+
+}
+
+.inquire-link {
+
+	position: fixed;
 	left:2.5vw;
-	bottom: 14vh;
-	font-size: .8rem;
-
-	font-family: $verdana;
-	color: lighten($text-color, 25%);
-	z-index: 4;
-
+	top:115px;
+	@extend .indicator;
+	
 	@include breakpoint(mobile) {
 
-		position: static;
-		width:85%;
-		height:50px;
-		margin: 20px auto 0 auto;
-		background-color: $green;
-		text-align: center;
-		color:white;
-		font-size: 1.2rem;
-		text-transform: uppercase;
-		font-weight: bold;
-		line-height: 3rem;
+		// position: static;
+		// width:85%;
+		// height:50px;
+		// margin: 20px auto 0 auto;
+		// background-color: $green;
+		// text-align: center;
+		// color:white;
+		// font-size: 1.2rem;
+		// text-transform: uppercase;
+		// font-weight: bold;
+		// line-height: 3rem;
 
 
 	}
@@ -2169,7 +2215,7 @@ body , html{
 
 .home-service-modules-container {
 
-	@extend .service-modules-container;
+	@extend .service-section;
 
 	width:100%;
 	padding-bottom: 50px;

@@ -132,6 +132,11 @@
                 _.touch();
             }
 
+            if (_.settings.navHover) {
+
+                _.navHover();
+
+            }
 
         }
         
@@ -348,6 +353,38 @@
             container = '<nav class="skippr-nav-container">' + navElements + '</nav>';
 
             _.$element.append(container);
+
+        };
+
+        Skippr.prototype.navHover = function() {
+
+            var _ = this;
+
+            $(".skippr-nav-item").on({
+                mouseenter : function() {
+
+                    if (_.settings.autoPlay) {
+
+                        _.change($(this));
+                        clearInterval(timer);
+
+                    } else {
+
+                        _.change($(this));
+
+                    }    
+
+                }, 
+                mouseleave : function() {
+
+                    if (_.settings.autoPlay) {
+
+                        _.autoPlay();
+
+                    }
+
+                }
+            });
 
         };
 
@@ -629,6 +666,7 @@
         keyboardOnAlways: true,
         hidePrevious: false,
         imgArray : null,
+        navHover : false,
         logs: false
        
     };
