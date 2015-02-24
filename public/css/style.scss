@@ -335,8 +335,10 @@ body , html{
 .nav-positioner {
 
 	position: absolute;
-	bottom:70px;
-	right:70px;
+	bottom: 3vw;
+	right:3vw;
+	// bottom:70px;
+	// right:70px;
 
 }
 
@@ -356,7 +358,7 @@ body , html{
 
 		@include breakpoint(1500px) {
 
-			font-size:3.2rem;
+			font-size:2.8rem;
 
 		}
 
@@ -381,6 +383,13 @@ body , html{
 	height:20px;
 	background-color: white;
 	border-radius: 50%;
+
+	@include breakpoint(1500px) {
+
+		width:15px;
+		height:15px;
+
+	}
 
 	@include breakpoint(mobile) {
 
@@ -425,6 +434,12 @@ body , html{
 	text-align: right;
 
 	@extend .details;
+
+	@include breakpoint(1500px) {
+
+		margin-top: 60px;
+
+	}
 
 	@include breakpoint(mobile) {
 
@@ -2196,7 +2211,7 @@ body , html{
 
 .indicator {
 
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-family: $verdana;
 	font-weight: bold;
 	color: $light;
