@@ -2222,7 +2222,10 @@ body , html{
 	input, textarea {
 
 		background-color: transparent;
+		border-radius: 0;
+		outline:none;
 		border:none;
+		-webkit-appearance: none;
 		border: 2px solid $light;
 		width:100%;
 		font-family: $verdana;
@@ -2293,6 +2296,14 @@ body , html{
 			font-size: 1.2rem;
 
 		}
+
+	}
+
+	@include breakpoint(small) {
+
+		width:100%;
+		@include box-sizing(border-box);
+		padding:0 20px;
 
 	}
 
