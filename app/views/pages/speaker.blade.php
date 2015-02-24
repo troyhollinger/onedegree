@@ -27,7 +27,7 @@ Speaker
 				
 				<div>
 					<p>{{ Form::label('phone', 'Phone Number') }}</p>
-					<p>{{ Form::text('phone', '', ['placeholder' => 'Phone Number']) }}</p>
+					<p><input type="tel" name="phone" id="phone" placeholder="Phone Number"></p>
 				</div>
 
 				<div>
