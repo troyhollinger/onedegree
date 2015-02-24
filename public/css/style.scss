@@ -284,6 +284,18 @@ body , html{
 
 	}
 
+	&.shifted {
+
+		@include transform(translate(-22%, 0));
+
+		@include breakpoint(mobile) {
+
+			@include transform(translate(-90%, 0));			
+
+		}
+
+	}
+
 
 	@include breakpoint(mobile) {
 
@@ -341,7 +353,7 @@ body , html{
 	min-width: 70px !important;
 	@include transform(translate(0,0));
 
-	@include transition(all 1s ease);
+	@include transition(all .75s ease);
 
 	&.shifted {
 
@@ -1526,6 +1538,12 @@ body , html{
 
 	}
 
+	&:first-child {
+
+		padding-top: 30px;
+
+	}
+
 	&:last-child {
 
 		// margin-bottom: 100px;
@@ -2363,18 +2381,7 @@ body , html{
 	
 	@include breakpoint(mobile) {
 
-		// position: static;
-		// width:85%;
-		// height:50px;
-		// margin: 20px auto 0 auto;
-		// background-color: $green;
-		// text-align: center;
-		// color:white;
-		// font-size: 1.2rem;
-		// text-transform: uppercase;
-		// font-weight: bold;
-		// line-height: 3rem;
-
+		display: none;
 
 	}
 

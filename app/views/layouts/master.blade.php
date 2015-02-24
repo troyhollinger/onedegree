@@ -86,12 +86,12 @@
         @include('partials.nav')
 
         
-
+         @include('partials.mast')
 
 
         <div class="outer-container" id="outer-container">
 
-            @include('partials.mast')
+           
 
             @if(Route::currentRouteName() != 'home' && Route::currentRouteName() != 'process' && Route::currentRouteName() != 'inquiry' && Route::currentRouteName() != 'speaker')
             <div class="spacer"></div>

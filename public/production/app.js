@@ -988,6 +988,7 @@ var Navigation = {
 	navButton : $("#nav-button"),
 	element : $(".nav-container"),
 	outerContainer : $('#outer-container'),
+	mast : $(".mast"),
 	title : $(".title"),
 	logo : $("#logo"),
 
@@ -998,6 +999,7 @@ var Navigation = {
 		_.element.removeClass('closed').addClass('open');
 		_.navButton.removeClass('fa-bars').addClass('fa-close');
 		_.outerContainer.addClass('shifted');
+		_.mast.addClass('shifted');
 		_.title.hide();
 		_.logo.addClass('shifted');
 
@@ -1017,6 +1019,7 @@ var Navigation = {
 		_.element.removeClass('open').addClass('closed');
 		_.navButton.removeClass('fa-close').addClass('fa-bars');
 		_.outerContainer.removeClass('shifted');
+		_.mast.removeClass('shifted');
 		_.logo.removeClass('shifted');
 
 
@@ -1031,7 +1034,7 @@ var Navigation = {
 			_.navButton.attr('style', '');
 
 
-		}, 200)
+		}, 150)
 		
 
 	}
