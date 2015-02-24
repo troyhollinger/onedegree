@@ -230,13 +230,14 @@ body , html{
 }
 
 .mast {
-	position: absolute;
+	// position: absolute;
+	position: fixed;
 	width:100%;
 	height:120px;
 	min-height: 60px !important;
 	background-color: transparent;
 	z-index: 11;
-	@include transition(all .1s ease);
+	@include transition(all .25s ease);
 	overflow: visible;
 
 
@@ -301,7 +302,9 @@ body , html{
 	cursor:pointer;
 	color:$green;
 	top:5%;
-	right:3%;
+	top:2.5vw;
+	right:2.5%;
+	right:2.5vw;
 	z-index: 15;
 	// @include transition(color .1s linear);
 
@@ -314,6 +317,55 @@ body , html{
 	&.white {
 
 		background-color: white;
+
+	}
+
+	@include breakpoint(small) {
+
+		top:5vw;
+		right:5vw;
+
+	}
+
+}
+
+#logo {
+
+	position: fixed;
+	top:5%;
+	top:2.5vw;
+	left:2.5%;
+	left:2.5vw;
+	z-index: 15;
+	width:160px;
+	min-width: 70px !important;
+	@include transform(translate(0,0));
+
+	@include transition(all 1s ease);
+
+	&.shifted {
+
+		@include transform(translate(-100%, 0));
+
+	}
+
+	@include breakpoint(1500px) {
+
+		width:120px;
+
+	}
+
+	@include breakpoint(mobile) {
+
+		width:120px;
+
+	}
+
+	@include breakpoint(small) {
+
+		width:90px;
+		top:5vw;
+		left:5vw;
 
 	}
 
@@ -482,25 +534,7 @@ body , html{
 
 }
 
-.mast-logo {
-	width:160px;
-	min-width: 70px !important;
-	float: left;
-	@include transition(width .1s linear);
 
-	@include breakpoint(1500px) {
-
-		width:120px;
-
-	}
-
-	@include breakpoint(mobile) {
-
-		width:70px;
-
-	}
-
-}
 
 .mast-logo-letters {
 
@@ -869,6 +903,13 @@ body , html{
 	margin-bottom: 40px;
 	padding-bottom: 13px;
 	color:$text-color;
+
+	@include breakpoint(small) {
+
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+
+	}
 }
 
 
@@ -1477,6 +1518,12 @@ body , html{
 		font-family: $verdana;
 		line-height: 1.5;
 
+		@include breakpoint(small) {
+
+			font-size: .9rem;
+
+		}
+
 	}
 
 	&:last-child {
@@ -1506,6 +1553,12 @@ body , html{
 
 		}
 
+
+	}
+
+	@include breakpoint(mobile) {
+
+		width:100%;
 
 	}
 

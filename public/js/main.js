@@ -286,6 +286,7 @@ var Navigation = {
 	element : $(".nav-container"),
 	outerContainer : $('#outer-container'),
 	title : $(".title"),
+	logo : $("#logo"),
 
 	open : function() {
 
@@ -295,6 +296,7 @@ var Navigation = {
 		_.navButton.removeClass('fa-bars').addClass('fa-close');
 		_.outerContainer.addClass('shifted');
 		_.title.hide();
+		_.logo.addClass('shifted');
 
 		setTimeout(function() {
 
@@ -312,6 +314,8 @@ var Navigation = {
 		_.element.removeClass('open').addClass('closed');
 		_.navButton.removeClass('fa-close').addClass('fa-bars');
 		_.outerContainer.removeClass('shifted');
+		_.logo.removeClass('shifted');
+
 
 		setTimeout(function() {
 
@@ -341,7 +345,7 @@ var Mast = {
 	},
 
 	element : $(".mast"),
-	logo : $('.mast-logo'),
+	logo : $('#logo'),
 	navButton : $("#nav-button"),
 	topContainer : $(".mast").children('.top-container'),
 	bottomContainer : $(".mast").children('.bottom-container'),

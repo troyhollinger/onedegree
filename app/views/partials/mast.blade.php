@@ -6,7 +6,7 @@
 
         <!-- <img class="mast-logo" src="{{ asset('img/logo-green.svg') }}"></a> -->
 
-        <a href="{{ route('home') }}">
+        <!-- <a href="{{ route('home') }}">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="mast-logo" viewBox="0 0 293 92.75" style="enable-background:new 0 0 293 92.75;" xml:space="preserve">
                 <g>
                     <path class="mast-logo-letters" d="M82.466,44.373c0,6.29-1.181,12.361-3.539,18.211c-2.358,5.847-5.667,10.938-9.929,15.269
@@ -48,7 +48,7 @@
                         c0.826,1.25,2.146,1.945,3.951,2.09c1.984,0.161,3.741-0.46,5.271-1.859C274.366,29.789,275.619,28.044,276.597,25.957"/>
                 </g>
             </svg>
-        </a>
+        </a> -->
 
         <!-- <p class="title">
              @yield('title')
