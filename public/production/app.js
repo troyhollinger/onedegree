@@ -944,6 +944,8 @@ var Navigation = {
 					_.open();
 
 				}
+
+				return false;
 			});
 
 			_.outerContainer.on('touchstart', function() {
@@ -953,6 +955,8 @@ var Navigation = {
 					_.close();
 
 				} 
+
+				return false;
 
 			});
 			
