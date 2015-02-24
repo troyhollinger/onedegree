@@ -377,12 +377,12 @@
 
                     if (_.settings.autoPlay) {
 
-                        _.change($(this));
+                        _.change($(this), true);
                         clearInterval(timer);
 
                     } else {
 
-                        _.change($(this));
+                        _.change($(this), true);
 
                     }    
 
@@ -429,7 +429,7 @@
 
         };
 
-        Skippr.prototype.change = function(element) {
+        Skippr.prototype.change = function(element, navHover) {
 
             var _ = this,
                 item = element.attr('data-slider'),
@@ -440,7 +440,16 @@
 
             if(item != currentItem) { //prevents animation for repeat click.
 
-                if (_.settings.transition == 'fade') {
+                if (navHover === true) {
+
+                    var showingSlide = _.$photos.eq(item - 1)
+
+                    showingSlide.css('z-index', '10').siblings('div').css('z-index', '9');
+                    showingSlide.show()
+                    _.$element.find(".visible").hide().removeClass('visible');     
+                    showingSlide.addClass('visible');
+                                       
+                } else if (_.settings.transition == 'fade') {
 
                     _.$photos.eq(item - 1).css('z-index', '10').siblings('div').css('z-index', '9');
                     
@@ -449,10 +458,9 @@
                             $(this).removeClass('visible');
                             _.$photos.eq(item - 1).addClass('visible');
                         });
-                    }); 
-                }
+                    });
 
-                if (_.settings.transition == 'slide') {
+                } else if (_.settings.transition == 'slide') {
                   
                     _.$photos.each(function(){
 
