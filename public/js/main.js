@@ -253,8 +253,6 @@ var Navigation = {
 
 				} 
 
-				return false;
-
 			});
 			
 		} else {

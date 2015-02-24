@@ -956,7 +956,7 @@ var Navigation = {
 
 				} 
 
-				return false;
+
 
 			});
 			
