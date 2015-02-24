@@ -18,7 +18,7 @@
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script src="{{ asset('js/vendor/angular.min.js') }}"></script>
 
-        <script> var thisPage = '{{ Request::path() }}'</script>
+        <script> var thisPage = '{{ Route::currentRouteName() }}'</script>
     </head>
     <body ng-app="onedegree">
 
@@ -28,8 +28,10 @@
 
         <i class="fa fa-bars" id="nav-button"></i>
 
-        @if(Route::currentRouteName() !== 'inquiry')
+        @if(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() !== 'home')
         <a href="{{ route('inquiry') }}"><div class="inquire-link" id="inquire-link">Inquire</div></a>
+        @elseif(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() === 'home')
+        <a href="{{ route('inquiry') }}"><div class="inquire-link" id="inquire-link"></div></a>
         @endif
 
         @include('partials.nav')
@@ -63,6 +65,7 @@
         <script src="{{ asset('bower_components/angular-ui-bootstrap/src/position/position.js') }}"></script>
         <script src="{{ asset('bower_components/angular-dateparser/dist/angular-dateparser.js') }}"></script>
         <script src="{{ asset('bower_components/angular-timepicker/dist/angular-timepicker.js') }}"></script>
+        <script src="{{ asset('bower_components/ng-focus-on/ng-focus-on.js') }}"></script>
         <script src="{{ asset('js/plugins.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
         <script>

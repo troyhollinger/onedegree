@@ -134,7 +134,7 @@ Menu
 
 <div class="container content">
 
-    <div class="home-service-modules-container">
+    <div class="home-service-modules-container indicator-parent" data-indicator="Inquire" id="inquiry">
 
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>

@@ -22,52 +22,48 @@ Inquiry
 
 				<div>
 
-					<p>{{ Form::text('name') }}</p>
 					<p>{{ Form::label('name', 'NAME') }}</p>
+					<p>{{ Form::text('name', '', ['placeholder' => 'Name']) }}</p>
+					
 
 				</div>
 				
 				<div>
 
-					<p>{{ Form::text('email') }}</p>
-					<p>{{ Form::label('email', 'EMAIL') }}</p>
+					<p>{{ Form::label('reffered', 'Reffered By') }}</p>
+					<p>{{ Form::text('referred', '', ['placeholder' => 'Referred By']) }}</p>
+					
 
 				</div>
-				
+
 				<div>
 
-					<p>{{ Form::text('business-name') }}</p>
-					<p>{{ Form::label('business-name', 'BUSINESS NAME') }}</p>
+					<p>{{ Form::label('location', 'Area you live in') }}</p>
+					<p>{{ Form::text('location', '', ['placeholder' => 'Area you live in']) }}</p>					
 
 				</div>
-				
+
 				<div>
 
-					<p>{{ Form::text('phone') }}</p>
-					<p>{{ Form::label('phone', 'PHONE NUMBER') }}</p>
+					<p>{{ Form::label('phone', 'Phone number') }}</p>
+					<p>{{ Form::text('phone', '', ['placeholder' => 'Phone number']) }}</p>					
 
 				</div>
-				
+
 				<div>
 
-					<p>{{ Form::text('location') }}</p>
-					<p>{{ Form::label('location', 'CITY, STATE') }}</p>
-
+					<p>{{ Form::label('email', 'Email Address') }}</p>
+					<p>{{ Form::text('email', '', ['placeholder' => 'Email Address (Optional)']) }}</p>
+					
 				</div>
 				
+					
 				<div>
-
-					<p>{{ Form::textarea('description') }}</p>
-					<p>{{ Form::label('description', 'TELL US ABOUT YOURSELF (140 CHARACTERS OR LESS)') }}</p>
+					<p>{{ Form::label('reason', 'Brief reason for inquiry') }}</p>
+					<p>{{ Form::textarea('reason', '', ['placeholder' => 'Brief reason for inquiry']) }}</p>
 
 				</div>
 				
-
-				<!-- <div class="inquiry-form-button">
-
-					<p>CANCEL</p>
-
-				</div> -->
 				<div class="inquiry-form-button ">
 
 					<p>SEND INQUIRY</p>

@@ -1,3 +1,5 @@
+'use strict';
+
 
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
@@ -5,7 +7,7 @@ var requestAnimationFrame = window.requestAnimationFrame ||
                             window.msRequestAnimationFrame;
 
 
-var app = angular.module(['onedegree'], ['angularLoad', '720kb.datepicker', 'dnTimepicker']);
+var app = angular.module(['onedegree'], ['angularLoad', '720kb.datepicker', 'dnTimepicker', 'focusOn']);
 
 app.factory('Video', function($http) {
 
@@ -21,8 +23,22 @@ app.factory('Video', function($http) {
 
 });
 
-app.controller('SpeakerFormController', ['$scope', function($scope) {
+app.controller('SpeakerFormController', ['$scope', 'focus', function($scope, focus) {
 
+
+	$scope.focusDate = function($event) {
+
+		$event.preventDefault();
+		focus('date');
+
+	}
+
+	$scope.focusTime = function($event) {
+
+		$event.preventDefault();
+		focus('time');
+
+	}
 
 
 }]);
@@ -427,7 +443,7 @@ var ProcessLine = {
 		var length = path.getTotalLength();
 		var distance = $(document).scrollTop();
 
-		for(i = 0; i < ProcessLine.colorTransitionPoints.length; i++) {
+		for(var i = 0; i < ProcessLine.colorTransitionPoints.length; i++) {
 
 			if (parseInt(path.style.strokeDashoffset) < ProcessLine.colorTransitionPoints[i]) {
 
@@ -612,7 +628,7 @@ var SectionIndicators = {
 
 		SectionIndicators.setIndicators();
 
-		requestAnimationFrame(SectionIndicators.track);
+		SectionIndicators.loop = requestAnimationFrame(SectionIndicators.track);
 
 	},
 
@@ -630,12 +646,27 @@ var SectionIndicators = {
 
 			var text = $(this).attr('data-indicator');
 			var anchor = $(this).attr('id');
-			
-			html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';
 
+			// in order to be able to use this code snippet for the single inquiry link
+			// on the home page, this conditional checks for that one instance, else
+			// assigns normal behavior
+
+			if (anchor === 'inquiry') {
+
+				html += '<a href="/inquiry"class="indicator-element">' + text + '</a>';
+
+			} else {
+
+				html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';
+
+			}
+		
 		});
 
-		document.getElementById('outer-container').innerHTML += html;
+		// For some reason, the code directly below causes errors galore. WHY?
+		// document.getElementById('outer-container').innerHTML += html;
+
+		$("#outer-container").append(html);
 
 		SectionIndicators.indicatorElements = $(".indicator-element");
 
@@ -663,7 +694,7 @@ var SectionIndicators = {
 
 		});
 
-		requestAnimationFrame(SectionIndicators.track);
+		SectionIndicators.loop = requestAnimationFrame(SectionIndicators.track);
 
 	}
 
@@ -672,22 +703,22 @@ var SectionIndicators = {
 
 
 $(document).ready(function() {
-
+	
 	Mast.init();
 	squarify();
 	Navigation.init();
 
-	if (thisPage === '/') {
+	if (thisPage === 'home') {
 
 		HomeBanner.init();
 		Mast.coloring();
 		MediumPosts.init();
 
-	}
+		if ($(window).width() > 1100) {
 
-	if (thisPage === 'inquiry') {
+			SectionIndicators.init();
 
-		// Mast.coloring();
+		}
 
 	}
 
@@ -695,6 +726,12 @@ $(document).ready(function() {
 
 		EthicsSlideshow.init();
 		
+
+		if ($(window).width() > 1100) {
+
+			SectionIndicators.init();
+
+		}
 
 	}
 
@@ -707,7 +744,7 @@ $(document).ready(function() {
 	if (thisPage === 'process' && $(window).width() > 1100) {
 
 		ProcessLine.init();
-		// SectionIndicators.init();
+		SectionIndicators.init();
 
 	}
 
@@ -717,15 +754,7 @@ $(document).ready(function() {
 
 	}
 
-	if (thisPage === 'services') {
-
-		if ($(window).width() > 1100) {
-
-			SectionIndicators.init();
-
-		}
-
-	}
+	
 
 	if (thisPage === 'speaker' || thisPage === 'inquiry') {
 

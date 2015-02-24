@@ -16,36 +16,19 @@
 
         </div>
 
-        <!-- <div class="footer-links footer-module">
-            <ul>
-
-                <li><span class="bold">FINRA</span> : Financial Industry Regulatory Authority</li>
-                <li><span class="bold">SIPC</span> : Securities Investor Protection Corporation</li>
-                <li><span class="bold">Market</span> : MarketWatch | Yahoo Finance | Bloomberg</li>
-                <li><span class="bold">Savings</span> / Load Rate Calculators: Bankrate</li>
-                <li><span class="bold">Government</span>: IRS | Social Security | Medicare</li>
-                <li><span class="bold">Credit Report</span>: AnnualCreditReport.com</li>
-
-            </ul>
-
-        </div>
- -->
         <div class="portal-links footer-module">
 
             <ul>
                 <li class="footer-title">CLIENT PORTAL</li>
                 <li>TD Ameritrade - Custodian</li>
-                <li>Evestnet - Report</li>
+                <li>Envestnet - Report</li>
                 <li>eMoney - Plan</li>
                 <br>
-                <!-- // <script src="https://www.riskalyze.com/hosted/d796c4e20cf97ca5b48a/rq/lt/lg/btn.js" type="text/javascript" data-logo="1" data-button-title="Free Portfolio Risk Analysis"></script> -->
                 <a href="https://pro.riskalyze.com/embed/d796c4e20cf97ca5b48a" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a>
                  
             </ul>
 
         </div>
-
-        
 
         <div class="footer-next-page">
 

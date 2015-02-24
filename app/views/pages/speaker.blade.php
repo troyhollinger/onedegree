@@ -41,20 +41,20 @@ Request Us To Speak - One Degree Advisors
 					</div>
 					
 					<div>
-						<!-- <label for="date">Presentation Date</label> -->
+						<label for="date">Presentation Date</label>
 						<datepicker date-format="longDate">					
-							<input ng-model="date" class="tabbed-input" type="text" name="date" placeholder="Presentation Date">
+							<input ng-model="date" focus-on="date" class="tabbed-input" type="text" name="date" placeholder="Presentation Date">
 						</datepicker>
-						<label for="date" class="input-tab"><i class="fa fa-calendar"></i></label>
+						<label for="date" class="input-tab" ng-click="focusDate($event)"><i class="fa fa-calendar"></i></label>
 
 						<div class="clear"></div>
 					</div>
 
 
 					<div>
-						<!-- <label for="time">Presentation Time</label> -->
-						<input type="text" class="tabbed-input" name="time" dn-timepicker="h:mm a" ng-model="time" placeholder="Presentation Time">
-						<label for="time" class="input-tab"><i class="fa fa-clock-o"></i><div class="clear"></div></label>
+						<label for="time">Presentation Time</label>
+						<input type="text" class="tabbed-input" focus-on="time" name="time" dn-timepicker="h:mm a" ng-model="time" placeholder="Presentation Time">
+						<label for="time" ng-click="focusTime($event)" class="input-tab"><i class="fa fa-clock-o"></i><div class="clear"></div></label>
 
 						<div class="clear"></div>
 					</div>
