@@ -26,7 +26,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <i class="fa fa-bars" id="nav-button"></i>
+        <i class="fa fa-bars" id="nav-button">
+            <p class="title">
+                 @yield('title')
+            </p>
+        </i>
 
         @if(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() !== 'home')
         <a href="{{ route('inquiry') }}"><div class="inquire-link" id="inquire-link">Inquire</div></a>

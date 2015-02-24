@@ -280,6 +280,7 @@ var Navigation = {
 	navButton : $("#nav-button"),
 	element : $(".nav-container"),
 	outerContainer : $('#outer-container'),
+	title : $(".title"),
 
 	open : function() {
 
@@ -288,6 +289,7 @@ var Navigation = {
 		_.element.removeClass('closed').addClass('open');
 		_.navButton.removeClass('fa-bars').addClass('fa-close');
 		_.outerContainer.addClass('shifted');
+		_.title.hide();
 
 		setTimeout(function() {
 
@@ -308,7 +310,14 @@ var Navigation = {
 
 		setTimeout(function() {
 
-			_.navButton.attr('style', '')
+			_.title.show();
+
+		}, 100);
+
+		setTimeout(function() {
+
+			_.navButton.attr('style', '');
+
 
 		}, 200)
 		
@@ -458,8 +467,6 @@ var ProcessLine = {
 			}
 
 		}
-
-		console.log(path.style.strokeDashoffset);
 
 		path.style.strokeDashoffset = (length - (distance * 2.65));
 			

@@ -16,7 +16,7 @@ Inquiry
 
 			{{ Form::open(['class' => 'inquiry-form']) }}
 
-				<h2 class="form-title"><span class="bold">Hello,</span><br>Thank you for your interest in One Degree. To start the process, please fill out the form below.</h2>
+				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest in One Degree. To start the process, please fill out the form below.</h2>
 				<h3 class="form-secondary-title">We will then contact you to schedule a 15 min phone call to get acquainted and determine if we are a good fit for your needs.</h3>
 
 
@@ -77,5 +77,15 @@ Inquiry
 
 	</div>
 	
+	<div class="banner footer-banner form-page-banner">
+
+		<div class="container">
+
+			<p class="banner-quote">Details Matter <br><span class="bold">Even to the Smallest Degree</span></p>
+			<p class="banner-quote-source">One Degree Advisors</p>
+
+		</div>
+
+	</div>
 
 @stop

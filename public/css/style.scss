@@ -6,7 +6,7 @@ $verdana : 'Verdana', 'Helvetica', 'Arial', sans-serif;
 $text-color : #404649;
 $green : #6bbb6f;
 $blue : #5fa8dc;
-$light : #e1e1e1;
+$light : #b7b7b7;
 
 //Mixins
 @mixin center {
@@ -118,6 +118,12 @@ body , html{
 	font-weight: bold;
 }
 
+.bigger {
+
+	font-size: 1.2em;
+
+}
+
 .uppercase {
 
 	text-transform: uppercase;
@@ -213,12 +219,18 @@ body , html{
 
 		@include transform(translate(-22%, 0));
 
+		@include breakpoint(mobile) {
+
+			@include transform(translate(-90%, 0));			
+
+		}
+
 	}
 
 }
 
 .mast {
-	position: fixed;
+	position: absolute;
 	width:100%;
 	height:120px;
 	min-height: 60px !important;
@@ -330,6 +342,13 @@ body , html{
 
 	}
 
+	@include breakpoint(mobile) {
+
+		width:90%;
+		width:90vw;
+
+	}
+
 }
 
 .nav-positioner {
@@ -402,10 +421,16 @@ body , html{
 
 .title {
 
-	display: inline;
+	// display: inline;
+	// @include centerRight;
+	// margin-right: 50px;
+	// margin-top: 2px;
+
 	@include centerRight;
-	margin-right: 50px;
-	margin-top: 2px;
+	right:130%;
+	
+
+
 	font-family: $verdana;
 	color:$green;
 	text-transform: uppercase;
@@ -566,7 +591,7 @@ body , html{
 	font-family: $verdana;
 	color:white;
 	font-size: 5rem;
-	letter-spacing: -1px;
+	letter-spacing: -5px;
 	margin-bottom: 10px;
 
 	@include breakpoint(mobile) {
@@ -581,7 +606,7 @@ body , html{
 
 	font-family: $verdana;
 	color:white;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 
 	@include breakpoint(mobile) {
 
@@ -805,6 +830,20 @@ body , html{
 			}
 
 		}
+
+	}
+
+}
+
+.home-medium-container {
+
+	@extend .medium-container;
+
+	margin-top: 20px;
+
+	.section-title {
+
+		text-transform: none;
 
 	}
 
@@ -2069,8 +2108,25 @@ body , html{
 	padding:100px 0;
 	font-family: $verdana;
 
+
 }
 
+.form-page-banner {
+
+	.container {
+
+		width:380px;
+		overflow: visible;
+
+		p {
+
+			white-space: nowrap;
+
+		}
+
+	}
+
+}
 
 .inquiry-form {
 
@@ -2080,7 +2136,6 @@ body , html{
 	& > div {
 
 		margin-bottom: 20px;
-
 
 	}
 
@@ -2094,11 +2149,12 @@ body , html{
 		color:$text-color;
 		font-size: 1.2rem;
 		@include box-sizing(border-box);
-		padding:5px 10px;
+		padding:8px 10px;
 
 		&:focus {
 
 			outline: none;
+			border: 2px solid $green;
 
 		}
 
@@ -2107,6 +2163,7 @@ body , html{
 	textarea {
 
 		height: 120px;
+		resize:none;
 
 	}
 
@@ -2146,7 +2203,7 @@ body , html{
 		display: inline-block;
 		border:2px solid $light;
 		@include box-sizing(border-box);
-		height:37px;
+		height:43px;
 		cursor: pointer;
 
 		i {
@@ -2164,8 +2221,8 @@ body , html{
 .form-title {
 
 	color:$green;
-	font-size: 1.5rem;
-	line-height: 1.75rem;
+	font-size: 1.6rem;
+	line-height: 2rem;
 	margin-bottom: 20px;
 
 }
@@ -2173,7 +2230,7 @@ body , html{
 .form-secondary-title {
 
 	color:$text-color;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	margin-bottom: 20px;
 
 }
@@ -2187,6 +2244,7 @@ body , html{
 	border:1px solid white;
 	position: relative;
 	color:white;
+
 	
 
 	&:last-child {
@@ -2200,7 +2258,7 @@ body , html{
 
 		@include center;
 		text-transform: uppercase;
-		font-size: .9rem;
+		font-size: 1.1rem;
 		font-family: $verdana;
 		white-space: nowrap;
 
@@ -2216,6 +2274,12 @@ body , html{
 	font-weight: bold;
 	color: $light;
 	z-index: 15;
+
+	@include breakpoint(medium) {
+
+		font-size: 1.1rem;
+
+	}
 
 }
 

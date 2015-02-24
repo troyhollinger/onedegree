@@ -50,9 +50,9 @@
             </svg>
         </a>
 
-        <p class="title">
+        <!-- <p class="title">
              @yield('title')
-        </p>
+        </p> -->
                 
         
 

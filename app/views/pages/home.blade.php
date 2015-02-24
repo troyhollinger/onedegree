@@ -160,7 +160,7 @@ Menu
 
     <div class="divider"></div>
 
-    <div class="medium-container">
+    <div class="home-medium-container">
 
         <p class="section-title">Recent Columns:</p><br>
         

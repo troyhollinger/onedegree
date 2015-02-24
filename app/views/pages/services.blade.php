@@ -354,7 +354,7 @@ Services
 		<br>
 		<p class="text">
 
-			<span class="bold">How are you paid? </span><br>
+			<span class="bold">How are you paid?</span><br>
 			We are fee-based, meaning most of our revenue 
 			comes from the fees paid for either financial planning 
 			and/or investment management services. Some fees 
