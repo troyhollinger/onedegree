@@ -893,6 +893,11 @@ app.controller('MediumController', ['$scope', 'angularLoad', function($scope, an
 
 }]);
 
+function isTouchDevice() {
+
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+
+}
 
 
 function mobile() {
@@ -926,7 +931,7 @@ var Navigation = {
 
 		var _ = this;
 
-		if (mobile()) {
+		if (isTouchDevice()) {
 
 			_.navButton.on('touchstart', function() {
 
