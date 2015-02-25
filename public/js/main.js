@@ -315,7 +315,6 @@ var Navigation = {
 
 		var _ = this;
 
-		_.element.removeClass('open').addClass('closed');
 		_.navButton.removeClass('fa-close').addClass('fa-bars');
 		_.outerContainer.removeClass('shifted');
 		_.mast.removeClass('shifted');
@@ -333,7 +332,13 @@ var Navigation = {
 			_.navButton.attr('style', '');
 
 
-		}, 150)
+		}, 150);
+
+		setTimeout(function(){
+
+			_.element.removeClass('open').addClass('closed');
+			
+		}, 300);
 		
 
 	}

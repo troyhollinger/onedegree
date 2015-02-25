@@ -400,9 +400,9 @@ body , html{
 	
 	// padding:70px;
 
-	&.open {
+	&.closed {
 
-		// @include transform(translate(-100%, 0));
+		display: none;
 
 	}
 
@@ -460,7 +460,6 @@ body , html{
 		}
 
 	}
-
 
 
 }
@@ -1739,6 +1738,7 @@ body , html{
 
 		position: static;
 		margin:50px 0;
+		top:0;
 
 	}
 
@@ -1748,6 +1748,13 @@ body , html{
 
 	position: relative;
 	bottom: 80px;
+
+	@include breakpoint(mobile) {
+
+		position: static;
+		margin-bottom: 50px;
+
+	}
 
 
 }
@@ -1820,6 +1827,7 @@ body , html{
 
 			text-align: center;
 
+
 		}
 
 	}
@@ -1842,7 +1850,20 @@ body , html{
 			width:100%;
 			text-align: left;
 
+			.section-title {
+
+				margin: 0;
+				margin-bottom: 10px;
+
+			}
+
 		}
+
+	}
+
+	@include breakpoint(mobile) {
+
+		padding:0;
 
 	}
 }
@@ -1869,6 +1890,7 @@ body , html{
 }
 
 .process-module-text {
+
 	float:left;
 
 	.section-title {
@@ -1878,6 +1900,12 @@ body , html{
 		@include transition(width .25s ease);
 		font-family: $verdana;
 		font-style: normal;
+
+		@include breakpoint(mobile) {
+
+			width:auto;
+
+		}
 
 	}
 
@@ -1899,7 +1927,7 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		margin-top: 80px;
+		padding-top: 40px;
 
 	}
 
@@ -1959,6 +1987,7 @@ body , html{
 	@include breakpoint(mobile) {
 
 		overflow: visible;
+		height:auto;
 
 	}
 
@@ -2204,7 +2233,16 @@ body , html{
 
 		}
 
+		@include breakpoint(small) {
+
+			@include center;
+			width:80%;
+
+		}
+
 	}
+
+
 
 }
 
