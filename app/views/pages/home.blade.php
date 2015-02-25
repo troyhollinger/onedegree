@@ -22,7 +22,7 @@ Menu
             <p class="photo-content-title">Our Purpose</p>
             <p class="photo-content-text">Timeless financial wisdom. We educate, equip, and empower our clients to be all they are...</p>
 
-            <a href="{{ route('services') }}"><div class="photo-content-button">
+            <a href="{{ route('services') }}#purpose"><div class="photo-content-button">
             
                 <p>Learn More</p>
             
@@ -45,7 +45,7 @@ Menu
                 <p class="photo-content-text">Timeless financial wisdom. We educate, equip, and empower our clients to be all they are...</p>
                 
 
-                <a href="{{ route('services') }}">
+                <a href="{{ route('services') }}#purpose">
                     <div class="photo-content-button">
                 
                         <p>Read More</p>
@@ -64,11 +64,11 @@ Menu
                 <p class="photo-content-text">Navigating life’s transitions: widowhood, business sale, sound investments, preserving wealth and/or...</p>
                 
 
-                <div class="photo-content-button">
+                <a href="{{ route('services') }}#why-one-degree"><div class="photo-content-button">
 
                     <p>See More</p>
 
-                </div>
+                </div></a>
 
             </div>
 
@@ -82,7 +82,7 @@ Menu
 
                 
 
-                <a href="{{ route('videos') }}"><div class="photo-content-button">
+                <a href="{{ route('services') }}#expect"><div class="photo-content-button">
                 
                     <p>Expect More</p>
                 
@@ -100,7 +100,7 @@ Menu
 
                 
 
-                <a href="https://medium.com/@janicethompson/a-game-plan-for-2015-4827ec319f97"><div class="photo-content-button">
+                <a href="{{ route('services') }}#ideal-client"><div class="photo-content-button">
                 
                     <p>Ideal Client</p>
                 
