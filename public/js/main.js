@@ -548,11 +548,11 @@ var HomeBanner = {
 
 		// this.sizing();
 
-		if (!mobile() && $(window).width() > 1100) {
+		// if (!mobile() && $(window).width() > 1100) {
 
 			this.slideshow();
 
-		}
+		// }
 		
 
 	},

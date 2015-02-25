@@ -176,7 +176,7 @@
                 var xcoord = e.pageX;
 
                 if(_.touchOnThis) {
-                    e.preventDefault();
+                    // e.preventDefault();
 
                     if(_.previousTouchX < xcoord) {
                         // swiping right to go backwards
@@ -1251,11 +1251,11 @@ var HomeBanner = {
 
 		// this.sizing();
 
-		if (!mobile() && $(window).width() > 1100) {
+		// if (!mobile() && $(window).width() > 1100) {
 
 			this.slideshow();
 
-		}
+		// }
 		
 
 	},

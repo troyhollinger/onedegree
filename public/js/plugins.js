@@ -164,7 +164,7 @@
                 var xcoord = e.pageX;
 
                 if(_.touchOnThis) {
-                    e.preventDefault();
+                    // e.preventDefault();
 
                     if(_.previousTouchX < xcoord) {
                         // swiping right to go backwards
