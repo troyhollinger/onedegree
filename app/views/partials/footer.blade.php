@@ -24,7 +24,7 @@
                 <li>Envestnet - Report</li>
                 <li>eMoney - Plan</li>
                 <br>
-                <a href="https://pro.riskalyze.com/embed/d796c4e20cf97ca5b48a" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a>
+                <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a>
                  
             </ul>
 
