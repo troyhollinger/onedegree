@@ -780,6 +780,12 @@ $(document).ready(function() {
 
 	}
 
+	if (thisPage === 'blog') {
+
+		MediumPosts.init();
+
+	}
+
 	
 
 	if (thisPage === 'speaker' || thisPage === 'inquiry') {
@@ -826,11 +832,11 @@ $(window).resize(function() {
 
 	}
 
-	// if (thisPage === '/' || thisPage === 'blog') {
+	if (thisPage === '/' || thisPage === 'blog') {
 
-	// 	MediumPosts.init();
+		MediumPosts.init();
 
-	// }
+	}
 
 });
 

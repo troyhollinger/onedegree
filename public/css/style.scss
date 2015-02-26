@@ -2540,7 +2540,37 @@ body , html{
 }
 
 
+.pagination {
 
+	font-family: $verdana;
+	font-size: 1.1rem;
+	overflow: auto;
+	float:right;
+	margin:50px 0;
+
+	li {
+
+		float:left;
+		margin-left:10px;
+		border-radius: 5px;
+
+		&.active {
+
+			background-color: $green;
+			color:white;
+
+		}
+
+		&.disabled {
+
+			display: none;
+
+		}
+
+
+	}
+
+}
 
 
 

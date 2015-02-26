@@ -30,7 +30,9 @@ Route::get('services', ['as' => 'services', function() {
 
 Route::get('blog', ['as' => 'blog', function() {
 
-	return View::make('pages.blog');
+	$columns = Column::paginate(6);
+
+	return View::make('pages.blog', ['columns' => $columns]);
 
 }]);
 

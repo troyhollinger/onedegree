@@ -10,17 +10,31 @@ Columns
 
 @section('content')
 
-	<div class="container content" ng-controller="MediumController">
+	<div class="container content">
 
 		<div class="medium-container" id="medium-container">
 
-			<!-- Medium Posts are injected here -->
+			@for($i = 0; $i < count($columns); $i++)
+
+				@if($i === 0 || $i === 3)
+				<div class="medium-row">
+				@endif
+
+				{{ $columns[$i]->link }}
+
+				@if($i === 2 || $i === 5 )
+				</div>
+				@endif
+
+			@endfor
 			
 		</div>
 
-		<!-- <p ng-click="loadPosts()">Load More</p> -->
-		
 
+		{{ $columns->links() }}
+
+		<div class="clear"></div>
+	
 	</div>
 
 	<div class="banner footer-banner">
@@ -33,5 +47,7 @@ Columns
 		</div>
 
 	</div>
+
+	<script async src="https://static.medium.com/embed.js"></script>
 
 @stop
