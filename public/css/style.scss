@@ -1280,7 +1280,7 @@ body , html{
 .team-member-image-container {
 
 	float:left;
-	width: 8%;
+	width: 10%;
 
 	@include breakpoint(mobile) {
 
@@ -1294,8 +1294,8 @@ body , html{
 
 .team-member-image {
 
-	width:170px;
-	height:170px;
+	width:220px;
+	height:220px;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
@@ -1303,6 +1303,9 @@ body , html{
 	@include breakpoint(mobile) {
 
 		margin: 0 auto;
+		width:200px;
+		height:200px;
+		margin-bottom: 10px;
 
 	}
 
@@ -1310,7 +1313,7 @@ body , html{
 
 .team-member-info-container {
 	float:right;
-	width:80%;
+	width:77%;
 
 	@include breakpoint(mobile) {
 
@@ -2578,6 +2581,13 @@ body , html{
 
 		}
 
+
+	}
+
+	@include breakpoint(mobile) {
+
+		float:none;
+		margin:50px auto;
 
 	}
 
