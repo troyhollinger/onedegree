@@ -2052,7 +2052,11 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		display: none;
+		// display: none;
+		width:100%;
+		@include box-sizing(border-box);
+		// padding:0 20px;
+		bottom:25px;
 
 	}
 
@@ -2076,6 +2080,13 @@ body , html{
 .skippr-nav-element-block {
 	width:60px;
 	height:10px;
+
+	@include breakpoint(mobile) {
+
+		height:20px;
+		width: calc(100% / 5);
+
+	}
 }
 
 
