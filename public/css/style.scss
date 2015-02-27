@@ -1126,6 +1126,7 @@ body , html{
 			@include transform(none);
 			margin-top: 30px;
 			font-size: .7rem !important;
+			float:none;
 
 		}
 	}
@@ -1172,6 +1173,12 @@ body , html{
 .portal-links {
 
 	float:left;
+
+	@include breakpoint(mobile) {
+
+		float:none;
+
+	}
 
 }
 
@@ -1224,7 +1231,21 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		display: none;
+		float:none;
+		margin-left: 0;
+		margin-top: 20px;
+
+		ul {
+
+			text-align: left;
+
+		}
+
+		&:last-child {
+
+			display: none;
+
+		}
 
 	}
 
@@ -1243,6 +1264,7 @@ body , html{
 		// @include center;
 		color:$green;
 		font-size: 4rem;
+		margin-top: 20px;
 
 	}
 
