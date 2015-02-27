@@ -7,7 +7,12 @@ module.exports = function(grunt) {
         concat: {
             dist : {
                 src : [
+                    'bower_components/angular-load/angular-load.js',                
                     'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
+                    'bower_components/angular-ui-bootstrap/src/position/position.js',
+                    'bower_components/angular-dateparser/dist/angular-dateparser.js',
+                    'bower_components/angular-timepicker/dist/angular-timepicker.js',
+                    'bower_components/ng-focus-on/ng-focus-on.js',
                     'js/plugins.js',
                     'js/main.js'
                 ],

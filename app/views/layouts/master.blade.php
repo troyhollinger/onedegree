@@ -111,21 +111,14 @@
         var base = '{{ URL::to("/") }}';
 
         </script>
-        <script src="{{ asset('bower_components/angular-load/angular-load.js') }}"></script>
-        <script src="{{ asset('bower_components/angularjs-datepicker/dist/angular-datepicker.min.js') }}"></script>
-        <script src="{{ asset('bower_components/angular-ui-bootstrap/src/position/position.js') }}"></script>
-        <script src="{{ asset('bower_components/angular-dateparser/dist/angular-dateparser.js') }}"></script>
-        <script src="{{ asset('bower_components/angular-timepicker/dist/angular-timepicker.js') }}"></script>
-        <script src="{{ asset('bower_components/ng-focus-on/ng-focus-on.js') }}"></script>
-        <script src="{{ asset('js/plugins.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
-        <script>
+        <script src="{{ asset('production/app.min.js') }}"></script>
+       <!-- <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script>-->
     </body>
 </html>

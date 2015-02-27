@@ -1,3 +1,61 @@
+/* angular-load.js / v0.2.0 / (c) 2014 Uri Shaked / MIT Licence */
+
+(function () {
+	'use strict';
+
+	angular.module('angularLoad', [])
+		.service('angularLoad', ['$document', '$q', '$timeout', function ($document, $q, $timeout) {
+
+			/**
+			 * Dynamically loads the given script
+			 * @param src The url of the script to load dynamically
+			 * @returns {*} Promise that will be resolved once the script has been loaded.
+			 */
+			this.loadScript = function (src) {
+				var deferred = $q.defer();
+				var script = $document[0].createElement('script');
+				script.onload = script.onreadystatechange = function (e) {
+					$timeout(function () {
+						deferred.resolve(e);
+					});
+				};
+				script.onerror = function (e) {
+					$timeout(function () {
+						deferred.reject(e);
+					});
+				};
+				script.src = src;
+				$document[0].body.appendChild(script);
+				return deferred.promise;
+			};
+
+			/**
+			 * Dynamically loads the given CSS file
+			 * @param href The url of the CSS to load dynamically
+			 * @returns {*} Promise that will be resolved once the CSS file has been loaded.
+			 */
+			this.loadCSS = function (href) {
+				var deferred = $q.defer();
+				var style = $document[0].createElement('link');
+				style.rel = 'stylesheet';
+				style.type = 'text/css';
+				style.href = href;
+				style.onload = style.onreadystatechange = function (e) {
+					$timeout(function () {
+						deferred.resolve(e);
+					});
+				};
+				style.onerror = function (e) {
+					$timeout(function () {
+						deferred.reject(e);
+					});
+				};
+				$document[0].head.appendChild(style);
+				return deferred.promise;
+			};
+		}]);
+})();
+
 /*!
  * Angular Datepicker v0.2.4
  *
@@ -10,6 +68,644 @@
 
 !function(a){"use strict";a.module("720kb.datepicker",[]).directive("datepicker",["$window","$compile","$locale","$filter",function(b,c,d,e){var f=864e5;return{restrict:"AEC",scope:{dateSet:"@",dateMinLimit:"@",dateMaxLimit:"@"},link:function(g,h,i){var j,k,l,m,n=i.selector,o=a.element(n?h[0].querySelector("."+n):h[0].children[0]),p='<b class="datepicker-default-button">&lang;</b>',q='<b class="datepicker-default-button">&rang;</b>',r=i.buttonPrev||p,s=i.buttonNext||q,t=i.dateFormat,u=new Date,v=!1,w=!1,x=d.DATETIME_FORMATS,y='<div class="_720kb-datepicker-calendar" ng-blur="hideCalendar()"><div class="_720kb-datepicker-calendar-header" ng-hide="isMobile()"><div class="_720kb-datepicker-calendar-header-left"><a href="javascript:void(0)" ng-click="prevMonth()">'+r+'</a></div><div class="_720kb-datepicker-calendar-header-middle _720kb-datepicker-calendar-month">{{month}} <a href="javascript:void(0)" ng-click="showYearsPagination = !showYearsPagination"><span>{{year}} <i ng-if="!showYearsPagination">&dtrif;</i> <i ng-if="showYearsPagination">&urtri;</i> </span> </a></div><div class="_720kb-datepicker-calendar-header-right"><a href="javascript:void(0)" ng-click="nextMonth()">'+s+'</a></div></div><div class="_720kb-datepicker-calendar-header" ng-show="isMobile()"><div class="_720kb-datepicker-calendar-header-middle _720kb-datepicker-mobile-item _720kb-datepicker-calendar-month"><select ng-model="month" ng-change="selectedMonthHandle(month)"><option ng-repeat="item in months" ng-selected="month === item" ng-disabled=\'!isSelectableMaxDate(item + " " + day + ", " + year) || !isSelectableMinDate(item + " " + day + ", " + year)\' ng-value="item">{{item}}</option></select></div></div><div class="_720kb-datepicker-calendar-header" ng-show="isMobile()"><div class="_720kb-datepicker-calendar-header-middle _720kb-datepicker-mobile-item _720kb-datepicker-calendar-month"><select ng-model="mobileYear" ng-change="setNewYear(mobileYear)"><option ng-repeat="item in paginationYears" ng-selected="year === item" ng-value="item" ng-disabled="!isSelectableMinYear(item) || !isSelectableMaxYear(item)">{{item}}</option></select></div></div><div class="_720kb-datepicker-calendar-header" ng-show="showYearsPagination"><div class="_720kb-datepicker-calendar-years-pagination"><a ng-class="{\'_720kb-datepicker-active\': y === year, \'_720kb-datepicker-disabled\': !isSelectableMaxYear(y) || !isSelectableMinYear(y)}" href="javascript:void(0)" ng-click="setNewYear(y)" ng-repeat="y in paginationYears">{{y}}</a></div><div class="_720kb-datepicker-calendar-years-pagination-pages"><a href="javascript:void(0)" ng-click="paginateYears(paginationYears[0])" ng-class="{\'_720kb-datepicker-item-hidden\': paginationYearsPrevDisabled}">'+r+'</a><a href="javascript:void(0)" ng-click="paginateYears(paginationYears[paginationYears.length -1 ])" ng-class="{\'_720kb-datepicker-item-hidden\': paginationYearsNextDisabled}">'+s+'</a></div></div><div class="_720kb-datepicker-calendar-days-header"><div ng-repeat="d in daysInString"> {{d}} </div> </div><div class="_720kb-datepicker-calendar-body"><a href="javascript:void(0)" ng-repeat="px in prevMonthDays" class="_720kb-datepicker-calendar-day _720kb-datepicker-disabled">{{px}}</a><a href="javascript:void(0)" ng-repeat="item in days" ng-click="setDatepickerDay(item)" ng-class="{\'_720kb-datepicker-active\': day === item, \'_720kb-datepicker-disabled\': !isSelectableMinDate(year + \'/\' + monthNumber + \'/\' + item ) || !isSelectableMaxDate(year + \'/\' + monthNumber + \'/\' + item)}" class="_720kb-datepicker-calendar-day">{{item}}</a><a href="javascript:void(0)" ng-repeat="nx in nextMonthDays" class="_720kb-datepicker-calendar-day _720kb-datepicker-disabled">{{nx}}</a></div></div></div>';g.$watch("dateSet",function(a){a&&(u=new Date(a),g.month=e("date")(u,"MMMM"),g.monthNumber=Number(e("date")(u,"MM")),g.day=Number(e("date")(u,"dd")),g.year=Number(e("date")(u,"yyyy")))}),g.$watch("dateMinLimit",function(a){a&&(k=a)}),g.$watch("dateMaxLimit",function(a){a&&(l=a)}),g.month=e("date")(u,"MMMM"),g.monthNumber=Number(e("date")(u,"MM")),g.day=Number(e("date")(u,"dd")),g.year=Number(e("date")(u,"yyyy")),g.months=x.MONTH,g.daysInString=["0","1","2","3","4","5","6"].map(function(a){return e("date")(new Date(new Date("06/08/2014").valueOf()+f*a),"EEE")}),o.after(c(a.element(y))(g)),j=h[0].querySelector("._720kb-datepicker-calendar"),o.bind("focus click",function(){w=!0,g.showCalendar()}),o.bind("focusout",function(){w=!1}),a.element(j).bind("mouseenter",function(){v=!0}),a.element(j).bind("mouseleave",function(){v=!1}),a.element(j).bind("focusin",function(){v=!0}),a.element(b).bind("click focus",function(){v||w||g.hideCalendar()}),g.isMobile=function(){return navigator.userAgent&&(navigator.userAgent.match(/Android/i)||navigator.userAgent.match(/webOS/i)||navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/iPod/i)||navigator.userAgent.match(/BlackBerry/i)||navigator.userAgent.match(/Windows Phone/i))?!0:void 0},g.resetToMinDate=function(){g.month=e("date")(new Date(k),"MMMM"),g.monthNumber=Number(e("date")(new Date(k),"MM")),g.day=Number(e("date")(new Date(k),"dd")),g.year=Number(e("date")(new Date(k),"yyyy"))},g.resetToMaxDate=function(){g.month=e("date")(new Date(l),"MMMM"),g.monthNumber=Number(e("date")(new Date(l),"MM")),g.day=Number(e("date")(new Date(l),"dd")),g.year=Number(e("date")(new Date(l),"yyyy"))},g.nextMonth=function(){12===g.monthNumber?(g.monthNumber=1,g.nextYear()):g.monthNumber+=1,g.month=e("date")(new Date(g.year+"/"+g.monthNumber+"/01"),"MMMM"),g.setDaysInMonth(g.monthNumber,g.year),l&&(g.isSelectableMaxDate(g.year+"/"+g.monthNumber+"/"+g.day)||g.resetToMaxDate()),g.day=void 0},g.selectedMonthHandle=function(a){g.monthNumber=Number(e("date")(new Date("01 "+a+" 2000"),"MM")),g.setDaysInMonth(g.monthNumber,g.year),g.setInputValue()},g.prevMonth=function(){1===g.monthNumber?(g.monthNumber=12,g.prevYear()):g.monthNumber-=1,g.month=e("date")(new Date(g.year+"/"+g.monthNumber+"/01"),"MMMM"),g.setDaysInMonth(g.monthNumber,g.year),k&&(g.isSelectableMinDate(g.year+"/"+g.monthNumber+"/"+g.day)||g.resetToMinDate()),g.day=void 0},g.setNewYear=function(a){if(g.day=void 0,l&&g.year<Number(a)){if(!g.isSelectableMaxYear(a))return}else if(k&&g.year>Number(a)&&!g.isSelectableMinYear(a))return;g.year=Number(a),g.setDaysInMonth(g.monthNumber,g.year),g.paginateYears(a)},g.nextYear=function(){g.year=Number(g.year)+1},g.prevYear=function(){g.year=Number(g.year)-1},g.setInputValue=function(){if(!g.isSelectableMinDate(g.year+"/"+g.monthNumber+"/"+g.day)||!g.isSelectableMaxDate(g.year+"/"+g.monthNumber+"/"+g.day))return!1;var a=new Date(g.year+"/"+g.monthNumber+"/"+g.day);o.val(i.dateFormat?e("date")(a,t):a),o.triggerHandler("input"),o.triggerHandler("change")},g.showCalendar=function(){m=b.document.getElementsByClassName("_720kb-datepicker-calendar"),a.forEach(m,function(a,b){m[b].classList.remove("_720kb-datepicker-open")}),j.classList.add("_720kb-datepicker-open")},g.hideCalendar=function(){j.classList.remove("_720kb-datepicker-open")},g.setDaysInMonth=function(a,b){var c,d,e,f,h=new Date(b,a,0).getDate(),i=new Date(b+"/"+a+"/1").getDay(),j=new Date(b+"/"+a+"/"+h).getDay(),k=[],l=[];for(g.days=[],c=1;h>=c;c+=1)g.days.push(c);if(0!==i){for(e=i,f=1===Number(a)?12:a-1,c=1;c<=new Date(b,f,0).getDate();c+=1)k.push(c);g.prevMonthDays=k.slice(-e)}else g.prevMonthDays=[];if(6>j){for(d=6-j,c=1;d>=c;c+=1)l.push(c);g.nextMonthDays=l}else g.nextMonthDays=[]},g.setDatepickerDay=function(a){g.day=Number(a),g.setInputValue(),g.hideCalendar()},g.paginateYears=function(a){g.paginationYears=[];var b,c=[],d=10;for(g.isMobile()&&(d=50),b=d;b>0;b-=1)c.push(Number(a)-b);for(b=0;d>b;b+=1)c.push(Number(a)+b);g.paginationYearsNextDisabled=l&&c&&c.length&&!g.isSelectableMaxYear(Number(c[c.length-1])+1)?!0:!1,g.paginationYearsPrevDisabled=k&&c&&c.length&&!g.isSelectableMinYear(Number(c[0])-1)?!0:!1,g.paginationYears=c},g.isSelectableMinDate=function(a){return k&&new Date(k)&&new Date(a).getTime()<new Date(k).getTime()?!1:!0},g.isSelectableMaxDate=function(a){return l&&new Date(l)&&new Date(a).getTime()>new Date(l).getTime()?!1:!0},g.isSelectableMaxYear=function(a){return l&&a>new Date(l).getFullYear()?!1:!0},g.isSelectableMinYear=function(a){return k&&a<new Date(k).getFullYear()?!1:!0},k&&!g.isSelectableMinYear(g.year)&&g.resetToMinDate(),l&&!g.isSelectableMaxYear(g.year)&&g.resetToMaxDate(),g.paginateYears(g.year),g.setDaysInMonth(g.monthNumber,g.year)}}}])}(angular);
 //# sourceMappingURL=angular-datepicker.sourcemap.map
+angular.module('ui.bootstrap.position', [])
+
+/**
+ * A set of utility methods that can be use to retrieve position of DOM elements.
+ * It is meant to be used where we need to absolute-position DOM elements in
+ * relation to other, existing elements (this is the case for tooltips, popovers,
+ * typeahead suggestions etc.).
+ */
+  .factory('$position', ['$document', '$window', function ($document, $window) {
+
+    function getStyle(el, cssprop) {
+      if (el.currentStyle) { //IE
+        return el.currentStyle[cssprop];
+      } else if ($window.getComputedStyle) {
+        return $window.getComputedStyle(el)[cssprop];
+      }
+      // finally try and get inline style
+      return el.style[cssprop];
+    }
+
+    /**
+     * Checks if a given element is statically positioned
+     * @param element - raw DOM element
+     */
+    function isStaticPositioned(element) {
+      return (getStyle(element, 'position') || 'static' ) === 'static';
+    }
+
+    /**
+     * returns the closest, non-statically positioned parentOffset of a given element
+     * @param element
+     */
+    var parentOffsetEl = function (element) {
+      var docDomEl = $document[0];
+      var offsetParent = element.offsetParent || docDomEl;
+      while (offsetParent && offsetParent !== docDomEl && isStaticPositioned(offsetParent) ) {
+        offsetParent = offsetParent.offsetParent;
+      }
+      return offsetParent || docDomEl;
+    };
+
+    return {
+      /**
+       * Provides read-only equivalent of jQuery's position function:
+       * http://api.jquery.com/position/
+       */
+      position: function (element) {
+        var elBCR = this.offset(element);
+        var offsetParentBCR = { top: 0, left: 0 };
+        var offsetParentEl = parentOffsetEl(element[0]);
+        if (offsetParentEl != $document[0]) {
+          offsetParentBCR = this.offset(angular.element(offsetParentEl));
+          offsetParentBCR.top += offsetParentEl.clientTop - offsetParentEl.scrollTop;
+          offsetParentBCR.left += offsetParentEl.clientLeft - offsetParentEl.scrollLeft;
+        }
+
+        var boundingClientRect = element[0].getBoundingClientRect();
+        return {
+          width: boundingClientRect.width || element.prop('offsetWidth'),
+          height: boundingClientRect.height || element.prop('offsetHeight'),
+          top: elBCR.top - offsetParentBCR.top,
+          left: elBCR.left - offsetParentBCR.left
+        };
+      },
+
+      /**
+       * Provides read-only equivalent of jQuery's offset function:
+       * http://api.jquery.com/offset/
+       */
+      offset: function (element) {
+        var boundingClientRect = element[0].getBoundingClientRect();
+        return {
+          width: boundingClientRect.width || element.prop('offsetWidth'),
+          height: boundingClientRect.height || element.prop('offsetHeight'),
+          top: boundingClientRect.top + ($window.pageYOffset || $document[0].documentElement.scrollTop),
+          left: boundingClientRect.left + ($window.pageXOffset || $document[0].documentElement.scrollLeft)
+        };
+      },
+
+      /**
+       * Provides coordinates for the targetEl in relation to hostEl
+       */
+      positionElements: function (hostEl, targetEl, positionStr, appendToBody) {
+
+        var positionStrParts = positionStr.split('-');
+        var pos0 = positionStrParts[0], pos1 = positionStrParts[1] || 'center';
+
+        var hostElPos,
+          targetElWidth,
+          targetElHeight,
+          targetElPos;
+
+        hostElPos = appendToBody ? this.offset(hostEl) : this.position(hostEl);
+
+        targetElWidth = targetEl.prop('offsetWidth');
+        targetElHeight = targetEl.prop('offsetHeight');
+
+        var shiftWidth = {
+          center: function () {
+            return hostElPos.left + hostElPos.width / 2 - targetElWidth / 2;
+          },
+          left: function () {
+            return hostElPos.left;
+          },
+          right: function () {
+            return hostElPos.left + hostElPos.width;
+          }
+        };
+
+        var shiftHeight = {
+          center: function () {
+            return hostElPos.top + hostElPos.height / 2 - targetElHeight / 2;
+          },
+          top: function () {
+            return hostElPos.top;
+          },
+          bottom: function () {
+            return hostElPos.top + hostElPos.height;
+          }
+        };
+
+        switch (pos0) {
+          case 'right':
+            targetElPos = {
+              top: shiftHeight[pos1](),
+              left: shiftWidth[pos0]()
+            };
+            break;
+          case 'left':
+            targetElPos = {
+              top: shiftHeight[pos1](),
+              left: hostElPos.left - targetElWidth
+            };
+            break;
+          case 'bottom':
+            targetElPos = {
+              top: shiftHeight[pos0](),
+              left: shiftWidth[pos1]()
+            };
+            break;
+          default:
+            targetElPos = {
+              top: hostElPos.top - targetElHeight,
+              left: shiftWidth[pos1]()
+            };
+            break;
+        }
+
+        return targetElPos;
+      }
+    };
+  }]);
+
+/*!
+ * angular-dateParser 1.0.12
+ * https://github.com/dnasir/angular-dateParser
+ * Copyright 2014, Dzulqarnain Nasir
+ * Licensed under: MIT (http://www.opensource.org/licenses/MIT)
+ */
+
+(function(angular) {
+    angular.module("dateParser", []).factory("dateParserHelpers", [ function() {
+        "use strict";
+        var cache = {};
+        return {
+            getInteger: function(string, startPoint, minLength, maxLength) {
+                var val = string.substring(startPoint);
+                var matcher = cache[minLength + "_" + maxLength];
+                if (!matcher) {
+                    matcher = new RegExp("^(\\d{" + minLength + "," + maxLength + "})");
+                    cache[minLength + "_" + maxLength] = matcher;
+                }
+                var match = matcher.exec(val);
+                if (match) {
+                    return match[1];
+                }
+                return null;
+            }
+        };
+    } ]).factory("$dateParser", [ "$locale", "dateParserHelpers", function($locale, dateParserHelpers) {
+        "use strict";
+        var datetimeFormats = $locale.DATETIME_FORMATS;
+        var monthNames = datetimeFormats.MONTH.concat(datetimeFormats.SHORTMONTH);
+        var dayNames = datetimeFormats.DAY.concat(datetimeFormats.SHORTDAY);
+        return function(val, format) {
+            if (angular.isDate(val)) {
+                return val;
+            }
+            try {
+                val = val + "";
+                format = format + "";
+                if (!format.length) {
+                    return new Date(val);
+                }
+                if (datetimeFormats[format]) {
+                    format = datetimeFormats[format];
+                }
+                var now = new Date(), i_val = 0, i_format = 0, format_token = "", year = now.getFullYear(), month = now.getMonth() + 1, date = now.getDate(), hh = 0, mm = 0, ss = 0, sss = 0, ampm = "am", z = 0, parsedZ = false;
+                while (i_format < format.length) {
+                    format_token = format.charAt(i_format);
+                    var token = "";
+                    if (format.charAt(i_format) == "'") {
+                        var _i_format = i_format;
+                        while (format.charAt(++i_format) != "'" && i_format < format.length) {
+                            token += format.charAt(i_format);
+                        }
+                        if (val.substring(i_val, i_val + token.length) != token) {
+                            throw "Pattern value mismatch";
+                        }
+                        i_val += token.length;
+                        i_format++;
+                        continue;
+                    }
+                    while (format.charAt(i_format) == format_token && i_format < format.length) {
+                        token += format.charAt(i_format++);
+                    }
+                    if (token == "yyyy" || token == "yy" || token == "y") {
+                        var minLength, maxLength;
+                        if (token == "yyyy") {
+                            minLength = 4;
+                            maxLength = 4;
+                        }
+                        if (token == "yy") {
+                            minLength = 2;
+                            maxLength = 2;
+                        }
+                        if (token == "y") {
+                            minLength = 2;
+                            maxLength = 4;
+                        }
+                        year = dateParserHelpers.getInteger(val, i_val, minLength, maxLength);
+                        if (year === null) {
+                            throw "Invalid year";
+                        }
+                        i_val += year.length;
+                        if (year.length == 2) {
+                            if (year > 70) {
+                                year = 1900 + (year - 0);
+                            } else {
+                                year = 2e3 + (year - 0);
+                            }
+                        }
+                    } else if (token === "MMMM" || token == "MMM") {
+                        month = 0;
+                        for (var i = 0; i < monthNames.length; i++) {
+                            var month_name = monthNames[i];
+                            if (val.substring(i_val, i_val + month_name.length).toLowerCase() == month_name.toLowerCase()) {
+                                month = i + 1;
+                                if (month > 12) {
+                                    month -= 12;
+                                }
+                                i_val += month_name.length;
+                                break;
+                            }
+                        }
+                        if (month < 1 || month > 12) {
+                            throw "Invalid month";
+                        }
+                    } else if (token == "EEEE" || token == "EEE") {
+                        for (var j = 0; j < dayNames.length; j++) {
+                            var day_name = dayNames[j];
+                            if (val.substring(i_val, i_val + day_name.length).toLowerCase() == day_name.toLowerCase()) {
+                                i_val += day_name.length;
+                                break;
+                            }
+                        }
+                    } else if (token == "MM" || token == "M") {
+                        month = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (month === null || month < 1 || month > 12) {
+                            throw "Invalid month";
+                        }
+                        i_val += month.length;
+                    } else if (token == "dd" || token == "d") {
+                        date = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (date === null || date < 1 || date > 31) {
+                            throw "Invalid date";
+                        }
+                        i_val += date.length;
+                    } else if (token == "HH" || token == "H") {
+                        hh = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (hh === null || hh < 0 || hh > 23) {
+                            throw "Invalid hours";
+                        }
+                        i_val += hh.length;
+                    } else if (token == "hh" || token == "h") {
+                        hh = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (hh === null || hh < 1 || hh > 12) {
+                            throw "Invalid hours";
+                        }
+                        i_val += hh.length;
+                    } else if (token == "mm" || token == "m") {
+                        mm = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (mm === null || mm < 0 || mm > 59) {
+                            throw "Invalid minutes";
+                        }
+                        i_val += mm.length;
+                    } else if (token == "ss" || token == "s") {
+                        ss = dateParserHelpers.getInteger(val, i_val, token.length, 2);
+                        if (ss === null || ss < 0 || ss > 59) {
+                            throw "Invalid seconds";
+                        }
+                        i_val += ss.length;
+                    } else if (token === "sss") {
+                        sss = dateParserHelpers.getInteger(val, i_val, 3, 3);
+                        if (sss === null || sss < 0 || sss > 999) {
+                            throw "Invalid milliseconds";
+                        }
+                        i_val += 3;
+                    } else if (token == "a") {
+                        if (val.substring(i_val, i_val + 2).toLowerCase() == "am") {
+                            ampm = "AM";
+                        } else if (val.substring(i_val, i_val + 2).toLowerCase() == "pm") {
+                            ampm = "PM";
+                        } else {
+                            throw "Invalid AM/PM";
+                        }
+                        i_val += 2;
+                    } else if (token == "Z") {
+                        parsedZ = true;
+                        if (val[i_val] === "Z") {
+                            z = 0;
+                            i_val += 1;
+                        } else {
+                            if (val[i_val + 3] === ":") {
+                                var tzStr = val.substring(i_val, i_val + 6);
+                                z = parseInt(tzStr.substr(0, 3), 10) * 60 + parseInt(tzStr.substr(4, 2), 10);
+                                i_val += 6;
+                            } else {
+                                var tzStr = val.substring(i_val, i_val + 5);
+                                z = parseInt(tzStr.substr(0, 3), 10) * 60 + parseInt(tzStr.substr(3, 2), 10);
+                                i_val += 5;
+                            }
+                        }
+                        if (z > 720 || z < -720) {
+                            throw "Invalid timezone";
+                        }
+                    } else {
+                        if (val.substring(i_val, i_val + token.length) != token) {
+                            throw "Pattern value mismatch";
+                        } else {
+                            i_val += token.length;
+                        }
+                    }
+                }
+                if (i_val != val.length) {
+                    throw "Pattern value mismatch";
+                }
+                year = parseInt(year, 10);
+                month = parseInt(month, 10);
+                date = parseInt(date, 10);
+                hh = parseInt(hh, 10);
+                mm = parseInt(mm, 10);
+                ss = parseInt(ss, 10);
+                sss = parseInt(sss, 10);
+                if (month == 2) {
+                    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+                        if (date > 29) {
+                            throw "Invalid date";
+                        }
+                    } else {
+                        if (date > 28) {
+                            throw "Invalid date";
+                        }
+                    }
+                }
+                if (month == 4 || month == 6 || month == 9 || month == 11) {
+                    if (date > 30) {
+                        throw "Invalid date";
+                    }
+                }
+                if (hh < 12 && ampm == "PM") {
+                    hh += 12;
+                } else if (hh > 11 && ampm == "AM") {
+                    hh -= 12;
+                }
+                var localDate = new Date(year, month - 1, date, hh, mm, ss, sss);
+                if (parsedZ) {
+                    return new Date(localDate.getTime() - (z + localDate.getTimezoneOffset()) * 6e4);
+                }
+                return localDate;
+            } catch (e) {
+                return undefined;
+            }
+        };
+    } ]);
+    angular.module("dateParser").directive("dateParser", [ "dateFilter", "$dateParser", function(dateFilter, $dateParser) {
+        "use strict";
+        return {
+            restrict: "A",
+            require: "ngModel",
+            link: function(scope, element, attrs, ngModel) {
+                var dateFormat;
+                attrs.$observe("dateParser", function(value) {
+                    dateFormat = value;
+                    ngModel.$render();
+                });
+                ngModel.$parsers.unshift(function(viewValue) {
+                    var date = $dateParser(viewValue, dateFormat);
+                    ngModel.$setValidity("date", angular.isDate(date));
+                    return date;
+                });
+                ngModel.$render = function() {
+                    element.val(ngModel.$modelValue ? dateFilter(ngModel.$modelValue, dateFormat) : undefined);
+                    scope.ngModel = ngModel.$modelValue;
+                };
+                ngModel.$formatters.push(function(modelValue) {
+                    ngModel.$setValidity("date", angular.isDate(modelValue));
+                    return modelValue ? dateFilter(modelValue, dateFormat) : "";
+                });
+            }
+        };
+    } ]);
+})(angular);
+/*!
+ * angular-timepicker 1.0.8
+ * https://github.com/Geta/angular-timepicker
+ * Copyright 2014, Geta AS
+ * Contributors: Dzulqarnain Nasir <dzul@geta.no>
+ * Licensed under: MIT (http://www.opensource.org/licenses/MIT)
+ */
+
+(function(angular) {
+    "use strict";
+    angular.module("dnTimepicker", [ "ui.bootstrap.position", "dateParser" ]).factory("dnTimepickerHelpers", function() {
+        return {
+            stringToMinutes: function(str) {
+                if (!str) {
+                    return null;
+                }
+                var t = str.match(/(\d+)(h?)/);
+                return t[1] ? t[1] * (t[2] ? 60 : 1) : null;
+            },
+            buildOptionList: function(minTime, maxTime, step) {
+                var result = [], i = angular.copy(minTime);
+                while (i <= maxTime) {
+                    result.push(new Date(i));
+                    i.setMinutes(i.getMinutes() + step);
+                }
+                return result;
+            },
+            getClosestIndex: function(value, from) {
+                if (!angular.isDate(value)) {
+                    return -1;
+                }
+                var closest = null, index = -1, _value = value.getHours() * 60 + value.getMinutes();
+                for (var i = 0; i < from.length; i++) {
+                    var current = from[i], _current = current.getHours() * 60 + current.getMinutes();
+                    if (closest === null || Math.abs(_current - _value) < Math.abs(closest - _value)) {
+                        closest = _current;
+                        index = i;
+                    }
+                }
+                return index;
+            }
+        };
+    }).directive("dnTimepicker", [ "$compile", "$parse", "$position", "$document", "dateFilter", "$dateParser", "dnTimepickerHelpers", "$log", function($compile, $parse, $position, $document, dateFilter, $dateParser, dnTimepickerHelpers, $log) {
+        return {
+            restrict: "A",
+            require: "ngModel",
+            scope: {
+                ngModel: "="
+            },
+            link: function(scope, element, attrs, ctrl) {
+                var current = null, list = [], updateList = true;
+                scope.timepicker = {
+                    element: null,
+                    timeFormat: "h:mm a",
+                    minTime: $dateParser("0:00", "H:mm"),
+                    maxTime: $dateParser("23:59", "H:mm"),
+                    step: 15,
+                    isOpen: false,
+                    activeIdx: -1,
+                    optionList: function() {
+                        if (updateList) {
+                            list = dnTimepickerHelpers.buildOptionList(scope.timepicker.minTime, scope.timepicker.maxTime, scope.timepicker.step);
+                            updateList = false;
+                        }
+                        return list;
+                    }
+                };
+                function getUpdatedDate(date) {
+                    if (!current) {
+                        current = angular.isDate(scope.ngModel) ? scope.ngModel : new Date();
+                    }
+                    current.setHours(date.getHours());
+                    current.setMinutes(date.getMinutes());
+                    current.setSeconds(date.getSeconds());
+                    setCurrentValue(current);
+                    return current;
+                }
+                function setCurrentValue(value) {
+                    if (!angular.isDate(value)) {
+                        value = $dateParser(scope.ngModel, scope.timepicker.timeFormat);
+                        if (isNaN(value)) {
+                            $log.warn("Failed to parse model.");
+                        }
+                    }
+                    current = value;
+                }
+                attrs.$observe("dnTimepicker", function(value) {
+                    if (value) {
+                        scope.timepicker.timeFormat = value;
+                    }
+                    ctrl.$render();
+                });
+                attrs.$observe("minTime", function(value) {
+                    if (!value) return;
+                    scope.timepicker.minTime = $dateParser(value, scope.timepicker.timeFormat);
+                    updateList = true;
+                });
+                attrs.$observe("maxTime", function(value) {
+                    if (!value) return;
+                    scope.timepicker.maxTime = $dateParser(value, scope.timepicker.timeFormat);
+                    updateList = true;
+                });
+                attrs.$observe("step", function(value) {
+                    if (!value) return;
+                    var step = dnTimepickerHelpers.stringToMinutes(value);
+                    if (step) scope.timepicker.step = step;
+                    updateList = true;
+                });
+                scope.$watch("ngModel", function(value) {
+                    setCurrentValue(value);
+                    ctrl.$render();
+                });
+                ctrl.$render = function() {
+                    element.val(angular.isDate(current) ? dateFilter(current, scope.timepicker.timeFormat) : ctrl.$viewValue ? ctrl.$viewValue : "");
+                };
+                ctrl.$parsers.unshift(function(viewValue) {
+                    var date = angular.isDate(viewValue) ? viewValue : $dateParser(viewValue, scope.timepicker.timeFormat);
+                    if (isNaN(date)) {
+                        ctrl.$setValidity("time", false);
+                        return undefined;
+                    }
+                    ctrl.$setValidity("time", true);
+                    return getUpdatedDate(date);
+                });
+                scope.select = function(time) {
+                    if (!angular.isDate(time)) {
+                        return;
+                    }
+                    ctrl.$setViewValue(getUpdatedDate(time));
+                    ctrl.$render();
+                };
+                scope.isActive = function(index) {
+                    return index === scope.timepicker.activeIdx;
+                };
+                scope.setActive = function(index) {
+                    scope.timepicker.activeIdx = index;
+                };
+                scope.scrollToSelected = function() {
+                    if (scope.timepicker.element && scope.timepicker.activeIdx > -1) {
+                        var target = scope.timepicker.element[0].querySelector(".active");
+                        target.parentNode.scrollTop = target.offsetTop - 50;
+                    }
+                };
+                scope.openPopup = function() {
+                    scope.position = $position.position(element);
+                    scope.position.top = scope.position.top + element.prop("offsetHeight");
+                    scope.timepicker.isOpen = true;
+                    scope.timepicker.activeIdx = dnTimepickerHelpers.getClosestIndex(scope.ngModel, scope.timepicker.optionList());
+                    scope.$digest();
+                    scope.scrollToSelected();
+                };
+                scope.closePopup = function() {
+                    if (scope.timepicker.isOpen) {
+                        scope.timepicker.isOpen = false;
+                        scope.$apply();
+                        element[0].blur();
+                    }
+                };
+                element.after($compile(angular.element("<div dn-timepicker-popup></div>"))(scope));
+                element.bind("focus", function() {
+                    scope.openPopup();
+                }).bind("keypress keyup", function(e) {
+                    if (e.which === 38 && scope.timepicker.activeIdx > 0) {
+                        scope.timepicker.activeIdx--;
+                        scope.scrollToSelected();
+                    } else if (e.which === 40 && scope.timepicker.activeIdx < scope.timepicker.optionList().length - 1) {
+                        scope.timepicker.activeIdx++;
+                        scope.scrollToSelected();
+                    } else if (e.which === 13 && scope.timepicker.activeIdx > -1) {
+                        scope.select(scope.timepicker.optionList()[scope.timepicker.activeIdx]);
+                        scope.closePopup();
+                    }
+                    scope.$digest();
+                });
+                $document.bind("click", function(event) {
+                    if (scope.timepicker.isOpen && event.target !== element[0]) {
+                        scope.closePopup();
+                    }
+                });
+                setCurrentValue(scope.ngModel);
+            }
+        };
+    } ]).directive("dnTimepickerPopup", function() {
+        return {
+            restrict: "A",
+            replace: true,
+            transclude: false,
+            template: '<ul class="dn-timepicker-popup dropdown-menu" ng-style="{display: timepicker.isOpen && \'block\' || \'none\', top: position.top+\'px\', left: position.left+\'px\'}"><li ng-repeat="time in timepicker.optionList()" ng-class="{active: isActive($index) }" ng-mouseenter="setActive($index)"><a ng-click="select(time)">{{time | date:timepicker.timeFormat}}</a></li></ul>',
+            link: function(scope, element, attrs) {
+                scope.timepicker.element = element;
+                element.find("a").bind("click", function(event) {
+                    event.preventDefault();
+                });
+            }
+        };
+    });
+})(angular);
+;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+// Generated by CoffeeScript 1.6.3
+var app;
+
+app = angular.module('focusOn', []);
+
+app.directive('focusOn', function() {
+  return function(scope, elem, attr) {
+    return scope.$on('focusOn', function(e, name) {
+      if (name === attr.focusOn) {
+        return elem[0].focus();
+      }
+    });
+  };
+});
+
+app.factory('focus', [
+  '$rootScope', '$timeout', (function($rootScope, $timeout) {
+    return function(name) {
+      return $timeout(function() {
+        return $rootScope.$broadcast('focusOn', name);
+      });
+    };
+  })
+]);
+
+},{}]},{},[1])
+;
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
