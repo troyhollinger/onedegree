@@ -369,7 +369,7 @@ Services
 
 	</div>
 
-	<div class="service-section" id="info">
+	<div class="service-section faded" id="info">
 
 		<p class="section-title">
 			Compliance

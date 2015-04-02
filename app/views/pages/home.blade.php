@@ -141,20 +141,20 @@ Menu
 
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>
-            <p class="text">We take a comprehensive approach to managing your wealth. By incorporating the <span class="green-text">six-step Financial Planning process</span> recognized by the CFP® Board, your initial plan is developed over the course of several meetings. We also coordinate with your other professionals, such as estate planning attorneys, CPAs, and insurance specialists as needed. If you don’t have this team in place, we can provide recommendations. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
+            <p class="text">Our focus is on what’s important to you. Theoverarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
            
         </div>
 
         <div class="service-module">
             <p class="section-title uppercase">Investment Management</p>
-            <p class="text">We use a purpose allocation approach to determine the proper asset allocation of your investments. What is important to you? Are you trying to save for retirement? Do you need an income distribution strategy? Would you like to buy a second home? Do you want to be able to give more money to charity now? Would you like to focus on leaving a legacy?  Once we understand your values, we then work on building an all-weather portfolio designed to accomplish these goals. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
+            <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">Free, Instant Portfolio Analysis</a></p><br>
     
         </div>
 
         <div class="service-module">
 
             <p class="section-title uppercase">Stewardship Coaching</p>
-            <p class="text">Many families and business owners are experienced stewards and they have a vision to go over the top. They know that generosity is really the key to success and brings great joy with it. We encourage families to build plans inspired by their life’s purpose and passion. It involves a purposeful desire to take conflict and confusion so typical in life and replace it with clarity. Financial wealth, planning and confidence can make it happen. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p>
+            <p class="text">Many people race through life without giving careful consideration to finding and fulfilling their unique purpose in life. Even with help from competent advisors, many financially blessed families end up with results that may not reflect their values or unique calling. And, by the time they discover it, it may be too late to do anything about it. How you handle the blessings God has given you—your time, talent, treasure, and...<a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p>
 
         </div>
 

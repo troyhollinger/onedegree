@@ -20,9 +20,9 @@
 
             <ul>
                 <li class="footer-title">CLIENT PORTAL</li>
-                <li>TD Ameritrade - Custodian</li>
-                <li>Envestnet - Report</li>
-                <li>eMoney - Plan</li>
+                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade - Custodian</li></a>
+                <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>Envestnet - Report</li></a>
+                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/strategicfs" target="_blank"><li>eMoney - Plan</li></a>
                 <br>
                 <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a>
                  

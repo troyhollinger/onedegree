@@ -28,7 +28,7 @@ Process
 
 		<div class="process-module-text indicator-parent" data-indicator="Discover" id="discover">
 			<div class="section-title" id="discover-title">Discover</div>
-			<p class="text align-left">Our process starts with getting to know you. We begin with a brief phone call to get acquainted with you and your financial needs. If it appears our services can provide value to you, the next step is a Complimentary Introductory Meeting in our office. The Discovery Meeting begins with a discussion about your life goals. At this time, we also gather information that relates to all major aspects of your life and answer any questions you have.  </p>
+			<p class="text align-left">Our process starts with getting to know you. We begin with a brief phone call to get acquainted with your financial needs and answer any questions you have. If it appears our services can provide value to you, the next steps are a Complimentary Introductory Meeting in our office, followed by an in-depth Discovery Meeting if you choose to engage our services. During these meetings we discuss your life goals and gather information that relates to all major aspects of your finances. </p>
 		</div>
 
 	</div>
@@ -43,20 +43,20 @@ Process
 
 		<div class="process-module-text align-right indicator-parent" data-indicator="Analyze" id="analyze">
 			<div class="section-title" id="analyze-title">Analyze</div>
-			<p class="text">Next, we analyze your current financial picture. We will evaluate strengths, weaknesses and gaps in your current financial position.</p>
+			<p class="text">Next we evaluate your current financial picture. Welook at where you are now and compare it with where you want to go identifying adjustments that need to be made and ways to utilize what you have to the fullest.</p>
 		</div>
 
 	</div>
 
-	<div class="process-module process-module-left process-develop">
+	<div class="process-module process-module-left process-strategize">
 
 		<div class="process-module-icon">
-			<i class="fa fa-wrench" id="develop-icon"></i>
+			<i class="fa fa-wrench" id="strategize-icon"></i>
 		</div>
 
-		<div class="process-module-text align-left indicator-parent" data-indicator="Develop" id="develop">
-			<div class="section-title" id="develop-title">Develop</div>
-			<p class="text">We will then review various strategies for your wealth and make recommendations to ensure that your goals and your finances are aligned. In our Plan Delivery meeting, we will review your plan and our recommendations with you. We also prioritize the items that need to be addressed. </p>
+		<div class="process-module-text align-left indicator-parent" data-indicator="Strategize" id="strategize">
+			<div class="section-title" id="strategize-title">Strategize</div>
+			<p class="text">We will then review various strategies for your wealth to ensure that your goals and your finances are aligned. In our Strategy meeting, we review your initial plan and our recommendations with you. We also prioritize the items that need to be addressed.</p>
 		</div>
 
 	</div>
@@ -69,7 +69,7 @@ Process
 
 		<div class="process-module-text indicator-parent" data-indicator="Implement" id="implement">
 			<div class="section-title" id="implement-title"><p>Implement</p></div>
-			<p class="text">After working together to decide how our recommendations will be carried out, we put the plan into practice. Depending on the complexity of your plan, this often requires several meetings and can incorporate the services of other professionals.</p>
+			<p class="text">After working together to decide how our recommendations willbe carried out, we put the plan into practice. Depending on the complexity of your plan, this often requires several meetings and can incorporate the services of other professionals.</p>
 		</div>
 
 	</div>
@@ -82,7 +82,7 @@ Process
 
 		<div class="process-module-text indicator-parent" data-indicator="Monitor" id="monitor">
 			<div class="section-title" id="monitor-title">Monitor</div>
-			<p class="text">Financial planning is not a one-time event. We monitor your plan and investments regularly. Our ongoing meetings help ensure your plan remains accurate and relavant as life changes.</p>
+			<p class="text">Financial planning is not a one-time event. We monitor your plan and investments regularly. Our ongoing meetings help ensure your plan remains accurate and relevant as life changes.</p>
 		</div>
 
 	</div>

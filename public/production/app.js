@@ -1883,7 +1883,7 @@ var ProcessLine = {
 	colorTransitionElements : [
 		{ icon : '#discover-icon', title : '#discover-title' },
 		{ icon : '#analyze-icon', title : '#analyze-title' },
-		{ icon : '#develop-icon', title : '#develop-title' },
+		{ icon : '#strategize-icon', title : '#strategize-title' },
 		{ icon : '#implement-icon', title : '#implement-title' },
 		{ icon : '#monitor-icon', title : '#monitor-title' }
 	],
