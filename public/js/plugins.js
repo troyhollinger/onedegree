@@ -361,6 +361,7 @@
             var _ = this;
 
             $(".skippr-nav-item").on({
+
                 mouseenter : function() {
 
                     if (_.settings.autoPlay) {
@@ -385,6 +386,39 @@
 
                 }
             });
+
+            /**
+             * The following listener is SPECIFIC
+             * to One Degree Advisors, should be kept out of skippr
+             * master code.
+             */
+
+            $(".photo-content-button").on({
+
+                mouseenter : function() {
+
+                    if (_.settings.autoPlay) {
+                       
+                        clearInterval(timer);
+
+                    } 
+
+                }, 
+
+                mouseleave : function() {
+
+                    if (_.settings.autoPlay) {
+
+                        _.autoPlay();
+
+                    }
+
+                }
+
+            });
+
+
+            
 
         };
 

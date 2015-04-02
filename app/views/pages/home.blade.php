@@ -41,14 +41,14 @@ Menu
 
             <div class="photo-content-container">
 
-                <p class="photo-content-title">Our Purpose</p>
-                <p class="photo-content-text">Timeless financial wisdom. We educate, equip, and empower our clients to be all they are...</p>
+                <p class="photo-content-title">What We Do</p>
+                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
                 
 
                 <a href="{{ route('services') }}#purpose">
                     <div class="photo-content-button">
                 
-                        <p>Read More</p>
+                        <p>Services</p>
                 
                     </div>
                 </a>
@@ -61,7 +61,7 @@ Menu
             <div class="photo-content-container">
 
                 <p class="photo-content-title">Why One Degree</p>
-                <p class="photo-content-text">Navigating life’s transitions: widowhood, business sale, sound investments, preserving wealth and/or...</p>
+                <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>
                 
 
                 <a href="{{ route('services') }}#why-one-degree"><div class="photo-content-button">
@@ -73,6 +73,24 @@ Menu
             </div>
 
         </div>
+
+        <div style="background-image:url({{ asset('img/group.jpg') }})">
+
+           <div class="photo-content-container">
+
+                <p class="photo-content-title">We Love<br>What We Do</p>
+                <p class="photo-content-text">We love working with people who are good at what they do and passionate about sharing their gifts...</p>
+
+               <a href="{{ route('services') }}"><div class="photo-content-button">
+               
+                   <p>About Us</p>
+               
+               </div></a>
+
+           </div>
+
+        </div>
+
         <div style="background-image:url({{ asset('img/meeting.jpg') }})">
 
             <div class="photo-content-container">
@@ -84,14 +102,14 @@ Menu
 
                 <a href="{{ route('services') }}#expect"><div class="photo-content-button">
                 
-                    <p>Expect More</p>
+                    <p>Our Process</p>
                 
                 </div></a>
 
             </div>
 
         </div>
-        <div style="background-image:url({{ asset('img/tiles-green.jpg') }})">
+        {{-- <div style="background-image:url({{ asset('img/tiles-green.jpg') }})">
 
             <div class="photo-content-container">
 
@@ -109,22 +127,7 @@ Menu
             </div>
 
         </div>
-        <div style="background-image:url({{ asset('img/group.jpg') }})">
-
-           <div class="photo-content-container">
-
-                <p class="photo-content-title">We Love To!</p>
-                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
-
-               <a href="{{ route('services') }}"><div class="photo-content-button">
-               
-                   <p>Services</p>
-               
-               </div></a>
-
-           </div>
-
-        </div>
+         --}}
        
     </div>
 

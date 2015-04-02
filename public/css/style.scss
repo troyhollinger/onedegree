@@ -140,11 +140,6 @@ body , html{
 	color:$text-color;
 	line-height: 1.75rem;
 
-	@include breakpoint(mobile) {
-
-		// padding:0 10px;
-
-	}
 }
 
 .clear {
@@ -230,7 +225,7 @@ body , html{
 }
 
 .mast {
-	// position: absolute;
+
 	position: fixed;
 	width:100%;
 	height:120px;
@@ -318,7 +313,6 @@ body , html{
 	right:2.5%;
 	right:2.5vw;
 	z-index: 15;
-	// @include transition(color .1s linear);
 
 	&.above-fold {
 
@@ -385,20 +379,15 @@ body , html{
 
 .nav-container {
 
-	background-color: $green;
 	position: fixed;
 	right:0;
-	// left:100%;
 	top:0;
 	z-index:9;
 	width:22%;
 	width: 22vw;
 	height:100%;
 	height:100vh;
-	// @include transform(translate(0,0));
-	// @include transition(all .25s ease);
-	
-	// padding:70px;
+	background-color: $green;
 
 	&.closed {
 
@@ -420,8 +409,6 @@ body , html{
 	position: absolute;
 	bottom: 3vw;
 	right:3vw;
-	// bottom:70px;
-	// right:70px;
 
 	@include breakpoint(mobile) {
 
@@ -492,21 +479,14 @@ body , html{
 
 .title {
 
-	// display: inline;
-	// @include centerRight;
-	// margin-right: 50px;
-	// margin-top: 2px;
 
 	@include centerRight;
 	right:130%;
-	
-
-
-	font-family: $verdana;
 	color:$green;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	// @include transition(all .25s ease);
+	font-family: $verdana;
+	
 
 	&.above-fold {
 
@@ -587,9 +567,6 @@ body , html{
 	width:100%;
 	margin:0 auto;
 	height:82vh;
-	// background-image: url(../img/tiles-large.jpg);
-	// background-position: center;
-	// background-size: cover;
 
 	@include breakpoint(mobile) {
 
@@ -602,17 +579,6 @@ body , html{
 .mobile-home-banner {
 
 	display: none;
-	// background-size: cover;
-	// background-position: center;
-
-	// @include breakpoint(mobile) {
-
-	// 	display: block;
-	// 	position: relative;
-	// 	width:100%;
-	// 	height:100%;
-
-	// }
 
 }
 
@@ -825,7 +791,6 @@ body , html{
 .divider {
 	height:2px;
 	width:100%;
-	// margin: 1px 0;
 	background-color: #d1d1d1;
 	clear: both;
 
@@ -893,11 +858,12 @@ body , html{
 
 	@extend .medium-container;
 
-	margin-top: 20px;
+	margin-top: 15px;
 
 	.section-title {
 
 		text-transform: none;
+		padding-bottom: 15px;
 
 	}
 
@@ -945,11 +911,8 @@ body , html{
 
 	&:first-child {
 		border-left: 2px solid #d1d1d1;
-		// padding-left: 0;
-
 
 		.tweet-handle-container {
-			// left: 0;
 
 			@include breakpoint(mobile) {
 
@@ -969,7 +932,6 @@ body , html{
 	&:nth-child(2) {
 		border-left: 2px solid #d1d1d1;	
 		border-right: 2px solid #d1d1d1;	
-		// padding-right: 0;
 
 		@include breakpoint(mobile) {
 
@@ -991,13 +953,11 @@ body , html{
 
 .twitter-see-more {
 
-	// float:left;
 	position: absolute;
 	left:100%;
 	height:350px;
 	width:8%;
 	overflow: hidden;
-	// position: relative; 
 
 	@include breakpoint(mobile) {
 
@@ -1035,12 +995,6 @@ body , html{
 	margin-bottom: 5px;
 	color:$blue;
 	font-weight: bold;
-
-	@include breakpoint(mobile) {
-
-		// font-size: .9rem;
-
-	}
 
 }
 
@@ -1089,16 +1043,13 @@ body , html{
 	height:275px;
 	position: relative;
 	color:white;
-	// @include box-sizing(border-box);
-
-
+	
 	@extend .details;
 
 	.container {
 		@include center;
 		overflow: auto;
 		width:93%;
-		// height:100%;
 		height:auto;
 
 		@include breakpoint(mobile) {
@@ -1256,12 +1207,11 @@ body , html{
 	float:right;
 	position: relative;
 	height:100%;
-	// width:;
 	margin-left: 40px;
 	text-align: right;
 
 	i {
-		// @include center;
+
 		color:$green;
 		font-size: 4rem;
 		margin-top: 20px;
@@ -1545,7 +1495,6 @@ body , html{
 	width:70%;
 	overflow: auto;
 	margin:0 auto;
-	// margin-top: 100px;
 	padding-top: 100px;
 	position: relative;
 
@@ -1570,7 +1519,6 @@ body , html{
 
 	&:last-child {
 
-		// margin-bottom: 100px;
 		padding-bottom: 100px;
 
 	}
@@ -2077,12 +2025,11 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		// display: none;
 		width:100%;
-		@include box-sizing(border-box);
-		// padding:0 20px;
 		bottom:25px;
 
+		@include box-sizing(border-box);
+		
 	}
 
 }
@@ -2132,7 +2079,6 @@ body , html{
 
 	width:30px;
 	height:30px;
-	/*background-color: white;*/
 	transform-origin:center center;
 	-webkit-transform-origin:top left;
 	cursor: pointer;
@@ -2244,7 +2190,7 @@ body , html{
 .inquiry-banner {
 
 	@extend .home-banner;
-	// background-color: $green;
+
 	margin:0 auto;
 	height:auto;
 
@@ -2252,7 +2198,6 @@ body , html{
 
 .inquiry-form-container {
 
-	// @include center;
 	margin:0 auto;
 	overflow: auto;
 	@include box-sizing(border-box);
@@ -2478,17 +2423,6 @@ body , html{
 
 }
 
-
-#skippr-target {
-
-	@include breakpoint(mobile) {
-
-		// display: none;
-
-	}
-
-}
-
 .home-service-modules-container {
 
 	@extend .service-section;
@@ -2512,9 +2446,6 @@ body , html{
 	}
 
 }
-
-
-
 
 
 // For the ng-datapicker directive

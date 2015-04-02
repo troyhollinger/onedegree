@@ -104,16 +104,6 @@ Team
 			
 		</div>
 		
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/courtney-1.jpg') }})">
-			<div class="overlay">
-				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Courtney Daus</p>
-					<p class="secondary-team-member-position">Administration</p>
-				</div>
-			</div>
-			
-		</div>
-
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/angela-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">

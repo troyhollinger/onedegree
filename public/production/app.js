@@ -1069,6 +1069,7 @@ app.factory('focus', [
             var _ = this;
 
             $(".skippr-nav-item").on({
+
                 mouseenter : function() {
 
                     if (_.settings.autoPlay) {
@@ -1093,6 +1094,39 @@ app.factory('focus', [
 
                 }
             });
+
+            /**
+             * The following listener is SPECIFIC
+             * to One Degree Advisors, should be kept out of skippr
+             * master code.
+             */
+
+            $(".photo-content-button").on({
+
+                mouseenter : function() {
+
+                    if (_.settings.autoPlay) {
+                       
+                        clearInterval(timer);
+
+                    } 
+
+                }, 
+
+                mouseleave : function() {
+
+                    if (_.settings.autoPlay) {
+
+                        _.autoPlay();
+
+                    }
+
+                }
+
+            });
+
+
+            
 
         };
 
@@ -1944,15 +1978,8 @@ var MediumPosts = {
 var HomeBanner = {
 
 	init : function() {
-
-		// this.sizing();
-
-		// if (!mobile() && $(window).width() > 1100) {
-
-			this.slideshow();
-
-		// }
-		
+	
+		this.slideshow();
 
 	},
 
@@ -1975,7 +2002,7 @@ var HomeBanner = {
 			transition : 'fade',
 			arrows : false,
 			autoPlay : true,
-			autoPlayDuration : 3000,
+			autoPlayDuration : 6000,
 			navHover : true
 
 		});
@@ -2041,7 +2068,7 @@ var EthicsSlideshow  = {
 
 			i++;
 
-		}, 2000);
+		}, 1000);
 
 	}
 

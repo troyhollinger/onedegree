@@ -545,15 +545,8 @@ var MediumPosts = {
 var HomeBanner = {
 
 	init : function() {
-
-		// this.sizing();
-
-		// if (!mobile() && $(window).width() > 1100) {
-
-			this.slideshow();
-
-		// }
-		
+	
+		this.slideshow();
 
 	},
 
@@ -576,7 +569,7 @@ var HomeBanner = {
 			transition : 'fade',
 			arrows : false,
 			autoPlay : true,
-			autoPlayDuration : 3000,
+			autoPlayDuration : 6000,
 			navHover : true
 
 		});
@@ -642,7 +635,7 @@ var EthicsSlideshow  = {
 
 			i++;
 
-		}, 2000);
+		}, 1000);
 
 	}
 
