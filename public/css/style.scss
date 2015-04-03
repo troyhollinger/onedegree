@@ -2206,6 +2206,7 @@ body , html{
 
 .inquiry-form-container {
 
+	position: relative;
 	margin:0 auto;
 	overflow: auto;
 	@include box-sizing(border-box);
@@ -2244,6 +2245,7 @@ body , html{
 .inquiry-form {
 
 	width:380px;
+	position: relative;
 	margin:0 auto;
 
 	& > div {
@@ -2360,7 +2362,7 @@ body , html{
 }
 
 .inquiry-form-button {
-	margin-top: 40px;
+	margin-top: 20px;
 	height:50px;
 	width:100%;
 	float:left;
@@ -2564,7 +2566,15 @@ body , html{
 }
 
 
+.form-x {
 
+	position: absolute;
+	top:0;
+	left:110%;
+	width:90px;
+	cursor:pointer;
+
+}
 
 
 

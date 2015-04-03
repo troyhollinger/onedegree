@@ -16,34 +16,37 @@ Speaker
 		<div class="inquiry-form-container" ng-controller="SpeakerFormController">
 
 
+
 			{{ Form::open(['class' => 'inquiry-form']) }}
 
-				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest in our program. Fill out the form below to proceed:</h2>
+				<img class="form-x" src="{{ asset('img/form-x.jpg') }}" onclick="history.go(-1);">
+
+				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest. Fill out the form below to proceed:</h2>
 
 				<div>
 					<p>{{ Form::label('name', 'Name') }}</p>
-					<p>{{ Form::text('name', '', ['placeholder' => 'Requestor Name']) }}</p>		
+					<p>{{ Form::text('name', '', ['placeholder' => 'Requestor Name', 'ng-model' => 'form.name']) }}</p>		
 				</div>
 				
 				<div>
 					<p>{{ Form::label('phone', 'Phone Number') }}</p>
-					<p><input type="tel" name="phone" id="phone" placeholder="Phone Number"></p>
+					<p><input type="tel" name="phone" id="phone" placeholder="Phone Number" ng-model="form.phone"></p>
 				</div>
 
 				<div>
 					<p>{{ Form::label('organization', 'Organization') }}</p>
-					<p>{{ Form::text('organization', '', ['placeholder' => 'Organization Name']) }}</p>						
+					<p>{{ Form::text('organization', '', ['placeholder' => 'Organization Name', 'ng-model' => 'form.organization']) }}</p>						
 				</div>
 
 				<div>
 					<p>{{ Form::label('email', 'Email') }}</p>
-					<p>{{ Form::text('email', '', ['placeholder' => 'Email']) }}</p>						
+					<p>{{ Form::text('email', '', ['placeholder' => 'Email', 'ng-model' => 'form.email']) }}</p>						
 				</div>
 				
 				<div>
 					<label for="date">Presentation Date</label>
 					<datepicker date-format="longDate">					
-						<input ng-model="date" focus-on="date" class="tabbed-input" type="text" name="date" placeholder="Presentation Date">
+						<input ng-model="form.date" focus-on="date" class="tabbed-input" type="text" name="date" placeholder="Presentation Date">
 					</datepicker>
 					<label for="date" class="input-tab" ng-click="focusDate($event)"><i class="fa fa-calendar"></i></label>
 
@@ -53,7 +56,7 @@ Speaker
 
 				<div>
 					<label for="time">Presentation Time</label>
-					<input type="text" class="tabbed-input" focus-on="time" name="time" dn-timepicker="h:mm a" ng-model="time" placeholder="Presentation Time">
+					<input type="text" class="tabbed-input" focus-on="time" name="time" dn-timepicker="h:mm a" ng-model="form.time" placeholder="Presentation Time">
 					<label for="time" ng-click="focusTime($event)" class="input-tab"><i class="fa fa-clock-o"></i><div class="clear"></div></label>
 
 					<div class="clear"></div>
@@ -63,7 +66,7 @@ Speaker
 				<div>
 
 					<p>{{ Form::label('alotted-time', 'Allotted time for speaker') }}</p>
-					<p>{{ Form::text('alotted-time', '', ['placeholder' => 'Allotted time for speaker']) }}</p>	
+					<p>{{ Form::text('alotted-time', '', ['placeholder' => 'Allotted time for speaker', 'ng-model' => 'form.allottedTime']) }}</p>	
 
 				</div>
 
@@ -71,30 +74,28 @@ Speaker
 				<div>
 
 					<p>{{ Form::label('subject', 'Subject') }}</p>
-					<p>{{ Form::text('subject', '', ['placeholder' => 'Subject']) }}</p>	
+					<p>{{ Form::text('subject', '', ['placeholder' => 'Subject', 'ng-model' => 'form.subject']) }}</p>	
 
 				</div>
 
 				<div>
 
 					<p>{{ Form::label('target', 'Target Audience') }}</p>
-					<p>{{ Form::text('target', '', ['placeholder' => 'Target Audience']) }}</p>	
+					<p>{{ Form::text('target', '', ['placeholder' => 'Target Audience', 'ng-model' => 'form.audience']) }}</p>	
 
 				</div>
 				
 				<div>
-					<p>{{ Form::label('attendance', 'Expected attendance amount') }}</p>
-					<p>{{ Form::text('attendance', '', ['placeholder' => 'Expected attendance amount']) }}</p>	
+					<p>{{ Form::label('attendance', 'Expected attendance') }}</p>
+					<p>{{ Form::text('attendance', '', ['placeholder' => 'Expected attendance amount', 'ng-model' => 'form.attendance']) }}</p>	
 				</div>
 
 				<div>
 					<p>{{ Form::label('comments', 'Comments') }}</p>
-					<p>{{ Form::textarea('comments', '', ['placeholder' => 'Comments']) }}</p>						
+					<p>{{ Form::textarea('comments', '', ['placeholder' => 'Comments', 'ng-model' => 'form.comments']) }}</p>						
 				</div>
 				
-				<h3 class="form-secondary-title">Please note that we may not be able to fulfill all requests.</h3>
-				
-				<div class="inquiry-form-button ">
+				<div class="inquiry-form-button" ng-click="submitForm()">
 
 					<p>SUBMIT</p>
 

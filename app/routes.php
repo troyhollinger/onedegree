@@ -75,3 +75,6 @@ Route::get('speaker', ['as' => 'speaker', function() {
 	return View::make('pages.speaker');
 
 }]);
+
+Route::post('email/speaker', ['as' => 'email.speaker', 'uses' => 'EmailController@speaker']);
+Route::post('email/inquire', ['as' => 'email.inquire', 'uses' => 'EmailController@inquire']);

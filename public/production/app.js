@@ -1456,7 +1456,45 @@ app.factory('Video', function($http) {
 
 });
 
-app.controller('SpeakerFormController', ['$scope', 'focus', function($scope, focus) {
+app.factory('Email', ['$http', function($http) {
+
+	return {
+
+		speaker : function(data) {
+
+			return $http.post('email/speaker', data);
+
+		}, 
+
+		inquiry : function(data) {
+
+			return $http.post('email/inquiry', data);
+
+		}
+
+	}
+
+}]);
+
+app.controller('InquireFormController', ['$scope', 'Email', function($scope, Email) {
+
+	$scope.submitForm = function() {
+
+		Email.inquiry($scope.form).success(function(response) {
+
+
+
+		}).error(function(response) {
+
+
+
+		});
+
+	}
+
+}]);
+
+app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($scope, focus, Email) {
 
 
 	$scope.focusDate = function($event) {
@@ -1473,6 +1511,20 @@ app.controller('SpeakerFormController', ['$scope', 'focus', function($scope, foc
 
 	}
 
+
+	$scope.submitForm = function() {
+
+		Email.speaker($scope.form).success(function(response) {
+
+			console.log("success");
+
+		}).error(function(response) {
+
+			console.log("there was an error");
+
+		});
+
+	}
 
 }]);
 
