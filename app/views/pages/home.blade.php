@@ -45,7 +45,7 @@ Menu
                 <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
                 
 
-                <a href="{{ route('services') }}#purpose">
+                <a href="{{ route('services') }}#whatwedo">
                     <div class="photo-content-button">
                 
                         <p>Services</p>
@@ -81,7 +81,7 @@ Menu
                 <p class="photo-content-title">We Love<br>What We Do</p>
                 <p class="photo-content-text">We love working with people who are good at what they do and passionate about sharing their gifts...</p>
 
-               <a href="{{ route('services') }}"><div class="photo-content-button">
+               <a href="{{ route('services') }}#about"><div class="photo-content-button">
                
                    <p>About Us</p>
                
@@ -100,7 +100,7 @@ Menu
 
                 
 
-                <a href="{{ route('services') }}#expect"><div class="photo-content-button">
+                <a href="{{ route('process') }}"><div class="photo-content-button">
                 
                     <p>Our Process</p>
                 
