@@ -1985,7 +1985,16 @@ var MediumPosts = {
 
 	init : function() {
 
-		requestAnimationFrame(MediumPosts.setWidth);
+		// requestAnimationFrame(MediumPosts.setWidth);
+
+		MediumPosts.setWidth();
+
+		setInterval(function() {
+
+			MediumPosts.setWidth();
+
+
+		}, 4000);
 
 	},
 
@@ -2005,6 +2014,7 @@ var MediumPosts = {
 			loadedElements.each(function() {
 
 				$(this).attr('width', "33%");
+				$(this).css('width', "33%");
 
 			});
 
@@ -2014,16 +2024,19 @@ var MediumPosts = {
 
 				$(this).attr('data-width', "100%");
 
+
 			});
 
 			loadedElements.each(function() {
 
 				$(this).attr('width', "100%");
+				$(this).css('width', "100%");
 
 			});
 		}
 
-		requestAnimationFrame(MediumPosts.setWidth);
+		console.log(loadedElements);
+
 	}
 }
 
