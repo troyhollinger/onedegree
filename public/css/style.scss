@@ -420,6 +420,13 @@ body , html{
 
 	}
 
+	@include breakpoint(small) {
+
+		bottom:auto;
+		top:15vh;
+
+	}
+
 }
 
 .nav {
@@ -445,6 +452,12 @@ body , html{
 		@include breakpoint(mobile) {
 
 			font-size: 2.5rem;
+
+		}
+
+		@include breakpoint(small) {
+
+			font-size: 2.2rem;
 
 		}
 
@@ -1386,7 +1399,7 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		width:50%;
+		// width:20%;
 
 	}
 
