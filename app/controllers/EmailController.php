@@ -10,8 +10,6 @@ class EmailController extends BaseController {
 			
 			$form = Input::all();
 
-			Log::info($form['time']);
-			
 			// $form['time'] = Carbon::parse($form['time'])->setToStringFormat('h:mm a');
 			$form['time'] = Carbon::parse($form['time'])->format('h:m a');
 
