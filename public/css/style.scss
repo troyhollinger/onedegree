@@ -2601,3 +2601,12 @@ body , html{
 
 
 
+#group-mobile-fix {
+
+	@include breakpoint(mobile) {
+
+		background-image: url(../img/tiles-large-1.jpg) !important;
+
+	}
+
+}
