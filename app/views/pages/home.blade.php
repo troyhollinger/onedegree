@@ -182,25 +182,29 @@ Menu
 
         <div class="twitter-block">
 
-            <p class="tweet-text">We love helping our clients reach their long and short term goals!</p>
+            <a href="http://twitter.com/onedegreetweets"><p class="tweet-text">We love helping our clients reach their long and short term goals!</p></a>
             <p class="tweet-time">November 17, 2014</p>
 
-            <div class="tweet-handle-container">
-                <i class="fa fa-twitter"></i>
-                <p>@onedegreetweets</p>
-            </div>
+            <a href="http://twitter.com/onedegreetweets" target="_blank">
+                <div class="tweet-handle-container">
+                    <i class="fa fa-twitter"></i>
+                    <p>@onedegreetweets</p>
+                </div>
+            </a>
 
         </div>
 
         <div class="twitter-block">
 
-            <p class="tweet-text">New Post on Medium called "The Power of Planning" written by our own Jonathan Doe. www.t.co/rh8s3yr</p>
+            <a href="http://twitter.com/onedegreetweets"><p class="tweet-text">New Post on Medium called "The Power of Planning" written by our own Jonathan Doe. www.t.co/rh8s3yr</p></a>
             <p class="tweet-time">November 17, 2014</p>
 
-            <div class="tweet-handle-container">
-                <i class="fa fa-twitter"></i>
-                <p>@onedegreetweets</p>
-            </div>
+            <a href="http://twitter.com/onedegreetweets" target="_blank">
+                <div class="tweet-handle-container">
+                    <i class="fa fa-twitter"></i>
+                    <p>@onedegreetweets</p>
+                </div>
+            </a>
 
         </div>
 

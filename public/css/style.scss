@@ -606,7 +606,7 @@ body , html{
 	bottom:5vw;
 	width:650px;
 	text-align: right;
-	overflow: hidden;
+	overflow: visible;
 	letter-spacing: -1px;
 
 
@@ -757,7 +757,7 @@ body , html{
 	&:last-child {
 
 		text-align: left;
-		border-left:2px solid #d1d1d1;
+		border-left:2px solid $text-color;
 
 		@include breakpoint(mobile) {
 
@@ -814,7 +814,7 @@ body , html{
 .divider {
 	height:2px;
 	width:100%;
-	background-color: #d1d1d1;
+	background-color: $text-color;
 	clear: both;
 
 }
@@ -843,7 +843,7 @@ body , html{
 		font-size: 1.5rem;
 		margin-bottom: 40px;
 		padding-bottom: 10px;
-		border-bottom: 2px solid #d1d1d1;
+		border-bottom: 2px solid $text-color;
 
 		&:last-child {
 
@@ -851,7 +851,7 @@ body , html{
 			right:0;
 			top:110%;
 			border:none;
-			border-top: 2px solid #d1d1d1;
+			border-top: 2px solid $text-color;
 			padding-top: 10px;
 			margin-bottom: 0;
 
@@ -933,7 +933,7 @@ body , html{
 
 
 	&:first-child {
-		border-left: 2px solid #d1d1d1;
+		border-left: 2px solid $text-color;
 
 		.tweet-handle-container {
 
@@ -953,8 +953,8 @@ body , html{
 	}
 
 	&:nth-child(2) {
-		border-left: 2px solid #d1d1d1;	
-		border-right: 2px solid #d1d1d1;	
+		border-left: 2px solid $text-color;	
+		border-right: 2px solid $text-color;	
 
 		@include breakpoint(mobile) {
 
@@ -1612,9 +1612,9 @@ body , html{
 	}
 
 	&:nth-of-type(2) {
-		border-right:2px solid #d1d1d1;
+		border-right:2px solid $text-color;
 		padding:0 40px 0 40px;
-		border-left:2px solid #d1d1d1;
+		border-left:2px solid $text-color;
 
 	}
 
@@ -2553,8 +2553,11 @@ body , html{
 	li {
 
 		float:left;
-		margin-left:10px;
-		border-radius: 5px;
+		width:1.5rem;
+		height:1.5rem;
+		margin-left:5px;
+		border-radius: 50%;
+		text-align: center;
 
 		&.active {
 
@@ -2569,6 +2572,13 @@ body , html{
 
 		}
 
+
+	}
+
+	i {
+
+		font-size: 1.5rem;
+		color:$green;
 
 	}
 

@@ -17,7 +17,7 @@ Services
 	<div class="service-section indicator-parent" data-indicator="What We Do" id="whatwedo">
 		
 		<p class="section-title">Financial Planning</p>
-		<p class="text">Our focus is on what’s important to you. The overarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. We help you evaluate your goals, analyze your situation and options, develop strategies, and then implement decisions in coordination with your other trusted advisors. Financial planning is most successful when these areas are realigned to help you stay on course. Every degree counts. <span class="green-text">eMoney Video</span></p><br>
+		<p class="text">Our focus is on what’s important to you. The overarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. We help you evaluate your goals, analyze your situation and options, develop strategies, and then implement decisions in coordination with your other trusted advisors. Financial planning is most successful when these areas are realigned to help you stay on course. Every degree counts.</p><br>
 			
 	</div>
 
@@ -45,13 +45,10 @@ Services
 		<br>
 		<p class="text">
 			Keys to success include a disciplined and diversified strategy. These principles have 
-			served us and our clients well over time and various market conditions. <span class="green-text">Video 
-			Explainer</span>
+			served us and our clients well over time and various market conditions.
 		</p>
 		<br>
-		<p class="text green-text bold">
-			<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank">Free, Instant Portfolio Analysis</a>
-		</p>
+		<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><p class="text green-text bold">Free, Instant Portfolio Analysis</p></a>
 
 	</div>
 
@@ -68,7 +65,7 @@ Services
 		<br>
 		<p class="text">This advanced planning process is designed to help financially blessed families gain 
 			clarity and a renewed passion for aligning your life with your purpose. It’s not just 
-			about money—it’s your family, your life, and your legacy that matters! <span class="green-text">Video Explainer</span></a>
+			about money—it’s your family, your life, and your legacy that matters!</a>
 		</p>
 
 	</div>
@@ -117,15 +114,15 @@ Services
 		
 
 		<p class="text">
-			<span class="bold">CFP®</span> - CERTIFIED FINANCIAL PLANNER <br>
-			The <span class="green-text">CFP®</span> certification mark identifies professionals who have met and maintained the 
+			<a href="http://www.letsmakeaplan.org" target="_blank"><span class="bold">CFP®</span></a> - CERTIFIED FINANCIAL PLANNER <br>
+			The <a href="http://www.letsmakeaplan.org" target="_blank"><span class="green-text">CFP®</span></a> certification mark identifies professionals who have met and maintained the 
 			high standards of competency and ethics established and enforced by the Certified 
 			Financial Planner Board of Standards. 
 		</p>
 		<br>
 		<p class="text">
-			<span class="bold">FPA</span> - FINANCIAL PLANNING ASSOCIATION <br>
-			The <span class="green-text">FPA</span> is the largest member organization of Certified Financial Planner (CFP®) 
+			<a href="http://www.plannersearch.org" target="_blank"><span class="bold">FPA</span></a> - FINANCIAL PLANNING ASSOCIATION <br>
+			The <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">FPA</span></a> is the largest member organization of Certified Financial Planner (CFP®) 
 			practitioners, educators, and financial services professionals all of whom support high 
 			standards of competency and ethics in the financial services industry.
 
@@ -145,7 +142,7 @@ Services
 
 		<p class="section-title">Code of Ethics</p>
 
-		<p class="text">Abiding by the <span class="green-text">Financial Planning Association’s</span> and the <spann class="green-text">Certified Financial Planner</spann> 
+		<p class="text">Abiding by the <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">Financial Planning Association</span></a>’s and the <a href="http://www.letsmakeaplan.org"><span class="green-text">Certified Financial Planner</span></a> 
 		Board’s Code of Ethics standards are a top priority at One Degree Advisors. Here is 
 		what you can expect from us:</p>
 
@@ -176,7 +173,7 @@ Services
 			derive great satisfaction in freeing you up to focus your time and resources on what’s 
 			important to you. </p>
 		<br>
-		<p class="text green-text"><a href="{{ route('team') }}">Meet our <span class="bold">Team</span></a></p>
+		<a href="{{ route('team') }}"><p class="text green-text">Meet our <span class="bold">Team</span></p></a>
 
 	</div>
 
@@ -190,8 +187,10 @@ Services
 			is committed to helping our clients and their families make meaningful and purposeful 
 			decisions–ones that keep them on course for generations to come. 
 		</p>
+
+		<br>
 		
-		<p class="text green-text"><a href="{{ route('process') }}">See our <span class="bold">Process</span></a></p>
+		<a href="{{ route('process') }}"><p class="text green-text">See our <span class="bold">Process</span></p></a>
 
 	</div>
 

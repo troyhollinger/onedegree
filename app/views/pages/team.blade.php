@@ -134,7 +134,7 @@ Team
 
 	<div class="secondary-team">
 
-		<div class="secondary-team-member square"></div>
+		{{-- <div class="secondary-team-member square"></div> --}}
 
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/linda-1.jpg') }})">
 			<div class="overlay">

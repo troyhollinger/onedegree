@@ -31,7 +31,7 @@ Columns
 		</div>
 
 
-		{{ $columns->links() }}
+		{{ $columns->links('pagination.custom') }}
 
 		<div class="clear"></div>
 	
