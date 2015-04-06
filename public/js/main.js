@@ -646,8 +646,6 @@ var MediumPosts = {
 			});
 		}
 
-		console.log(loadedElements);
-
 	}
 }
 
