@@ -624,8 +624,8 @@ body , html{
 		@include box-sizing(border-box);
 		padding: 0 4%;
 		width:60%;
-		bottom: 20%;
-		bottom: 20vh;
+		bottom: 25%;
+		bottom: 25vh;
 
 	}
 
@@ -2067,7 +2067,7 @@ body , html{
 	-moz-transform:translate(-50%,0);
 	-ms-transform:translate(-50%,0);
 
-	bottom:25px;
+	bottom:75px;
 	overflow: auto;
 	z-index:999;
 
@@ -2079,8 +2079,8 @@ body , html{
 
 	@include breakpoint(small) {
 
-		width:100%;
-		bottom:25px;
+		width:90%;
+		bottom:75px;
 
 		@include box-sizing(border-box);
 		
