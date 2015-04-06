@@ -141,20 +141,20 @@ Menu
 
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>
-            <p class="text">Our focus is on what’s important to you. Theoverarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p><br>
+            <p class="text">Our focus is on what’s important to you. The overarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. <a href="{{ route('services') }}#whatwedo"><span class="green-text bold">Read more... </span></a></p><br>
            
         </div>
 
         <div class="service-module">
             <p class="section-title uppercase">Investment Management</p>
-            <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">Free, Instant Portfolio Analysis</a></p><br>
+            <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}#investment-management"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">Free, Instant Portfolio Analysis</a></p><br>
     
         </div>
 
         <div class="service-module">
 
             <p class="section-title uppercase">Stewardship Coaching</p>
-            <p class="text">Many people race through life without giving careful consideration to finding and fulfilling their unique purpose in life. Even with help from competent advisors, many financially blessed families end up with results that may not reflect their values or unique calling. And, by the time they discover it, it may be too late to do anything about it. How you handle the blessings God has given you—your time, talent, treasure, and...<a href="{{ route('services') }}"><span class="green-text bold">Read more... </span></a></p>
+            <p class="text">Many people race through life without giving careful consideration to finding and fulfilling their unique purpose in life. Even with help from competent advisors, many financially blessed families end up with results that may not reflect their values or unique calling. And, by the time they discover it, it may be too late to do anything about it. How you handle the blessings God has given you—your time, talent, treasure, and...<a href="{{ route('services') }}#stewardship-coaching"><span class="green-text bold">Read more... </span></a></p>
 
         </div>
 

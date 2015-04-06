@@ -11,7 +11,6 @@ Services
 
 @section('content')
 
-<!-- <p class="indicator-element">Ideal Client</p> -->
 
 <div class="container">
 
@@ -22,7 +21,7 @@ Services
 			
 	</div>
 
-	<div class="service-section">
+	<div class="service-section" id="investment-management">
 
 		<p class="section-title">Investment Management</p>
 		<p class="text">
@@ -57,7 +56,7 @@ Services
 	</div>
 
 		
-	<div class="service-section">
+	<div class="service-section" id="stewardship-coaching">
 		<p class="section-title">Stewardship Coaching</p>
 		<p class="text">Many people race through life without giving careful consideration to finding and 
 			fulfilling their unique purpose in life. Even with help from competent advisors, many 
@@ -185,7 +184,7 @@ Services
 
 		<p class="section-title">Compelling Value</p>
 
-		<p class="text">We understand the importance of asking the right questions to help ensure we draw 
+		<p class="text">We understandingderstand the importance of asking the right questions to help ensure we draw 
 			the right conclusions before we offer any advice. Every client engagement begins by 
 			exploring your “why” before we determine your “how” solutions. One Degree Advisors 
 			is committed to helping our clients and their families make meaningful and purposeful 
@@ -195,8 +194,6 @@ Services
 		<p class="text green-text"><a href="{{ route('process') }}">See our <span class="bold">Process</span></a></p>
 
 	</div>
-
-	
 
 	<div class="service-section" id="faq">
 
