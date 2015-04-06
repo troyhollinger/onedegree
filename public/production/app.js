@@ -1478,11 +1478,13 @@ app.factory('Email', ['$http', function($http) {
 
 app.controller('InquireFormController', ['$scope', 'Email', function($scope, Email) {
 
+	console.log($scope.form);
+
 	$scope.submitForm = function() {
 
 		Email.inquiry($scope.form).success(function(response) {
 
-
+			// create a visual success alert
 
 		}).error(function(response) {
 
@@ -1495,6 +1497,7 @@ app.controller('InquireFormController', ['$scope', 'Email', function($scope, Ema
 }]);
 
 app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($scope, focus, Email) {
+
 
 
 	$scope.focusDate = function($event) {
@@ -1513,6 +1516,8 @@ app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($s
 
 
 	$scope.submitForm = function() {
+
+		console.log($scope.form);
 
 		Email.speaker($scope.form).success(function(response) {
 

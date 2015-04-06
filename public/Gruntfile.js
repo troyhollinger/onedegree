@@ -13,6 +13,7 @@ module.exports = function(grunt) {
                     'bower_components/angular-dateparser/dist/angular-dateparser.js',
                     'bower_components/angular-timepicker/dist/angular-timepicker.js',
                     'bower_components/ng-focus-on/ng-focus-on.js',
+                    'bower_components/angular-native-picker/build/angular-datepicker.js',
                     'js/plugins.js',
                     'js/main.js'
                 ],

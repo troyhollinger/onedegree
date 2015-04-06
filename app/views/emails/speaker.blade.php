@@ -6,17 +6,17 @@
 
 <h1>You have received a new Speaker Request!</h1>
 
-<p>Requestor Name : {{ $form['name'] }}</p>
-<p>Phone Number : {{ $form['phone'] }}</p>
-<p>Organization : {{ $form['organization'] }}</p>
-<p>Email : {{ $form['email'] }}</p>
-<p>Requested Date : {{ $form['date'] }}</p>
-<p>Requested Time : {{ $form['time'] }}</p>
-<p>Alloted Time : {{ $form['allottedTime'] }}</p>
-<p>Subject : {{ $form['subject'] }}</p>
-<p>Target Audience : {{ $form['audience'] }}</p>
-<p>Expected Attendance : {{ $form['attendance'] }}</p>
-<p>Comments : {{ $form['comments'] }}</p>
+<p><strong>Requestor Name</strong> : {{ $form['name'] }}</p>
+<p><strong>Phone Number</strong> : {{ $form['phone'] }}</p>
+<p><strong>Organization</strong> : {{ $form['organization'] }}</p>
+<p><strong>Email</strong> : {{ $form['email'] }}</p>
+<p><strong>Requested Date</strong> : {{ $form['date'] }}</p>
+<p><strong>Requested Time</strong> : {{ $form['time'] }}</p>
+<p><strong>Alloted Time</strong> : {{ $form['allottedTime'] }}</p>
+<p><strong>Subject</strong> : {{ $form['subject'] }}</p>
+<p><strong>Target Audience</strong> : {{ $form['audience'] }}</p>
+<p><strong>Expected Attendance</strong> : {{ $form['attendance'] }}</p>
+<p><strong>Comments</strong> : {{ $form['comments'] }}</p>
 
 
 

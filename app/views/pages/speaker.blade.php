@@ -56,7 +56,7 @@ Speaker
 
 				<div>
 					<label for="time">Presentation Time</label>
-					<input type="text" class="tabbed-input" focus-on="time" name="time" dn-timepicker="h:mm a" ng-model="form.time" placeholder="Presentation Time">
+					<input type="text" class="tabbed-input" focus-on="time" name="time" ng-model="form.time" placeholder="Presentation Time">
 					<label for="time" ng-click="focusTime($event)" class="input-tab"><i class="fa fa-clock-o"></i><div class="clear"></div></label>
 
 					<div class="clear"></div>

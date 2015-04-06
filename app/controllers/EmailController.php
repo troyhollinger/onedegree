@@ -1,6 +1,5 @@
 <?php
 
-use Carbon\Carbon;
 
 class EmailController extends BaseController {
 
@@ -9,11 +8,6 @@ class EmailController extends BaseController {
 		try {
 			
 			$form = Input::all();
-
-			// $form['time'] = Carbon::parse($form['time'])->setToStringFormat('h:mm a');
-			$form['time'] = Carbon::parse($form['time'])->format('h:m a');
-
-			Log::info($form['time']);
 
 			Mail::send('emails.speaker', array('form' => $form), function($message) {
 
