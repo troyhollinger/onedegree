@@ -12,7 +12,7 @@ Process
 
 <div class="container">
 
-	<svg viewBox="-15, 0, 1000, 3140" width="915" height="3140" class="process-line">
+	<svg viewBox="-15, 0, 1000, 3140" width="915" height="3140" class="process-line" preserveAspectRatio="xMinYMin slice">
 		<g transform="translate(15,2030)">
 			<path style="fill:none;stroke:#dddddd;stroke-width:40px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 0.49974197,-2087.2678 0,715.0925 914.21027803,0 0,502.12312 -854.149178,493.1433 -55.8828,32.2639 0,452.8671 473.704298,0 0,943.64508"/>
 			<path style="fill:none;stroke:#6bbb6f;stroke-width:40px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 0.49974197,-2087.2678 0,715.0925 914.21027803,0 0,502.12312 -854.149178,493.1433 -55.8828,32.2639 0,452.8671 473.704298,0 0,943.64508"	class="animated-process-line"/>
