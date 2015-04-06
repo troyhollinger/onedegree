@@ -15,25 +15,7 @@ Menu
 
 <div class="home-banner top-banner">
 
-    <div class="mobile-home-banner" style="background-image:url({{ asset('img/tiles-large-1.jpg') }})">
-
-        <div class="photo-content-container">
-
-            <p class="photo-content-title">Our Purpose</p>
-            <p class="photo-content-text">Timeless financial wisdom. We educate, equip, and empower our clients to be all they are...</p>
-
-            <a href="{{ route('services') }}#purpose"><div class="photo-content-button">
-            
-                <p>Learn More</p>
-            
-            </div></a>
-
-        </div>
-
-    </div>
-
-
-
+    
     <div id="skippr-target">
 
         
@@ -45,7 +27,7 @@ Menu
                 <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
                 
 
-                <a href="{{ route('services') }}#whatwedo">
+                <a href="{{ route('services') }}">
                     <div class="photo-content-button">
                 
                         <p>Services</p>
@@ -78,7 +60,7 @@ Menu
 
            <div class="photo-content-container">
 
-                <p class="photo-content-title">We Love<br>What We Do</p>
+                <p class="photo-content-title">We Love What We Do</p>
                 <p class="photo-content-text">We love working with people who are good at what they do and passionate about sharing their gifts...</p>
 
                <a href="{{ route('services') }}#about"><div class="photo-content-button">
