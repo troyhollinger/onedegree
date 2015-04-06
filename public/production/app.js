@@ -1972,7 +1972,7 @@ var ProcessLine = {
 
 	element : document.querySelector('.process-line .animated-process-line'),
 
-	colorTransitionPoints : [4777, 3242, 1715, 709, 163],
+	colorTransitionPoints : [4777, 3155, 1724, 709, 163],
 
 	colorTransitionElements : [
 		{ icon : '#discover-icon', title : '#discover-title' },
@@ -2015,6 +2015,8 @@ var ProcessLine = {
 		}
 
 		path.style.strokeDashoffset = (length - (distance * 2.65));
+
+		console.log(path.style.strokeDashoffset);
 			
 		ProcessLine.loop = requestAnimationFrame(ProcessLine.draw)
 
