@@ -2114,14 +2114,14 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		bottom:75px;
+		bottom:100px;
 
 	}
 
 	@include breakpoint(small) {
 
 		width:90%;
-		bottom:75px;
+		bottom:100px;
 
 		@include box-sizing(border-box);
 		
