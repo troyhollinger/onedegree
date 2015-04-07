@@ -1760,6 +1760,18 @@ body , html{
 
 
 
+.process-line-container {
+
+	min-height: 3140px;
+
+	@include breakpoint(mobile) {
+
+		min-height: 0;
+		height:auto;
+
+	}
+
+}
 
 
 .process-line {

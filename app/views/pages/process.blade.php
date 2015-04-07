@@ -10,7 +10,7 @@ Process
 
 @section('content')
 
-<div class="container" style="min-height:3140px;">
+<div class="container process-line-container">
 
 	<svg viewBox="-15, 0, 1000, 3140" width="915" height="3140" style="height:3140px" class="process-line" preserveAspectRatio="xMinYMin slice">
 		<g transform="translate(15,2030)">
