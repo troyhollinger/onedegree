@@ -48,13 +48,13 @@ Services
 			served us and our clients well over time and various market conditions.
 		</p>
 		<br>
-		<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><p class="text green-text bold">Free, Instant Portfolio Analysis</p></a>
+		<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><p class="text green-text bold">What's Your Risk Score?</p></a>
 
 	</div>
 
 		
 	<div class="service-section" id="stewardship-coaching">
-		<p class="section-title">Stewardship Coaching</p>
+		<p class="section-title">Stewardship Advising</p>
 		<p class="text">Many people race through life without giving careful consideration to finding and 
 			fulfilling their unique purpose in life. Even with help from competent advisors, many 
 			financially blessed families end up with results that may not reflect their values or 
@@ -286,9 +286,30 @@ Services
 			Advisors and Securities America are separate 
 			companies. We are registered to sell Securities in the 
 			following states: AZ, CA, CO, FL, GA, HI, ID, IN, ME, 
-			MO, MT, NC, NJ, OR, SC, SD, UT, VA, WA.
-
+			MO, MT, NC, NJ, OR, SC, SD, UT, VA, WA.		
 		</p>
+
+		<br>
+		<p class="text">AIF - The Accredited Fiduciary Standard of Care applies to advisory services only.</p>
+		<br>
+		<table class="text">
+			<tr>
+				<td>Audrey Coleman</td>
+				<td>&nbsp;CA Life Insurance License #0690605</td>
+			</tr>
+			<tr>
+				<td>Janice Thompson</td>
+				<td>&nbsp;CA Life Insurance License #0B67613</td>
+			</tr>
+			<tr>
+				<td>Blake Gallion</td>
+				<td>&nbsp;CA Life Insurance License #0E88557</td>
+			</tr>
+			<tr>
+				<td>Anthony Saffer</td>
+				<td>&nbsp;CA Life Insurance License #0C43243</td>
+			</tr>
+		</table>
 
 	</div>
 

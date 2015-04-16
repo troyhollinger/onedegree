@@ -742,7 +742,7 @@ var EthicsSlideshow  = {
 
 			i++;
 
-		}, 1000);
+		}, 2000);
 
 	}
 

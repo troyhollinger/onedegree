@@ -196,6 +196,12 @@ body , html{
 	overflow: visible;
 	position: relative;
 
+	@include breakpoint(1320px) {
+
+		width:800px;
+
+	}
+
 	@include breakpoint(mobile) {
 
 		width:70%;
@@ -1650,14 +1656,14 @@ body , html{
 
 	&:first-of-type {
 		width:32%;
-		padding:0 40px 0px 0;
+		padding:0 30px 0px 0;
 		
 
 	}
 
 	&:nth-of-type(2) {
 		border-right:2px solid $text-color;
-		padding:0 40px 0 40px;
+		padding:0 30px 0 30px;
 		border-left:2px solid $text-color;
 
 	}
@@ -1665,7 +1671,7 @@ body , html{
 	&:last-of-type {
 
 		width:32%;
-		padding:0 0 0px 40px;
+		padding:0 0 0px 30px;
 		
 
 	}
@@ -2485,8 +2491,15 @@ body , html{
 	font-size: 1.4rem;
 	font-family: $verdana;
 	font-weight: bold;
-	color: $light;
+	color: darken($light, 10%);
 	z-index: 15;
+	@include transition(color .25s linear);
+
+	&:hover {
+
+		color:$green;
+
+	}
 
 	@include breakpoint(medium) {
 
@@ -2526,8 +2539,13 @@ body , html{
 
 	width:100%;
 	padding-bottom: 50px;
-	margin-top: 60px;
 	padding-top: 0;
+
+	&:first-child {
+
+		padding-top: 60px;
+
+	}
 
 	.section-title {
 
@@ -2544,6 +2562,11 @@ body , html{
 
 }
 
+.home-services-module-wrapper {
+
+	margin-top: 20px;
+
+}
 
 // For the ng-datapicker directive
 .dropdown-menu {

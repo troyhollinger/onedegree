@@ -117,9 +117,9 @@ Menu
 
 
 
-<div class="container content">
+<div class="container content indicator-parent home-services-module-wrapper" data-indicator="Inquire" id="inquiry">
 
-    <div class="home-service-modules-container indicator-parent" data-indicator="Inquire" id="inquiry">
+    <div class="home-service-modules-container">
 
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>
@@ -129,13 +129,13 @@ Menu
 
         <div class="service-module">
             <p class="section-title uppercase">Investment Management</p>
-            <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}#investment-management"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">Free, Instant Portfolio Analysis</a></p><br>
+            <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br><br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}#investment-management"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">What's Your Risk Score?</a></p><br>
     
         </div>
 
         <div class="service-module">
 
-            <p class="section-title uppercase">Stewardship Coaching</p>
+            <p class="section-title uppercase">Stewardship Advising</p>
             <p class="text">Many people race through life without giving careful consideration to finding and fulfilling their unique purpose in life. Even with help from competent advisors, many financially blessed families end up with results that may not reflect their values or unique calling. And, by the time they discover it, it may be too late to do anything about it. How you handle the blessings God has given you—your time, talent, treasure, and...<a href="{{ route('services') }}#stewardship-coaching"><span class="green-text bold">Read more... </span></a></p>
 
         </div>
