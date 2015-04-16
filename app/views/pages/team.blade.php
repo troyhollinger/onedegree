@@ -36,7 +36,7 @@ Team
 				Fiduciary®. Audrey is an active Rotarian, member of the San Diego Women’s Foundation and San Diego Chapter of the Financial Planning 
 				Association. Audrey is married to Ron and has one son, Matthew.
 				<br><br>
-				CA Life Insurance License # 0690605. <a href="https://www.linkedin.com/pub/audrey-coleman-cfp%C2%AE/4/83a/369">Connect with me on LinkedIn</a>
+				<a href="https://www.linkedin.com/pub/audrey-coleman-cfp%C2%AE/4/83a/369">Connect with me on LinkedIn</a>
 			</p>
 
 		</div>
@@ -64,7 +64,7 @@ Team
 				mentoring other financial professionals is also important to her. Janice and her husband, Tom, live in San Diego, California, have two married 
 				children and are actively involved with several ministries. Janice also serves on the Board of Directors for Kingdom Advisors.  
 				<br><br>
-				CA Life Insurance License # 0B67613. <a href="https://www.linkedin.com/pub/janice-thompson-cfp%C2%AE/37/109/570">Connect with me on LinkedIn</a> / <a href="https://medium.com/@janicethompson">Read my writings on Medium</a>
+				<a href="https://www.linkedin.com/pub/janice-thompson-cfp%C2%AE/37/109/570">Connect with me on LinkedIn</a> / <a href="https://medium.com/@janicethompson">Read my writings on Medium</a>
 			</p>
 
 		</div>
@@ -92,7 +92,7 @@ Team
 				has served as a board member and treasurer for non-profit organizations, and currently serves on the local board of Kingdom Advisors. Blake 
 				loves spending time with his high-school sweetheart, Rachael, and their kids Avery and Tanner.
 				<br><br>
-				CA Life Insurance License # 0E88557. <a href="https://www.linkedin.com/pub/blake-gallion-cfp%C2%AE/9/976/16a">Connect with me on LinkedIn</a>
+				<a href="https://www.linkedin.com/pub/blake-gallion-cfp%C2%AE/9/976/16a">Connect with me on LinkedIn</a>
 			</p>
 
 		</div>
@@ -121,7 +121,7 @@ Team
 				church and coaches competitive youth soccer. Along with his wife, Robin, Anthony enjoys spending time with their three children, Jake, Gianna, 
 				and Henry.
 				<br><br>
-				CA Life Insurance License # 0C43243. <a href="https://www.linkedin.com/in/anthonysaffer">Connect with me on LinkedIn</a> / <a href="https://medium.com/@onedegreesaffer">Read my writings on Medium</a>
+				<a href="https://www.linkedin.com/in/anthonysaffer">Connect with me on LinkedIn</a> / <a href="https://medium.com/@onedegreesaffer">Read my writings on Medium</a>
 			</p>
 
 		</div>
@@ -140,7 +140,7 @@ Team
 			<div class="overlay">
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Linda Jillson</p>
-				<p class="secondary-team-member-position">Administration</p>
+				<p class="secondary-team-member-position">Office Manager</p>
 				</div>
 			</div>
 			
@@ -150,7 +150,7 @@ Team
 			<div class="overlay">
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Angela De Palo</p>
-					<p class="secondary-team-member-position">Administration</p>
+					<p class="secondary-team-member-position">Client Services Admin.</p>
 				</div>
 			</div>
 			
