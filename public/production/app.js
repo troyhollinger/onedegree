@@ -1850,11 +1850,11 @@ var Navigation = {
 
 		}, 150);
 
-		setTimeout(function(){
+		// setTimeout(function(){
 
 			_.element.removeClass('open').addClass('closed');
 			
-		}, 300);
+		// }, 300);
 		
 
 	}
