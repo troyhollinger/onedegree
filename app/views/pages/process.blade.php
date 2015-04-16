@@ -43,7 +43,7 @@ Process
 
 		<div class="process-module-text align-right indicator-parent" data-indicator="Analyze" id="analyze">
 			<div class="section-title" id="analyze-title">Analyze</div>
-			<p class="text">Next we evaluate your current financial picture. Welook at where you are now and compare it with where you want to go identifying adjustments that need to be made and ways to utilize what you have to the fullest.</p>
+			<p class="text">Next we evaluate your current financial picture. We look at where you are now and compare it with where you want to go identifying adjustments that need to be made and ways to utilize what you have to the fullest.</p>
 		</div>
 
 	</div>

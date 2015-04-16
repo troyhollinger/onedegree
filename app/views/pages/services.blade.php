@@ -65,7 +65,7 @@ Services
 		<br>
 		<p class="text">This advanced planning process is designed to help financially blessed families gain 
 			clarity and a renewed passion for aligning your life with your purpose. It’s not just 
-			about money—it’s your family, your life, and your legacy that matters!</a>
+			about money—it’s your family, your life, and your legacy that matter!</a>
 		</p>
 
 	</div>
@@ -181,7 +181,7 @@ Services
 
 		<p class="section-title">Compelling Value</p>
 
-		<p class="text">We understandingderstand the importance of asking the right questions to help ensure we draw 
+		<p class="text">We understand the importance of asking the right questions to help ensure we draw 
 			the right conclusions before we offer any advice. Every client engagement begins by 
 			exploring your “why” before we determine your “how” solutions. One Degree Advisors 
 			is committed to helping our clients and their families make meaningful and purposeful 

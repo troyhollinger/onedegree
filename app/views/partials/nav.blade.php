@@ -14,7 +14,7 @@
 
 		<div class="nav-details">
 		    <a href="https://www.google.com/maps/place/3131+Camino+Del+Rio+N+%231010,+San+Diego,+CA+92108/@32.7751506,-117.1270346,17z/data=!3m1!4b1!4m2!3m1!1s0x80d955a7fe9ffd0b:0x4a6d5c2f86006b14" target="_blank">
-		    	<p class="bold">One Degeee Advisors</p>
+		    	<p class="bold">One Degree Advisors</p>
 		    	<p>3131 Camino Del Rio N #1010</p>
 		    	<p>San Diego, CA 92108</p>
 		    </a>
