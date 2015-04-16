@@ -617,12 +617,17 @@ body , html{
 .photo-content-container {
 
 	position: absolute;
-	right:2.5vw;
+	// right:2.5vw;
+	// right:2
+	right:0;
+	box-sizing:border-box;
+	padding:15px 2.5vw 15px 15px;
 	bottom:5vw;
-	width:650px;
+	width:700px;
 	text-align: right;
 	overflow: visible;
 	letter-spacing: -1px;
+	background-color: rgba(0,0,0,0.5);
 
 
 	@include breakpoint(mobile) {
@@ -638,6 +643,9 @@ body , html{
 	@include breakpoint(small) {
 
 		width:100%;
+		right:2.5vw;
+		padding:0;
+		background-color: transparent;
 
 	}
 
