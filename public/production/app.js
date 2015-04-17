@@ -2208,7 +2208,7 @@ var SectionIndicators = {
 
 			if (anchor === 'inquiry') {
 
-				html += '<a href="/inquiry"class="indicator-element">' + text + '</a>';
+				html += '<a href="' + base + '/inquiry"class="indicator-element">' + text + '</a>';
 
 			} else {
 

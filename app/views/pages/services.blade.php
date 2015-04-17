@@ -142,11 +142,6 @@ Services
 
 		<p class="section-title">Code of Ethics</p>
 
-		<p class="text">Abiding by the <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">Financial Planning Association</span></a>’s and the <a href="http://www.letsmakeaplan.org"><span class="green-text">Certified Financial Planner</span></a> 
-		Board’s Code of Ethics standards are a top priority at One Degree Advisors. Here is 
-		what you can expect from us:</p>
-
-
 		<div class="ethics-slideshow">
 
 			<p class="ethics-slide ethics-slide-visible">Integrity.</p>
@@ -160,6 +155,10 @@ Services
 		</div>
 
 		<p class="ethics-slideshow-title">Principles we operate by</p>
+
+		<p class="text">Abiding by the <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">Financial Planning Association</span></a>’s and the <a href="http://www.letsmakeaplan.org"><span class="green-text">Certified Financial Planner</span></a> 
+		Board’s Code of Ethics standards are a top priority at One Degree Advisors. Here is 
+		what you can expect from us:</p>
 
 	</div>
 
