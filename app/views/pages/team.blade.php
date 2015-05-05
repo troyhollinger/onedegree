@@ -32,7 +32,7 @@ Team
 				providing financial planning and wealth management for retirees. 
 				<br><br>
 				In 2014, she merged her practice with Janice Thompson and jointly they formed One Degree Advisors. Audrey earned the CERTIFIED 
-				FINANCIAL PLANNER® designation from the College for Financial Planning in Denver, Colorado. She is also an Accredited Investment 
+				FINANCIAL PLANNER&trade; certification from the College for Financial Planning in Denver, Colorado. She is also an Accredited Investment 
 				Fiduciary®. Audrey is an active Rotarian, member of the San Diego Women’s Foundation and San Diego Chapter of the Financial Planning 
 				Association. Audrey is married to Ron and has one son, Matthew.
 				<br><br>
@@ -56,7 +56,7 @@ Team
 			<p class="team-member-description">
 				Janice can actually trace her interest in all things financial to an early childhood memory. After years of teaching financial basics, she began to 
 				focus on a professional career in the industry in 1993. During the next decade she earned a Master’s Degree in financial services, the CFP® 
-				designation, and launched Strategic Financial Solutions, Inc. In 2014 she merged her practice with Audrey Coleman of Coleman and Johnson 
+				certification, and launched Strategic Financial Solutions, Inc. In 2014 she merged her practice with Audrey Coleman of Coleman and Johnson 
 				and together they formed One Degree Advisors, Inc. 
 				<br><br>
 				Janice is passionate about assisting financially blessed families with holistic life coaching and wealth transfer planning, working with business 
@@ -86,10 +86,10 @@ Team
 				valuable learning lesson and was the spark to opening his first mutual fund in high school and ultimately led to his career in financial planning. 
 				Though everyone’s situation is unique, his overriding goal for his clients is to attain contentment in their financial life.
 				<br><br>
-				Blake earned a Management Science Degree from UCSD and holds the CFP® designation. After several years in the business he set out to find 
+				Blake earned a Management Science Degree from UCSD and holds the CFP® certification. After several years in the business he set out to find 
 				people who shared his same passion for helping others and through Kingdom Advisors he found Janice Thompson. They have been working 
 				together since 2007 at Strategic Financial Solutions and in 2014 merged with other like-minded planners forming One Degree Advisors, Inc. He 
-				has served as a board member and treasurer for non-profit organizations, and currently serves on the local board of Kingdom Advisors. Blake 
+				has served as a board member and treasurer for non-profit organizations{{-- , and currently serves on the local board of Kingdom Advisors --}}. Blake 
 				loves spending time with his high-school sweetheart, Rachael, and their kids Avery and Tanner.
 				<br><br>
 				<a href="https://www.linkedin.com/pub/blake-gallion-cfp%C2%AE/9/976/16a">Connect with me on LinkedIn</a>
@@ -116,8 +116,8 @@ Team
 				with a focus on simplifying complex matters through the planning process. He teamed with Audrey Coleman in 2006 and then the One Degree 
 				team in 2014. 
 				<br><br>
-				Anthony holds a Business Economics degree from the University of San Diego and the CFP® designation. He is also a director with Kingdom 
-				Advisors in San Diego. He authors the Principles of Prosperity newspaper column. In addition to financial education, Anthony serves at his 
+				Anthony holds a Business Economics degree from the University of San Diego and the CFP® certification. {{-- He is also a director with Kingdom 
+				Advisors in San Diego. --}} He authors the Principles of Prosperity newspaper column. In addition to financial education, Anthony serves at his 
 				church and coaches competitive youth soccer. Along with his wife, Robin, Anthony enjoys spending time with their three children, Jake, Gianna, 
 				and Henry.
 				<br><br>

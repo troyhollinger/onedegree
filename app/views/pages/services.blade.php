@@ -38,8 +38,7 @@ Services
 		<br>
 		<p class="text">
 			Questions such as these help us determine a “Purpose Allocation.” Once we 
-			understand your priorities, we structure an investment strategy to address your 
-			objectives. In this complex and noisy world we believe it is important to build a 
+			understand your values, we then strive to build an all-weather portfolio designed to accomplish these goals. In this complex and noisy world we believe it is important to build a 
 			portfolio using timeless principles. 
 		</p>
 		<br>
@@ -115,14 +114,17 @@ Services
 
 		<p class="text">
 			<a href="http://www.letsmakeaplan.org" target="_blank"><span class="bold">CFP®</span></a> - CERTIFIED FINANCIAL PLANNER <br>
-			The <a href="http://www.letsmakeaplan.org" target="_blank"><span class="green-text">CFP®</span></a> certification mark identifies professionals who have met and maintained the 
+			{{-- The <a href="http://www.letsmakeaplan.org" target="_blank"><span class="green-text">CFP®</span></a> certification mark identifies professionals who have met and maintained the 
 			high standards of competency and ethics established and enforced by the Certified 
-			Financial Planner Board of Standards. 
+			Financial Planner Board of Standards.  --}}
+
+			The mission of the <a href="http://www.letsmakeaplan.org" target="_blank" class="green-text">Certified Financial Paller Board of Standards Inc. (CFP® Board)</a> is to benefit the public by granting the CFP® certification and upholding it as the recognized standard of excellence for competent and ethical personal financial planning.
+
 		</p>
 		<br>
 		<p class="text">
 			<a href="http://www.plannersearch.org" target="_blank"><span class="bold">FPA</span></a> - FINANCIAL PLANNING ASSOCIATION <br>
-			The <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">FPA</span></a> is the largest member organization of Certified Financial Planner (CFP®) 
+			The <a href="http://www.plannersearch.org" target="_blank"><span class="green-text">FPA</span></a> is the largest member organization of Certified Financial Planner (CFP® Board) 
 			practitioners, educators, and financial services professionals all of whom support high 
 			standards of competency and ethics in the financial services industry.
 
@@ -219,16 +221,19 @@ Services
 		
 		<p class="text">
 
-			<span class="bold">What is a Certified Financial Planner?</span><br>
-			When selecting a financial planner, how do you know you can feel confident you have 
+			<span class="bold">What is a CERTIFIED FINANCIAL PLANNER&trade; professional?</span><br>
+			When selecting a financial planner, how do you know you can feel more confident you have 
 			chosen someone who is qualified, competent and ethical in helping you plan your 
-			future? You may assume anyone offering a financial service or product who calls 
+			future? {{-- You may assume anyone offering a financial service or product who calls 
 			themselves a financial planner is "certified," but this isn’t true. Only those who have 
 			fulfilled the rigorous certification and renewal requirements of the CFP® Board can 
 			display the CFP® certification marks. The CFP® certification helps ensure that you 
 			are working with someone who meets the strict education, examination, experience 
 			and ethical requirements necessary to maintain the right to use the CFP® certification 
 			marks. 
+ --}}
+			Most people thing that all financial planners are 'certified', but this isn't true. Only those who meet strict education, examination, experience, and ethics requirements are allowed the right to use the CFP® certification marks.
+			When selecting a financial planner, you can have added confidence that the person you choose to help you plan for your future is competent and ethical if you choose a CFP® professional.
 
 		</p>
 		<br>
@@ -265,6 +270,11 @@ Services
 			comprehensive and professional services. They were established in 1984, are 
 			headquartered in Omaha, NE, and serve over 1,700 financial advisors across the 
 			United States.
+
+
+			Founded in 1984 and based in Omaha, Nebraska, Securities America, Inc. is a national independent broker-dealer that facilitates the buying and selling of securities on behalf of the clients of its registered
+			representatives. Think of them as our behind-the-scenes support. Through their extensive technology, compliance and operational support, we can more readily provide comprehensive and professional service to you, our client. Securities America, Inc. serves more than
+			2,000 registered representitives and financial advisors across the United States.
 		</p>
 		
 		
@@ -281,11 +291,11 @@ Services
 
 			Advisory services offered through One Degree 
 			Advisors, Inc.SM Securities offered through Securities 
-			America, Inc., Member FINRA/SIPC. One Degree 
+			America, Inc., Member <a href="http://www.finra.org/" target="_blank">FINRA</a>/<a href="http://www.sipc.org/" target="_blank">SIPC</a>. One Degree 
 			Advisors and Securities America are separate 
 			companies. We are registered to sell Securities in the 
-			following states: AZ, CA, CO, FL, GA, HI, ID, IN, ME, 
-			MO, MT, NC, NJ, OR, SC, SD, UT, VA, WA.		
+			following states: AE, AP, AR, AZ, CA, CO, FL, GA, HI, ID, IN, MD, ME, 
+			MO, NC, NJ, NV, OR, SC, SD, UT, VA, WA.		
 		</p>
 
 		<br>
@@ -309,6 +319,12 @@ Services
 				<td>&nbsp;CA Life Insurance License #0C43243</td>
 			</tr>
 		</table>
+		<br>
+		<p class="text">Diversification does not guarantee a profit or protection from losses in a declining market.</p>
+		<br>
+		<p class="text">Certified Financial Planner Board of Standards Inc. owns the certification marks CFP®, Certified
+			Financial Planner&trade; and CFP® in the U.S., which it awards to individuals who successfully
+			complete CFP Board’s initial and ongoing certification requirements.</p>
 
 	</div>
 
