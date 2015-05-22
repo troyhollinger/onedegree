@@ -48,6 +48,8 @@ Services
 		</p>
 		<br>
 		<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><p class="text green-text bold">What's Your Risk Score?</p></a>
+		<br>
+		<p class="text faded smaller">Diversification does not guarantee a profit or protections from losses in a declining market</p>
 
 	</div>
 
@@ -75,9 +77,9 @@ Services
 		<p class="text">Are you looking for a speaker for your community group, church, classroom, charity, 
 			or civic organization? Do you need insight on relevant financial planning or investing 
 			topics? One Degree Advisors is committed to educating people through speaking, 
-			writing and supporting media who have a similar objective. We are experts in a 
+			writing and supporting media who have a similar objective. We have expertise in a 
 			variety of financial planning, investment management, family and business wealth 
-			transfer, and life stewardship topics. All presenters are Certified Financial Planners®, 
+			transfer, and life stewardship topics. All presenters are Certified Financial Planners&trade;, 
 			and enjoy the challenge of making complex topics easy to understand. 
 		</p>
 		<br>
@@ -118,7 +120,7 @@ Services
 			high standards of competency and ethics established and enforced by the Certified 
 			Financial Planner Board of Standards.  --}}
 
-			The mission of the <a href="http://www.letsmakeaplan.org" target="_blank" class="green-text">Certified Financial Paller Board of Standards Inc. (CFP® Board)</a> is to benefit the public by granting the CFP® certification and upholding it as the recognized standard of excellence for competent and ethical personal financial planning.
+			The mission of the <a href="http://www.letsmakeaplan.org" target="_blank" class="green-text">Certified Financial Planner Board of Standards Inc. (CFP® Board)</a> is to benefit the public by granting the CFP® certification and upholding it as the recognized standard of excellence for competent and ethical personal financial planning.
 
 		</p>
 		<br>
@@ -222,7 +224,7 @@ Services
 		<p class="text">
 
 			<span class="bold">What is a CERTIFIED FINANCIAL PLANNER&trade; professional?</span><br>
-			When selecting a financial planner, how do you know you can feel more confident you have 
+			When selecting a financial planner, how do you know you have 
 			chosen someone who is qualified, competent and ethical in helping you plan your 
 			future? {{-- You may assume anyone offering a financial service or product who calls 
 			themselves a financial planner is "certified," but this isn’t true. Only those who have 
@@ -232,7 +234,7 @@ Services
 			and ethical requirements necessary to maintain the right to use the CFP® certification 
 			marks. 
  --}}
-			Most people thing that all financial planners are 'certified', but this isn't true. Only those who meet strict education, examination, experience, and ethics requirements are allowed the right to use the CFP® certification marks.
+			Most people think that all financial planners are 'certified', but this isn't true. Only those who meet strict education, examination, experience, and ethics requirements are allowed the right to use the CFP® certification marks.
 			When selecting a financial planner, you can have added confidence that the person you choose to help you plan for your future is competent and ethical if you choose a CFP® professional.
 
 		</p>
@@ -264,17 +266,7 @@ Services
 
 		<p class="text">
 			<span class="bold">Who is Securities America, Inc.?</span><br>
-			Securities America provides independent financial professionals like us with 
-			technology, compliance, and operational support. Think of them as our 
-			behind-the-scenes back office that allows us to provide a wide variety of 
-			comprehensive and professional services. They were established in 1984, are 
-			headquartered in Omaha, NE, and serve over 1,700 financial advisors across the 
-			United States.
-
-
-			Founded in 1984 and based in Omaha, Nebraska, Securities America, Inc. is a national independent broker-dealer that facilitates the buying and selling of securities on behalf of the clients of its registered
-			representatives. Think of them as our behind-the-scenes support. Through their extensive technology, compliance and operational support, we can more readily provide comprehensive and professional service to you, our client. Securities America, Inc. serves more than
-			2,000 registered representitives and financial advisors across the United States.
+			Founded in 1984 and based in Omaha, Nebraska, Securities America, Inc. is a national independent broker-dealer that facilitates the buying and selling of securities on behalf of the clients of its registered representatives.  Think of them as our behind-the-scenes support. Through their extensive technology, compliance and operational support, we can more readily provide comprehensive and professional service to you, our client.  Securities America, Inc. serves more than 2,000 registered representatives and financial advisors across the United States.
 		</p>
 		
 		
@@ -284,7 +276,7 @@ Services
 	<div class="service-section faded" id="info">
 
 		<p class="section-title">
-			Compliance
+			Disclosures
 		</p>
 
 		<p class="text">

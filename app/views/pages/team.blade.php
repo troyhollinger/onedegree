@@ -38,6 +38,7 @@ Team
 				<br><br>
 				<a href="https://www.linkedin.com/pub/audrey-coleman-cfp%C2%AE/4/83a/369">Connect with me on LinkedIn</a>
 			</p>
+			<p class="text faded smaller">AIF – The Accredited Fiduciary Standard of Care applies to advisory services only</p>
 
 		</div>
 
