@@ -68,7 +68,7 @@
                 <a href="{{ route('services') }}#info"><li>Disclosures</li></a>
                 <a href="http://www.letsmakeaplan.org/home" target="_blank"><li>CFP&reg;</li></a>
                 <a href="http://www.plannersearch.org/Pages/Home.aspx" target="_blank"><li>FPA&reg;</li></a>
-                <a href="{{ route('services') }}#info"><li>FAQ</li></a>
+                <a href="{{ route('services') }}#faq"><li>FAQ</li></a>
             </ul>
         </div>
 

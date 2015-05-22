@@ -49,7 +49,7 @@ Services
 		<br>
 		<a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><p class="text green-text bold">What's Your Risk Score?</p></a>
 		<br>
-		<p class="text faded smaller">Diversification does not guarantee a profit or protections from losses in a declining market</p>
+		<p class="text faded smaller">Diversification does not guarantee a profit or protection from losses in a declining market</p>
 
 	</div>
 
