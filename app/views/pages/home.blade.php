@@ -190,15 +190,18 @@ Menu
 
         </div>
 
-        <div class="twitter-see-more">
 
-            <div class="twitter-circle">
-                <i class="fa fa-angle-right"></i>
+        <a href="https://twitter.com/onedegreetweets" target="_blank">
+            <div class="twitter-see-more">
+    
+                <div class="twitter-circle">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+    
             </div>
-
-        </div>
-
-        <div class="clear"></div>
+    
+            <div class="clear"></div>
+        </a>
 
 
     </div>

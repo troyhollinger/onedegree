@@ -97,7 +97,7 @@ Speaker
 				
 				<div class="inquiry-form-button" ng-click="submitForm()">
 
-					<p>SUBMIT</p>
+					<p ng-bind="buttonText"></p>
 
 				</div>
 

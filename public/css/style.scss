@@ -910,6 +910,17 @@ body , html{
 				@include centerLeft;
 				left:105%;
 				font-size: 3rem;
+				@include transition(all .1s linear);
+
+			}
+
+			&:hover {
+
+				i {
+
+					left:107%;
+
+				}
 
 			}
 
@@ -1055,6 +1066,17 @@ body , html{
 		@include centerRight;
 		font-size: 3rem;
 		right:20px;
+		@include transition(all .15s linear);
+
+	}
+
+	&:hover {
+
+		i {
+
+			right:15px;
+
+		}
 
 	}
 
@@ -2475,8 +2497,7 @@ body , html{
 	border:1px solid white;
 	position: relative;
 	color:white;
-
-	
+	cursor:pointer;
 
 	&:last-child {
 

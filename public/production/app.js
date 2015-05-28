@@ -1462,13 +1462,13 @@ app.factory('Email', ['$http', function($http) {
 
 		speaker : function(data) {
 
-			return $http.post('email/speaker', data);
+			return $http.post('/email/speaker', data);
 
 		}, 
 
 		inquiry : function(data) {
 
-			return $http.post('email/inquiry', data);
+			return $http.post('/email/inquire', data);
 
 		}
 
@@ -1478,13 +1478,16 @@ app.factory('Email', ['$http', function($http) {
 
 app.controller('InquireFormController', ['$scope', 'Email', function($scope, Email) {
 
-	console.log($scope.form);
+	$scope.buttonText = "SEND INQUIRY";
 
 	$scope.submitForm = function() {
 
+		$scope.buttonText = "Sending....";
+
 		Email.inquiry($scope.form).success(function(response) {
 
-			// create a visual success alert
+			$scope.buttonText = "THANK YOU!";
+			$scope.form = {};
 
 		}).error(function(response) {
 
@@ -1498,7 +1501,7 @@ app.controller('InquireFormController', ['$scope', 'Email', function($scope, Ema
 
 app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($scope, focus, Email) {
 
-
+	$scope.buttonText = "SUBMIT";
 
 	$scope.focusDate = function($event) {
 
@@ -1517,11 +1520,12 @@ app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($s
 
 	$scope.submitForm = function() {
 
-		console.log($scope.form);
+		$scope.buttonText = "Sending..."
 
 		Email.speaker($scope.form).success(function(response) {
 
-			console.log("success");
+			$scope.buttonText = "Success!";
+			$scope.form = {};
 
 		}).error(function(response) {
 

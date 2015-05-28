@@ -68,7 +68,7 @@ Inquiry
 				
 				<div class="inquiry-form-button" ng-click="submitForm()">
 
-					<p>SEND INQUIRY</p>
+					<p ng-bind="buttonText"></p>
 
 				</div>
 
