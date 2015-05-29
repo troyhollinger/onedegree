@@ -33,6 +33,10 @@ class ColumnTableSeeder extends Seeder {
 		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/ed143692496c">Conquer the Clutter</a>']);
 		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/4827ec319f97">A Game Plan for 2015</a>']);
 		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/87709bfc4d0b">A Spending Plan</a>']);
+		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@onedegreesaffer/what-do-you-have-that-you-did-not-receive-7f67aaf260f6">What do you have that you did not receive?</a>']);
+		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/raising-money-smart-children-e10afdddbed">Raising Money Smart Children</a>']);
+		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@onedegreesaffer/shemitah-years-blood-moons-oh-my-ec277814ac27">Shemitah Years & Blood Moons, Oh My!</a>']);
+		Column::create(['link' => '<a class="m-story" data-collapsed="true" href="https://medium.com/@onedegreesaffer/don-t-forget-to-save-for-college-b49675793510">Don’t Forget to Save for College</a>']);
 
 	}
 	
