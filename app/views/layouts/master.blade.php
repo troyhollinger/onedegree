@@ -12,8 +12,14 @@
         <title>
             @yield('tab')
         </title>
-        <meta name="description" content="">
+        <meta name="description" content="Financial Planning and Investment Management, Thinking for Tomorrow, Today">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta property="og:title" content="One Degree Advisors">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://onedegreeadvisors.com">
+        <meta property="og:image" content="{{ asset('img/city.jpg') }}" />
+        <meta property="og:description" content="Financial Planning and Investment Management, Thinking for Tomorrow, Today">
+        <meta property="og:site_name" content="One Degree Advisors">
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicons/apple-touch-icon-57x57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicons/apple-touch-icon-60x60.png') }}">
         <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicons/apple-touch-icon-72x72.png') }}">
