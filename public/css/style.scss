@@ -1122,6 +1122,12 @@ body , html{
 		line-height: 2rem;
 		color:lighten($text-color, 50%);
 
+		a {
+
+			color:inherit;
+
+		}
+
 	}
 
 	@include breakpoint(mobile) {

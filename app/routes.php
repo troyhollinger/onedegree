@@ -3,7 +3,9 @@
 
 Route::get('/',['as' => 'home', function() {
 
-	return View::make('pages.home');
+	$tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2]);
+
+	return View::make('pages.home', ['tweets' => $tweets]);
 	
 }]);
 
@@ -30,7 +32,7 @@ Route::get('services', ['as' => 'services', function() {
 
 Route::get('blog', ['as' => 'blog', function() {
 
-	$columns = Column::paginate(6);
+	$columns = Column::orderBy('created_at', 'desc')->paginate(6);
 
 	return View::make('pages.blog', ['columns' => $columns]);
 
@@ -70,6 +72,51 @@ Route::get('api/videos', ['as' => 'getVideos', function() {
 
 }]);
 
+Route::get('login', ['as' => 'login', function() {
+
+	return View::make('pages.login');
+
+}]);
+
+Route::post('login', ['as' => 'login.post', function() {
+
+	$email = Input::get('email');
+	$password = Input::get('password');
+
+	if (Auth::attempt(['email' => $email, 'password' => $password])) {
+
+		return Redirect::intended('admin.columns');
+
+	}
+
+}]);
+
+Route::get('admin/columns', ['as' => 'admin.columns', 'before' => 'auth', function() {
+
+	return View::make('pages.addColumns');
+
+}]);
+
+Route::post('column', ['as' => 'column.store', 'before' => 'auth', function() {
+
+	$link = Input::get('link');
+
+	$column = new Column;
+	$column->link = $link;
+	$column->save();
+
+	return Redirect::route('blog');
+
+}]);
+
+Route::get('api/tweets', ['as' => 'getTweets', function() {
+
+	$tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2, 'format' => 'json']);
+
+	return $tweets;
+
+}]);
+
 Route::get('speaker', ['as' => 'speaker', function() {
 
 	return View::make('pages.speaker');
@@ -78,3 +125,5 @@ Route::get('speaker', ['as' => 'speaker', function() {
 
 Route::post('email/speaker', ['as' => 'email.speaker', 'uses' => 'EmailController@speaker']);
 Route::post('email/inquire', ['as' => 'email.inquire', 'uses' => 'EmailController@inquire']);
+
+

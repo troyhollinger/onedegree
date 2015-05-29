@@ -7,6 +7,7 @@ module.exports = function(grunt) {
         concat: {
             dist : {
                 src : [
+                    'bower_components/Angular-Twitter/twitter.js',
                     'bower_components/angular-load/angular-load.js',                
                     'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
                     'bower_components/angular-ui-bootstrap/src/position/position.js',

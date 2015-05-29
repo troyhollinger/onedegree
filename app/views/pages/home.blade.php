@@ -162,34 +162,22 @@ Menu
 
     <div class="twitter-container">
 
+        @foreach($tweets as $tweet)
+
         <div class="twitter-block">
 
-            <a href="http://twitter.com/onedegreetweets"><p class="tweet-text">We love helping our clients reach their long and short term goals!</p></a>
-            <p class="tweet-time">November 17, 2014</p>
+            <a href="http://twitter.com/onedegreetweets" target="_blank"><p class="tweet-text">{{ $tweet->text }}</p></a>
+            <p class="tweet-time">{{ Twitter::ago($tweet->created_at) }}</p>
 
             <a href="http://twitter.com/onedegreetweets" target="_blank">
                 <div class="tweet-handle-container">
                     <i class="fa fa-twitter"></i>
-                    <p>@onedegreetweets</p>
+                    <p><a href="{{ $tweet->user->url }}">@onedegreetweets</a></p>
                 </div>
             </a>
 
         </div>
-
-        <div class="twitter-block">
-
-            <a href="http://twitter.com/onedegreetweets"><p class="tweet-text">New Post on Medium called "The Power of Planning" written by our own Jonathan Doe. www.t.co/rh8s3yr</p></a>
-            <p class="tweet-time">November 17, 2014</p>
-
-            <a href="http://twitter.com/onedegreetweets" target="_blank">
-                <div class="tweet-handle-container">
-                    <i class="fa fa-twitter"></i>
-                    <p>@onedegreetweets</p>
-                </div>
-            </a>
-
-        </div>
-
+        @endforeach
 
         <a href="https://twitter.com/onedegreetweets" target="_blank">
             <div class="twitter-see-more">
@@ -203,6 +191,7 @@ Menu
             <div class="clear"></div>
         </a>
 
+        <twitter></twitter>
 
     </div>
 

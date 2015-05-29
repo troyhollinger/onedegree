@@ -9,6 +9,7 @@ var requestAnimationFrame = window.requestAnimationFrame ||
 
 var app = angular.module(['onedegree'], ['angularLoad', '720kb.datepicker', 'dnTimepicker', 'focusOn']);
 
+
 app.factory('Video', function($http) {
 
 	return {
