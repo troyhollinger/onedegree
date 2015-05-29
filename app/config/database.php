@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'kinglyco_onedegree',
-			'username'  => 'kinglyco',
-			'password'  => '[Kingandwife1]',
+			'database'  => $_ENV['database_name'],
+			'username'  => $_ENV['database_username'],
+			'password'  => $_ENV['database_password'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

@@ -3,9 +3,11 @@
 
 Route::get('/',['as' => 'home', function() {
 
+	$columns = Column::orderBy('created_at', 'desc')->take(3)->get();
+
 	$tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2]);
 
-	return View::make('pages.home', ['tweets' => $tweets]);
+	return View::make('pages.home', ['tweets' => $tweets, 'columns' => $columns]);
 	
 }]);
 

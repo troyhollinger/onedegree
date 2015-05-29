@@ -19,13 +19,13 @@ return array(
 	*/
 
 	'connections' => array(
-
+		
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'onedegree',
-			'username'  => 'homestead',
-			'password'  => 'secret',
+			'database'  => $_ENV['database_name'],
+			'username'  => $_ENV['database_username'],
+			'password'  => $_ENV['database_password'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

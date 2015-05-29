@@ -14,8 +14,8 @@ return [
 	'REQUEST_TOKEN_URL'   => 'https://api.twitter.com/oauth/request_token',
 	'USE_SSL'             => true,
 
-	'CONSUMER_KEY'        => $_ENV['twitter.consumer_key'],
-	'CONSUMER_SECRET'     => $_ENV['twitter.consumer_secret'],
-	'ACCESS_TOKEN'        => $_ENV['twitter.access_token'],
-	'ACCESS_TOKEN_SECRET' => $_ENV['twitter.access_token_secret'],
+	'CONSUMER_KEY'        => $_ENV['twitter_consumer_key'],
+	'CONSUMER_SECRET'     => $_ENV['twitter_consumer_secret'],
+	'ACCESS_TOKEN'        => $_ENV['twitter_access_token'],
+	'ACCESS_TOKEN_SECRET' => $_ENV['twitter_access_token_secret'],
 ];

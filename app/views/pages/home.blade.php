@@ -150,10 +150,17 @@ Menu
         <p class="section-title">Recent Columns:</p><br>
         
         <script async src="https://static.medium.com/embed.js"></script>
-        <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/87709bfc4d0b">A Spending Plan</a>
+        {{-- <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/87709bfc4d0b">A Spending Plan</a>
         <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/4827ec319f97">A Game Plan for 2015</a>
         <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/ed143692496c">Conquer the Clutter</a>
-       
+        --}}
+
+        @foreach($columns as $column)
+
+        {{ $column->link }}
+
+        @endforeach
+
         <a href="{{ route('blog') }}"><p class="section-title">All Columns <i class="fa fa-angle-right"></i></p></a>
 
     </div>
