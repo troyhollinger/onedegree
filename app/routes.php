@@ -3,7 +3,7 @@
 
 Route::get('/',['as' => 'home', function() {
 
-	$columns = Column::orderBy('created_at', 'desc')->take(3)->get();
+	$columns = Column::orderBy('id', 'desc')->take(3)->get();
 
 	$tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2]);
 
@@ -34,7 +34,7 @@ Route::get('services', ['as' => 'services', function() {
 
 Route::get('blog', ['as' => 'blog', function() {
 
-	$columns = Column::orderBy('created_at', 'desc')->paginate(6);
+	$columns = Column::orderBy('id', 'desc')->paginate(6);
 
 	return View::make('pages.blog', ['columns' => $columns]);
 
