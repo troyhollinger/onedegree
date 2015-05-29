@@ -18,6 +18,9 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="http://onedegreeadvisors.com">
         <meta property="og:image" content="{{ asset('img/city.jpg') }}" />
+        <meta property="og:image" content="{{ asset('img/building.jpg') }}" />
+        <meta property="og:image" content="{{ asset('img/group.jpg') }}" />
+        <meta property="og:image" content="{{ asset('img/meeting.jpg') }}" />
         <meta property="og:description" content="Financial Planning and Investment Management, Thinking for Tomorrow, Today">
         <meta property="og:site_name" content="One Degree Advisors">
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicons/apple-touch-icon-57x57.png') }}">
