@@ -341,11 +341,11 @@ body , html{
 
 	}
 
-	&:hover {
+	// &:hover {
 
-		@include transform(scale(1.05));
+	// 	@include transform(scale(1.05));
 
-	}
+	// }
 
 	@include breakpoint(small) {
 
@@ -469,12 +469,12 @@ body , html{
 		display: inline-block;
 		position: relative;
 
-		&:hover:not(.faded) {
+		// &:hover:not(.faded) {
 
-			opacity: 0.9;
-			text-decoration: underline;
+		// 	opacity: 0.9;
+		// 	text-decoration: underline;
 
-		}
+		// }
 
 		@include breakpoint(1500px) {
 
