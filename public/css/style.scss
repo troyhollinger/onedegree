@@ -327,7 +327,7 @@ body , html{
 	right:2.5%;
 	right:2.5vw;
 	z-index: 15;
-	@include transition(all .2s linear);
+	// @include transition(all .2s linear);
 
 	&.above-fold {
 
