@@ -327,6 +327,7 @@ body , html{
 	right:2.5%;
 	right:2.5vw;
 	z-index: 15;
+	@include transition(all .2s linear);
 
 	&.above-fold {
 
@@ -337,6 +338,12 @@ body , html{
 	&.white {
 
 		background-color: white;
+
+	}
+
+	&:hover {
+
+		@include transform(scale(1.05));
 
 	}
 
@@ -461,6 +468,13 @@ body , html{
 		font-size: 3.5rem;
 		display: inline-block;
 		position: relative;
+
+		&:hover:not(.faded) {
+
+			opacity: 0.9;
+			text-decoration: underline;
+
+		}
 
 		@include breakpoint(1500px) {
 
