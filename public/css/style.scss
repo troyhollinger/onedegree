@@ -562,6 +562,16 @@ body , html{
 	margin-top: 90px;
 	text-align: right;
 
+	a {
+
+		&:hover {
+
+			text-decoration: underline;
+
+		}
+
+	}
+
 	@extend .details;
 
 	@include breakpoint(1500px) {

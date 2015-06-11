@@ -24,7 +24,7 @@
 		    <p>Email : <a href="mailto:admin@onedegreeadvisors.com" class="bold">admin@onedegreeadivsors.com</a> </p>
 		    <br>
 		    <br>
-		    <p class="smaller">WEBSITE MADE BY <a href="http://www.troyhollinger.com">TROY</a></p>
+		    <p class="smaller"><a href="http://www.troyhollinger.com">WEBSITE MADE BY TROY</a></p>
 		</div>
 
 	</div>
