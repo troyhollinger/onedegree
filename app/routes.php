@@ -93,7 +93,7 @@ Route::post('login', ['as' => 'login.post', function() {
 
 }]);
 
-Route::get('admin/columns', ['as' => 'admin.columns', 'before' => 'auth', function() {
+Route::get('admin', ['as' => 'admin.columns', 'before' => 'auth', function() {
 
 	return View::make('pages.addColumns');
 
