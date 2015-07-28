@@ -22,7 +22,7 @@
                 <li class="footer-title">CLIENT PORTAL</li>
                 <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>View Account Statements</li></a>
                 <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>View Reports</li></a>
-                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/strategicfs" target="_blank"><li>View Plan</li></a>
+                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>View Plan</li></a>
                 <br>
                 {{-- <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a> --}}
                  
