@@ -137,16 +137,24 @@ Team
 
 		{{-- <div class="secondary-team-member square"></div> --}}
 
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/linda-1.jpg') }})">
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/jill-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Linda Jillson</p>
+					<p class="secondary-team-member-name">Jill Schiller</p>
 				<p class="secondary-team-member-position">Office Manager</p>
 				</div>
 			</div>
-			
 		</div>
 		
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/alex-1.jpg') }})">
+			<div class="overlay">
+				<div class="secondary-team-member-info">
+					<p class="secondary-team-member-name">Alex Okugawa</p>
+					<p class="secondary-team-member-position">Advisor Support Specialist</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/angela-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">

@@ -864,7 +864,8 @@ $(document).ready(function() {
 
 	if (thisPage === 'team') {
 
-		SecondaryTeamMemberOverlay.init();
+		// turned off per Troy's request
+		// SecondaryTeamMemberOverlay.init();
 
 	}
 
