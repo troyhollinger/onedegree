@@ -135,7 +135,7 @@ Team
 
 	<div class="secondary-team">
 
-		{{-- <div class="secondary-team-member square"></div> --}}
+		<div class="secondary-team-title">Our Staff, Ready to Serve You</div>
 
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/jill-1.jpg') }})">
 			<div class="overlay">
