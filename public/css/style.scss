@@ -1577,6 +1577,13 @@ body , html{
 	padding:60px 0;
 	margin-left: 23%;
 
+	@include breakpoint(mobile) {
+
+		margin-left: 0;
+		width:100%;
+
+	}
+
 }
 
 .secondary-team-member {
@@ -1592,6 +1599,7 @@ body , html{
 	@include breakpoint(small) {
 
 		width:50%;
+		margin: 0;
 
 	}
 
