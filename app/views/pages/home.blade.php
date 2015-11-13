@@ -167,6 +167,20 @@ Menu
    
     <div class="divider"></div>
 
+    <div class="youtube-container">
+
+        <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/KPDtiJRy6-4" frameborder="0" allowfullscreen></iframe></div>
+
+        <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/gVHKI0sBpB0" frameborder="0" allowfullscreen></iframe></div>
+
+        <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/OF9plHU_zVc" frameborder="0" allowfullscreen></iframe></div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="divider"></div>
+
     <div class="twitter-container">
 
         @foreach($tweets as $tweet)
