@@ -20,7 +20,7 @@ Services
 		<p class="text">Our focus is on what’s important to you. The overarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. We help you evaluate your goals, analyze your situation and options, develop strategies, and then implement decisions in coordination with your other trusted advisors. Financial planning is most successful when these areas are realigned to help you stay on course. Every degree counts.</p><br>
 		
 		<div class="iframe-container">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/OF9plHU_zVc" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/OF9plHU_zVc?rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		
 
@@ -57,7 +57,7 @@ Services
 		<p class="text faded smaller">Diversification does not guarantee a profit or protection from losses in a declining market</p>
 
 		<div class="iframe-container">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/gVHKI0sBpB0" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/gVHKI0sBpB0?rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 
 	</div>
@@ -79,7 +79,7 @@ Services
 		</p>
 
 		<div class="iframe-container">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/KPDtiJRy6-4" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/KPDtiJRy6-4?rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 
 		
