@@ -137,6 +137,15 @@ Team
 
 		<div class="secondary-team-title">Our Staff, Ready to Serve You</div>
 
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/angela-1.jpg') }})">
+			<div class="overlay">
+				<div class="secondary-team-member-info">
+					<p class="secondary-team-member-name">Angela De Palo</p>
+					<p class="secondary-team-member-position">Client Services Admin.</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="secondary-team-member square" style="background-image:url({{ asset('img/jill-1.jpg') }})">
 			<div class="overlay">
 				<div class="secondary-team-member-info">
@@ -154,23 +163,8 @@ Team
 				</div>
 			</div>
 		</div>
-
-		<div class="secondary-team-member square" style="background-image:url({{ asset('img/angela-1.jpg') }})">
-			<div class="overlay">
-				<div class="secondary-team-member-info">
-					<p class="secondary-team-member-name">Angela De Palo</p>
-					<p class="secondary-team-member-position">Client Services Admin.</p>
-				</div>
-			</div>
-			
-		</div>
-
 		
-
 	</div>
-
-
-
 
 </div>
 

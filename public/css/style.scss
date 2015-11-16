@@ -1622,12 +1622,24 @@ body , html{
 	font-style: italic;
 	font-size: 1.2rem;
 
+	@include breakpoint(mobile) {
+
+		font-size: .9rem;
+
+	}
+
 }
 
 .secondary-team-member-position {
 
 	font-family: $verdana;
 	font-size: .8rem;
+
+	@include breakpoint(mobile) {
+
+		font-size: .6rem;
+
+	}
 
 }
 
