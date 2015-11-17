@@ -1247,7 +1247,7 @@ body , html{
 		width:93%;
 		height:auto;
 
-		@include breakpoint(small) {
+		@include breakpoint(medium) {
 
 			padding: 40px 0;
 			position: static;
@@ -1266,7 +1266,7 @@ body , html{
 			margin-bottom: 3px;
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint(medium) {
 
 			position: static;
 			@include transform(none);
@@ -1294,7 +1294,7 @@ body , html{
 
 	}
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		height:auto;
 
@@ -1320,7 +1320,7 @@ body , html{
 
 	float:left;
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		float:none;
 
@@ -1334,7 +1334,7 @@ body , html{
 	width:240px;
 	margin-bottom: 17px;
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		position: static;
 		@include transform(none);
@@ -1359,7 +1359,7 @@ body , html{
 
 	}
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		font-size: .5rem;
 
@@ -1381,7 +1381,7 @@ body , html{
 		text-align: right;
 	}
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		float:none;
 		margin-left: 0;
@@ -1417,7 +1417,7 @@ body , html{
 		font-size: 4rem;
 		margin-top: 20px;
 
-		@include breakpoint(small) {
+		@include breakpoint(medium) {
 
 			margin-top: 65px;	
 
@@ -1622,7 +1622,7 @@ body , html{
 	font-style: italic;
 	font-size: 1.2rem;
 
-	@include breakpoint(mobile) {
+	@include breakpoint(1320px) {
 
 		font-size: .9rem;
 
@@ -1635,7 +1635,7 @@ body , html{
 	font-family: $verdana;
 	font-size: .8rem;
 
-	@include breakpoint(mobile) {
+	@include breakpoint(1320px) {
 
 		font-size: .6rem;
 
