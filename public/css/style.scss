@@ -1577,7 +1577,7 @@ body , html{
 	padding:60px 0;
 	margin-left: 23%;
 
-	@include breakpoint(mobile) {
+	@include breakpoint(medium) {
 
 		margin-left: 0;
 		width:100%;
@@ -1596,7 +1596,7 @@ body , html{
 	overflow: hidden;
 	margin-right: 17px;
 
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		width:50%;
 		margin: 0;
