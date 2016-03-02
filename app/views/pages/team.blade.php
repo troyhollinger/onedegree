@@ -72,35 +72,6 @@ Team
 
 	</div>
 
-
-	<div class="team-member">
-
-		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/blake-1.jpg') }})"></div>
-		</div>
-
-		<div class="team-member-info-container">
-
-			<p class="team-member-name"><span>Blake Gallion, CFP<i class="smaller">&reg;</i></span><span>Financial Advisor</span></p>
-			<p class="team-member-description">
-				At an early age Blake’s parents helped him create and manage his own budget, incorporating the principles of saving and giving. This was a 
-				valuable learning lesson and was the spark to opening his first mutual fund in high school and ultimately led to his career in financial planning. 
-				Though everyone’s situation is unique, his overriding goal for his clients is to attain contentment in their financial life.
-				<br><br>
-				Blake earned a Management Science Degree from UCSD and holds the CFP® certification. After several years in the business he set out to find 
-				people who shared his same passion for helping others and through Kingdom Advisors he found Janice Thompson. They have been working 
-				together since 2007 at Strategic Financial Solutions and in 2014 merged with other like-minded planners forming One Degree Advisors, Inc. He 
-				has served as a board member and treasurer for non-profit organizations{{-- , and currently serves on the local board of Kingdom Advisors --}}. Blake 
-				loves spending time with his high-school sweetheart, Rachael, and their kids Avery and Tanner.
-				<br><br>
-				<a href="https://www.linkedin.com/pub/blake-gallion-cfp%C2%AE/9/976/16a">Connect with me on LinkedIn</a>
-			</p>
-
-		</div>
-
-	</div>
-
-
 	<div class="team-member">
 
 		<div class="team-member-image-container">
