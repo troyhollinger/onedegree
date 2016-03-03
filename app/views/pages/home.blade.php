@@ -14,82 +14,44 @@ Menu
 
 
 <div class="home-banner top-banner">
-
-    
     <div id="skippr-target">
-
-        
         <div style="background-image:url({{ asset('img/city.jpg') }})">
-
             <div class="photo-content-container">
-
                 <p class="photo-content-title">What We Do</p>
-                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
-                
-
+                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>            
                 <a href="{{ route('services') }}">
-                    <div class="photo-content-button">
-                
+                    <div class="photo-content-button">            
                         <p>Services</p>
-                
                     </div>
                 </a>
-
             </div>
-
         </div>
         <div style="background-image:url({{ asset('img/building.jpg') }})">
-
             <div class="photo-content-container">
-
                 <p class="photo-content-title">Why One Degree</p>
-                <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>
-                
-
+                <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>            
                 <a href="{{ route('services') }}#why-one-degree"><div class="photo-content-button">
-
                     <p>See More</p>
-
                 </div></a>
-
             </div>
-
         </div>
-
-        <div style="background-image:url({{ asset('img/group.jpg') }})" id="group-mobile-fix">
-
+        {{-- <div style="background-image:url({{ asset('img/group.jpg') }})" id="group-mobile-fix">
            <div class="photo-content-container">
-
                 <p class="photo-content-title">We Love What We Do</p>
                 <p class="photo-content-text">We love working with people who are good at what they do and passionate about sharing their gifts...</p>
-
-               <a href="{{ route('services') }}#about"><div class="photo-content-button">
-               
-                   <p>About Us</p>
-               
+               <a href="{{ route('services') }}#about"><div class="photo-content-button">            
+                   <p>About Us</p>               
                </div></a>
-
            </div>
-
-        </div>
-
+        </div>--}}
         <div style="background-image:url({{ asset('img/meeting.jpg') }})">
-
             <div class="photo-content-container">
-
                 <p class="photo-content-title">Expect From Us</p>
-                <p class="photo-content-text">Multiple Solutions with a plan that is flexible as life changes. Use our knowledge to meet your...</p>
-
-                
-
-                <a href="{{ route('process') }}"><div class="photo-content-button">
-                
-                    <p>Our Process</p>
-                
+                <p class="photo-content-text">Multiple Solutions with a plan that is flexible as life changes. Use our knowledge to meet your...</p>                
+                <a href="{{ route('process') }}"><div class="photo-content-button">            
+                    <p>Our Process</p>            
                 </div></a>
-
             </div>
-
         </div>
         {{-- <div style="background-image:url({{ asset('img/tiles-green.jpg') }})">
 
