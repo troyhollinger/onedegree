@@ -147,7 +147,7 @@ Menu
             <a href="http://twitter.com/onedegreetweets" target="_blank">
                 <div class="tweet-handle-container">
                     <i class="fa fa-twitter"></i>
-                    <p><a href="{{ $tweet->user->url }}">@onedegreetweets</a></p>
+                    <p><a href="http://twitter.com/onedegreetweets">@onedegreetweets</a></p>
                 </div>
             </a>
 

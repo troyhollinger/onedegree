@@ -69,7 +69,7 @@ Process
 
 		<div class="process-module-text indicator-parent" data-indicator="Implement" id="implement">
 			<div class="section-title" id="implement-title"><p>Implement</p></div>
-			<p class="text">After working together to decide how our recommendations willbe carried out, we put the plan into practice. Depending on the complexity of your plan, this often requires several meetings and can incorporate the services of other professionals.</p>
+			<p class="text">After determining action steps, we put the plan into practice. Depending on the complexity of your plan, this often requires several meetings and can incorporate the services of other professionals</p>
 		</div>
 
 	</div>

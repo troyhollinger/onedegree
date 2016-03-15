@@ -19,7 +19,7 @@ Inquiry
 				<img class="form-x" src="{{ asset('img/form-x.jpg') }}" onclick="history.go(-1);">
 
 				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest in One Degree. To start the process, please fill out the form below.</h2>
-				<h3 class="form-secondary-title">We will then contact you to schedule a 15 min phone call to get acquainted and determine if we are a good fit for your needs.</h3>
+				<h3 class="form-secondary-title">We will then contact you to schedule a 15 minute phone call to get acquainted and determine if we are a good fit for your needs.</h3>
 
 
 				<div>

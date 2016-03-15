@@ -111,7 +111,7 @@ Services
 
 	<div class="service-section indicator-parent" data-indicator="Why One Degree" id="why-one-degree">
 
-		<p class="section-title">Choose Us Because</p>
+		<p class="section-title">Why One Degree?</p>
 
 		<p class="text">Our name, One Degree Advisors, reflects the idea that small changes can have a big 
 			impact. Think about that 20 foot putt that’s just off the mark and lips out of the cup, 
