@@ -318,10 +318,6 @@ Services
 				<td>&nbsp;CA Life Insurance License #0B67613</td>
 			</tr>
 			<tr>
-				<td>Blake Gallion</td>
-				<td>&nbsp;CA Life Insurance License #0E88557</td>
-			</tr>
-			<tr>
 				<td>Anthony Saffer</td>
 				<td>&nbsp;CA Life Insurance License #0C43243</td>
 			</tr>
