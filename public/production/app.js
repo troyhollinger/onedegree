@@ -1443,19 +1443,13 @@ var requestAnimationFrame = window.requestAnimationFrame ||
 var app = angular.module(['onedegree'], ['angularLoad', '720kb.datepicker', 'dnTimepicker', 'focusOn']);
 
 
-app.factory('Video', function($http) {
-
+app.factory('Video', ['$http', function($http) {
 	return {
-
 		get : function() {
-
 			return $http.get(base + '/api/videos');
-
 		}
-
 	}
-
-});
+}]);
 
 app.factory('Email', ['$http', function($http) {
 
@@ -1539,14 +1533,13 @@ app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($s
 }]);
 
 
-app.controller('VideoController', function($scope, Video, $sce) {
+app.controller('VideoController', ['$scope', 'Video', '$sce', function($scope, Video, $sce) {
 
 	$scope.videos = [];
 
 	$scope.activeVideo = {};
 
 	$scope.setActiveVideo = function(index) {
-
 		var embedToBeTrusted = String($scope.videos[index].link);
 
 		$scope.activeVideo = $scope.videos[index];
@@ -1576,7 +1569,7 @@ app.controller('VideoController', function($scope, Video, $sce) {
 
 	$scope.getVideos();
 
-});
+}]);
 
 
 app.controller('MediumController', ['$scope', 'angularLoad', function($scope, angularLoad) {

@@ -8,7 +8,7 @@
 		    <a href="{{ route('team') }}"><li>Team{{ Route::currentRouteName() == 'team' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
 		    <a href="{{ route('process') }}"><li>Process{{ Route::currentRouteName() == 'process' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
 		    <a href="{{ route('blog') }}"><li>Columns{{ Route::currentRouteName() == 'blog' ? '<div class="nav-indicator"></div>': ''}}</li></a><br>
-		    <li class="faded">Videos{{ Route::currentRouteName() == 'videos' ? '<div class="nav-indicator"></div>': ''}}</li><br>
+		    <a href="{{ route('videos') }}"><li >Videos{{ Route::currentRouteName() == 'videos' ? '<div class="nav-indicator"></div>': ''}}</li><br>
 		    <a id="mobile-inquire-link" href="{{ route('inquiry') }}"><li>Inquire{{ Route::currentRouteName() == 'inquiry' ? '<div class="nav-indicator"></div>': ''}}</li></a>
 		</ul>
 
