@@ -52,12 +52,12 @@
 
         <div class="footer-nav footer-module">
             <ul>
-                 <a href="{{ route('home') }}"><li class="{{ Route::currentRouteName() == 'home' ? 'bold': ''}}" >Home</li></a>
-                 <a href="{{ route('services') }}"><li class="{{ Route::currentRouteName() == 'services' ? 'bold': ''}}" >Services</li></a>
-                 <a href="{{ route('team') }}"><li class="{{ Route::currentRouteName() == 'team' ? 'bold': ''}}" >Team</li></a>
-                 <a href="{{ route('process') }}"><li class="{{ Route::currentRouteName() == 'process' ? 'bold': ''}}" >Process</li></a>
-                 <a href="{{ route('blog') }}"><li class="{{ Route::currentRouteName() == 'blog' ? 'bold': ''}}" >Columns</li></a>
-                 <li class="faded {{ Route::currentRouteName() == 'videos' ? 'bold': ''}}" >Videos</li>
+                <a href="{{ route('home') }}"><li class="{{ Route::currentRouteName() == 'home' ? 'bold': ''}}" >Home</li></a>
+                <a href="{{ route('services') }}"><li class="{{ Route::currentRouteName() == 'services' ? 'bold': ''}}" >Services</li></a>
+                <a href="{{ route('team') }}"><li class="{{ Route::currentRouteName() == 'team' ? 'bold': ''}}" >Team</li></a>
+                <a href="{{ route('process') }}"><li class="{{ Route::currentRouteName() == 'process' ? 'bold': ''}}" >Process</li></a>
+                <a href="{{ route('blog') }}"><li class="{{ Route::currentRouteName() == 'blog' ? 'bold': ''}}" >Columns</li></a>
+                <a href="{{ route('videos') }}"><li class="{{ Route::currentRouteName() == 'videos' ? 'bold': ''}}" >Videos</li>
             </ul>
         </div>
 
