@@ -24,8 +24,8 @@ Videos
 </div>
 <div class="banner footer-banner">
 	<div class="container">
-		<p class="banner-quote">Quote to come...</p>
-		<p class="banner-quote-source">ONE DEGREE ADVISORS</p>
+		<p class="banner-quote">Plans Fail for Lack of Counsel, <br><span class="bold">But with Many Advisors they Succeed.</span></p>
+		<p class="banner-quote-source">PROVERBS</p>
 	</div>
 </div>
 
