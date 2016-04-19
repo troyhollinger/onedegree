@@ -41,6 +41,8 @@
             @elseif(Route::currentRouteName() == 'process')
             <a href="{{ route('blog') }}">
             @elseif(Route::currentRouteName() == 'blog')
+            <a href="{{ route('videos') }}">
+            @elseif(Route::currentRouteName() == 'videos')
             <a href="{{ route('home') }}">
             @endif
 
