@@ -1316,6 +1316,17 @@ body , html{
 
 }
 
+.footer-social-media {
+	@include centerHorizontal;
+	bottom:30px;
+
+	li {
+		display: inline-block;
+		font-size:1.2rem;
+		margin:0 5px;
+	}
+}
+
 .portal-links {
 
 	float:left;

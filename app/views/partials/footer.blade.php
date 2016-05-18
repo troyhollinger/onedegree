@@ -1,5 +1,13 @@
 <div class="footer">
 
+    <div class="footer-social-media">
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/pages/ONE%C2%BA/652730311451932"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/onedegreetweets"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/company/one-degree-advisors-inc"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+
     <div class="container">
 
         <img class="footer-logo" src="{{ asset('img/footer-logo.svg') }}">
@@ -19,10 +27,10 @@
         <div class="portal-links footer-module">
 
             <ul>
-                <li class="footer-title">CLIENT PORTAL</li>
-                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>View Account Statements</li></a>
-                <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>View Reports</li></a>
-                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>View Plan</li></a>
+                <li class="footer-title">CLIENT LOGIN</li>
+                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>One View</li></a>
+                <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>TD Ameritrade</li></a>
+                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>Performance Reports</li></a>
                 <br>
                 {{-- <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a> --}}
                  
@@ -65,9 +73,10 @@
 
         <div class="footer-nav footer-module">
             <ul>
-                <a href="https://twitter.com/onedegreetweets" target="_blank"><li>Twitter</li></a>
+                <!-- <a href="https://twitter.com/onedegreetweets" target="_blank"><li>Twitter</li></a>
                 <a href="https://www.facebook.com/pages/ONE%C2%BA/652730311451932" target="_blank"><li>Facebook</li></a>
-                <a href="https://www.linkedin.com/company/one-degree-advisors-inc" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/one-degree-advisors-inc" target="_blank">LinkedIn</a> -->
+                <a href="http://www.adviserinfo.sec.gov/IAPD/IAPDFirmSummary.aspx?ORG_PK=170392" target="_blank">Broker Check</a>
                 <a href="{{ route('services') }}#info"><li>Disclosures</li></a>
                 <a href="http://www.letsmakeaplan.org/home" target="_blank"><li>CFP&reg;</li></a>
                 <a href="http://www.plannersearch.org/Pages/Home.aspx" target="_blank"><li>FPA&reg;</li></a>

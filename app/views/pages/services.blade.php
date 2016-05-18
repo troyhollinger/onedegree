@@ -328,6 +328,8 @@ Services
 		<p class="text">Certified Financial Planner Board of Standards Inc. owns the certification marks CFP®, Certified
 			Financial Planner&trade; and CFP® in the U.S., which it awards to individuals who successfully
 			complete CFP Board’s initial and ongoing certification requirements.</p>
+		<br>
+		<p class="text">One Degree Advisors, Inc. is a registered investment adviser and in this capacity may only transact business in a particular state after licensure or satisfying qualifications requirements of that state, or only if excluded or exempt from the state’s investment adviser or investment adviser representative requirements, as the case may be. Application may differ from those instances listed above utilizing securities offered through Securities America, Inc.</p>
 
 	</div>
 
