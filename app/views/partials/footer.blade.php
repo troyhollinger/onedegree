@@ -28,9 +28,10 @@
 
             <ul>
                 <li class="footer-title">CLIENT LOGIN</li>
-                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>One View</li></a>
-                <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>TD Ameritrade</li></a>
-                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>Performance Reports</li></a>
+                                
+                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>One View</li></a>
+                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade</li></a>                
+                <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>Performance Reports</li></a>
                 <br>
                 {{-- <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a> --}}
                  
