@@ -1328,15 +1328,14 @@ body , html{
 }
 
 .portal-links {
-
 	float:left;
 
 	@include breakpoint(medium) {
-
 		float:none;
-
+		color:white;
+		font-size: .8rem;
+		margin-top: 10px;
 	}
-
 }
 
 .footer-logo {
@@ -1392,22 +1391,25 @@ body , html{
 		text-align: right;
 	}
 
-	@include breakpoint(medium) {
+	.show-mobile {
+		display: none;
+	}
 
+	@include breakpoint(medium) {
 		float:none;
 		margin-left: 0;
 		margin-top: 50px;
 
 		ul {
-
 			text-align: left;
-
 		}
 
 		&:last-child {
-
 			display: none;
+		}
 
+		.show-mobile {
+			display: block;
 		}
 
 	}

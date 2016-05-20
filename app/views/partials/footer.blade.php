@@ -69,6 +69,7 @@
                 <a href="{{ route('process') }}"><li class="{{ Route::currentRouteName() == 'process' ? 'bold': ''}}" >Process</li></a>
                 <a href="{{ route('blog') }}"><li class="{{ Route::currentRouteName() == 'blog' ? 'bold': ''}}" >Columns</li></a>
                 <a href="{{ route('videos') }}"><li class="{{ Route::currentRouteName() == 'videos' ? 'bold': ''}}" >Videos</li>
+                <a href="http://www.adviserinfo.sec.gov/IAPD/IAPDFirmSummary.aspx?ORG_PK=170392" target="_blank" class="show-mobile">Broker Check</a>
             </ul>
         </div>
 
