@@ -13,7 +13,8 @@ Videos
 	<h2 class="active-video-title">@{{ activeVideo.title }}</h2>
 	<p class="active-video-description">@{{ activeVideo.description }}</p>
 	<div class="video-thumbnail-container">
-		<div class="video-thumbnail square" ng-repeat="video in videos" ng-click="setActiveVideo($index)">
+		<div class="video-thumbnail square" ng-repeat="video in videos" ng-click="setActiveVideo($index)" >
+			<img src="http://img.youtube.com/vi/@{{video.youtube_id}}/0.jpg" alt="@{{ video.title }}">
 			<i class="fa fa-play"></i>
 			<div class="video-thumbnail-info-container">
 				<h4 class="video-thumbnail-title">@{{ video.title }}</h4>
