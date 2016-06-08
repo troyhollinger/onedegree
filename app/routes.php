@@ -53,26 +53,7 @@ Route::get('inquiry', ['as' => 'inquiry', function() {
 
 }]);
 
-
-Route::get('api/videos', ['as' => 'getVideos', function() {
-
-
-	try {
-	
-		$videos = Video::all();
-
-	} catch (Exception $e) {
-
-		return Response::json(['message' => 'Sorry, videos could not be retrived'], 404);
-		
-	}
-
-	Log::info($videos);
-
-	return Response::json(['data' => $videos], 200);
-
-
-}]);
+Route::get('api/videos', ['as' => 'getVideos', 'uses' => 'VideoController@getvideos']);
 
 Route::get('login', ['as' => 'login', function() {
 
@@ -127,5 +108,3 @@ Route::get('speaker', ['as' => 'speaker', function() {
 
 Route::post('email/speaker', ['as' => 'email.speaker', 'uses' => 'EmailController@speaker']);
 Route::post('email/inquire', ['as' => 'email.inquire', 'uses' => 'EmailController@inquire']);
-
-
