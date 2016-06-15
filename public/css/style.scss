@@ -413,7 +413,7 @@ body , html{
 	width:22%;
 	width: 22vw;
 	height:100%;
-	height:100vh;
+	height:105vh;
 	background-color: $green;
 	@include transform(translate(100%, 0%));
 	@include transition(all .25s ease);
@@ -2731,6 +2731,20 @@ body , html{
 	}
 
 }
+.client-link {
+
+	position: fixed;
+	left:2.4vw;
+	top:140px;
+	@extend .indicator;
+	
+	@include breakpoint(mobile) {
+
+		display: none;
+
+	}
+
+}
 
 .home-service-modules-container {
 
@@ -2919,5 +2933,105 @@ body , html{
 
 	}
 
+}
+
+.login-page{
+	.container{
+		width: 940px;
+	}
+	.home-service-modules-container{
+		overflow-x:hidden;
+	}
+	.title{
+		width: 135px;
+		color: $light;
+	}
+	#nav-button{
+		color: $light;	
+	}
+	.mast-logo-letters{
+		fill: $light;
+	}
+	.nav-container{
+		background-color: #D3D3D3;
+	}
+
+button.login-btn {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 100%;
+  min-height: 195px;
+  font-size: 24px;
+  font-family: $georgia;
+  font-weight: bold;
+  line-height: 1.8;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  border: none;
+  cursor:pointer;
+}
+button.login-btn:focus {
+  outline: none;
+}
+button.one-view{
+	background-color: rgb(15,109,169);
+	text-shadow: -1px 1px #417cb8;
+	
+}
+button.one-view:hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+
+
+button.performance-reports{
+	background-color: rgb(31,156,210);
+	
+}
+button.performance-reports:hover {
+  background-color: #1589FF;
+  text-shadow: -1px 1px #27496d;
+}
+
+button.td-ameritrade{
+	background-color: rgb(26,180,47);
+	
+}
+button.td-ameritrade:hover {
+  background-color: #006400;
+  text-shadow: -1px 1px #27496d;
+}
+
+
+.login-text{
+	font-size: 0.8rem;
+	a{
+		font-weight: normal;
+	}
+}
+span.bold{
+	font-weight: bold;
+}
+p.light{
+	color: $light;
+}
+.footer-banner{
+	background-color: $light;
+	text-align: center;
+
+}
+.banner-quote {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
 }
 

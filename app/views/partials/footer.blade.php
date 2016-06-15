@@ -27,7 +27,7 @@
         <div class="portal-links footer-module">
 
             <ul>
-                <li class="footer-title">CLIENT LOGIN</li>
+                <li class="footer-title"><a href="{{ route('client-login') }}">CLIENT LOGIN</a></li>
                                 
                 <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>One View</li></a>
                 <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade</li></a>                
