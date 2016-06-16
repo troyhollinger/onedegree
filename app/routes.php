@@ -61,6 +61,12 @@ Route::get('login', ['as' => 'login', function() {
 
 }]);
 
+Route::get('client-login', ['as' => 'client-login', function() {
+
+	return View::make('pages.clientLogin');
+
+}]);
+
 Route::post('login', ['as' => 'login.post', function() {
 
 	$email = Input::get('email');

@@ -2190,16 +2190,17 @@ var SectionIndicators = {
 	indicatorElements : $(".indicator-element"),
 
 	inquireLink : $("#inquire-link"),
+	
 
 	setIndicators : function() {
 
 		var html = '';
-
+		
 		SectionIndicators.elements.each(function() {
 
 			var text = $(this).attr('data-indicator');
 			var anchor = $(this).attr('id');
-
+		
 			// in order to be able to use this code snippet for the single inquiry link
 			// on the home page, this conditional checks for that one instance, else
 			// assigns normal behavior
@@ -2207,12 +2208,16 @@ var SectionIndicators = {
 			if (anchor === 'inquiry') {
 
 				html += '<a href="' + base + '/inquiry"class="indicator-element">' + text + '</a>';
+				
 
+			}else if(anchor === 'client-login'){
+				html += '<a href="' + base + '/client-login"class="indicator-element">' + text + '</a>';
 			} else {
 
 				html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';
 
 			}
+		
 		
 		});
 
@@ -2272,6 +2277,7 @@ $(document).ready(function() {
 			SectionIndicators.init();
 
 		}
+		
 
 	}
 
@@ -2305,6 +2311,10 @@ $(document).ready(function() {
 	if (thisPage === 'videos') {
 
 		// Video.init();
+
+	}
+
+	if (thisPage === 'client-login') {
 
 	}
 
