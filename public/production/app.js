@@ -2315,6 +2315,20 @@ $(document).ready(function() {
 	}
 
 	if (thisPage === 'client-login') {
+		var $img = jQuery('img.footer-logo');
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+        	
+            var $svg = jQuery(data).find('svg');
+            $svg = $svg.removeAttr('xmlns:a');
+            $.each(attributes, function() {
+                $svg.attr(this.name, this.value);
+            });
+
+            $img.replaceWith($svg);
+        }, 'xml');
 
 	}
 
@@ -2357,6 +2371,7 @@ $(document).ready(function() {
 	    }
 
 	});
+
 
 });
 

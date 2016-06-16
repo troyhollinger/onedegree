@@ -2936,9 +2936,9 @@ body , html{
 }
 
 .login-page{
-	.container{
+	/* .container{
 		width: 940px;
-	}
+	} */
 	.home-service-modules-container{
 		overflow-x:hidden;
 	}
@@ -3021,13 +3021,20 @@ button.td-ameritrade:hover {
 span.bold{
 	font-weight: bold;
 }
-p.light{
-	color: $light;
+p.light, .details a, .footer a, .nav-details a{
+	color: $light !important;
 }
+
 .footer-banner{
 	background-color: $light;
 	text-align: center;
 
+}
+.footer-social-media{
+	color: #fff;
+}
+svg path {
+    fill: $light;
 }
 .banner-quote {
     font-size: 1.5rem;
