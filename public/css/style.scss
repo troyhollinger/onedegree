@@ -3032,9 +3032,10 @@ button.td-ameritrade:hover {
 span.bold{
 	font-weight: bold;
 }
- p.light, .details a, .footer a, .nav-details a, .nav-details p{
-	color: $light !important;
-} 
+
+ p.light,.footer a{
+ 	color: $light !important;
+ }
 
 .footer-banner{
 	background-color: $light;
