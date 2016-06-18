@@ -9,9 +9,7 @@
     </div>
 
     <div class="container">
-
         <img class="footer-logo" src="{{ asset('img/footer-logo.svg') }}">
-
         <div class="footer-details">
             <a href="https://www.google.com/maps/place/3131+Camino+Del+Rio+N+%231010,+San+Diego,+CA+92108/@32.7751506,-117.1270346,17z/data=!3m1!4b1!4m2!3m1!1s0x80d955a7fe9ffd0b:0x4a6d5c2f86006b14" target="_blank">
                 <p>8880 Rio San Diego Drive, 1000</p>
@@ -21,15 +19,11 @@
             <p>Phone : 619.282.3288</p>
             <p>Fax : 619.280.9553</p>
             <p>Email : <a href="mailto:admin@onedegreeadvisors.com" class="green-text bold">admin@onedegreeadvisors.com</a> </p>
-
         </div>
-
         <div class="portal-links footer-module">
-
             <ul>
-                <li class="footer-title"><a href="{{ route('client-login') }}">CLIENT LOGIN</a></li>
-                                
-                <a href="https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree" target="_blank"><li>One View</li></a>
+                <li class="footer-title"><a href="{{ route('client-login') }}">CLIENT LOGIN</a></li>                    
+                <a href="https://wealth.emaplan.com/ema/SignIn?ema/securitiesamerica/onedegree" target="_blank"><li>One View</li></a>
                 <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade</li></a>                
                 <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>Performance Reports</li></a>
                 <br>
