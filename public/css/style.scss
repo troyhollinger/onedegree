@@ -2471,6 +2471,11 @@ body , html{
 
 }
 
+.video-thumbnail img{
+	width: 100%;
+	height: 100%;
+}
+
 .video-thumbnail-title {
 
 	font-family: $georgia;
@@ -2960,11 +2965,11 @@ button.login-btn {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 100%;
-  min-height: 195px;
+  min-height: 220px;
   font-size: 24px;
   font-family: $georgia;
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 1.2;
   vertical-align: bottom;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2988,7 +2993,9 @@ button.one-view{
 	
 }
 button.one-view:hover {
-  background-color: #346392;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   text-shadow: -1px 1px #27496d;
 }
 
@@ -2998,7 +3005,9 @@ button.performance-reports{
 	
 }
 button.performance-reports:hover {
-  background-color: #1589FF;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   text-shadow: -1px 1px #27496d;
 }
 
@@ -3007,13 +3016,15 @@ button.td-ameritrade{
 	
 }
 button.td-ameritrade:hover {
-  background-color: #006400;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   text-shadow: -1px 1px #27496d;
 }
 
 
 .login-text{
-	font-size: 0.8rem;
+	/* font-size: 0.8rem; */
 	a{
 		font-weight: normal;
 	}
@@ -3021,9 +3032,9 @@ button.td-ameritrade:hover {
 span.bold{
 	font-weight: bold;
 }
-p.light, .details a, .footer a, .nav-details a{
+ p.light, .details a, .footer a, .nav-details a, .nav-details p{
 	color: $light !important;
-}
+} 
 
 .footer-banner{
 	background-color: $light;
@@ -3032,6 +3043,9 @@ p.light, .details a, .footer a, .nav-details a{
 }
 .footer-social-media{
 	color: #fff;
+}
+.footer-next-page i{
+	color: $light;
 }
 svg path {
     fill: $light;
