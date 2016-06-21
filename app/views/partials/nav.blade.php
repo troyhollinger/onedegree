@@ -25,7 +25,7 @@
 		    <p>Email : <a href="mailto:admin@onedegreeadvisors.com" class="bold">admin@onedegreeadivsors.com</a> </p>
 		    <br>
 		    <br>
-		    <p class="smaller"><a href="http://www.troyhollinger.com">{{ Route::currentRouteName() == 'client-login' ? 'Made By Troy': 'WEBSITE MADE BY TROY'}}</a></p>
+		    <p class="smaller"><a href="http://www.troyhollinger.com">{{ Route::currentRouteName() == 'client-login' ? 'MADE BY TROY': 'WEBSITE MADE BY TROY'}}</a></p>
 		</div>
 
 	</div>

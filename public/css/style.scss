@@ -2941,14 +2941,11 @@ body , html{
 }
 
 .login-page{
-	/* .container{
-		width: 940px;
-	} */
+	
 	.home-service-modules-container{
 		overflow-x:hidden;
 	}
 	.title{
-		width: 135px;
 		color: $light;
 	}
 	#nav-button{
@@ -2958,16 +2955,16 @@ body , html{
 		fill: $light;
 	}
 	.nav-container{
-		background-color: #D3D3D3;
+		background-color: #8F9293;
 	}
 
 button.login-btn {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 100%;
-  min-height: 220px;
+  min-height: 225px;
   font-size: 24px;
-  font-family: $georgia;
+  font-family: $verdana;
   font-weight: bold;
   line-height: 1.2;
   vertical-align: bottom;
@@ -2987,44 +2984,56 @@ button.login-btn {
 button.login-btn:focus {
   outline: none;
 }
+button.one-view, button.performance-reports,button.td-ameritrade {
+	-webkit-transition: transform 1s ease-in-out;
+	-moz-transition:transform 1s ease-in-out;
+	 -ms-transition: transform 2s ease-in-out;
+}
 button.one-view{
+	font-family: sans-serif;
 	background-color: rgb(15,109,169);
-	text-shadow: -1px 1px #417cb8;
 	
 }
-button.one-view:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  text-shadow: -1px 1px #27496d;
+button.one-view, button.one-view:hover{
+	-webkit-transform-origin: 30% 100%;
+	-moz-transform-origin: 30% 100%;
+	-ms-transform-origin: 30% 100%;
+}
+button.one-view:hover,button.td-ameritrade:hover,button.performance-reports:hover{
+  -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transition: transform 1s ease-in-out;
+  -ms-transition: transform 2s ease-in-out;
+  -moz-transition:transform 1s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  font-family: sans-serif;
 }
 
-
 button.performance-reports{
+	font-family: sans-serif;
 	background-color: rgb(31,156,210);
 	
 }
-button.performance-reports:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  text-shadow: -1px 1px #27496d;
-}
+ 
 
 button.td-ameritrade{
+	font-family: sans-serif;
 	background-color: rgb(26,180,47);
 	
 }
-button.td-ameritrade:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  text-shadow: -1px 1px #27496d;
+button.td-ameritrade, button.td-ameritrade:hover{
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;	
 }
 
+ 
 
 .login-text{
-	/* font-size: 0.8rem; */
+	
 	a{
 		font-weight: normal;
 	}
@@ -3051,9 +3060,19 @@ span.bold{
 svg path {
     fill: $light;
 }
+.login-text-info{
+	font-size: 0.8em;
+	padding-top: 150px;
+	@include breakpoint(mobile) {
+		padding-top: 0px;
+	}
+}
+.login-helpful-cont-middle{
+	padding-top: 25px;
+
+}
 .banner-quote {
     font-size: 1.5rem;
     letter-spacing: -1px;
 }
 }
-

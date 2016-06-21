@@ -105,7 +105,7 @@
 
         @if(Route::currentRouteName() !== 'client-login')
         @if(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() !== 'home')
-        <a href="{{ route('client-login') }}"><div class="inquire-link" id="inquire-link">Client Login</div></a>
+        <a href="{{ route('client-login') }}"><div class="inquire-link" id="inquire-link">Login</div></a>
       
         @elseif(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() === 'home')
         <a href="{{ route('client-login') }}"><div class="inquire-link" id="inquire-link"></div></a>
