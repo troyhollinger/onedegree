@@ -32,7 +32,7 @@
             </ul>
 
         </div>
-
+        @if (Route::currentRouteName() !== 'client-login') 
         <div class="footer-next-page">
 
             @if (Route::currentRouteName() == 'home') 
@@ -54,7 +54,7 @@
             </a>
 
         </div>
-
+         @endif
         <div class="footer-nav footer-module">
             <ul>
                 <a href="{{ route('home') }}"><li class="{{ Route::currentRouteName() == 'home' ? 'bold': ''}}" >Home</li></a>

@@ -5,7 +5,7 @@ One Degree Advisors - San Diego based financial planning and investment services
 @stop
 
 @section('title')
-client login
+login
 @stop
 
 @section('content')
@@ -39,17 +39,17 @@ client login
         <div class="service-module">
             <button class="login-btn performance-reports"  onclick="window.open('https://advisor.envestnet.com/secure/login/envest.jsp', '_blank');">Performance Reports</button><br><br>
             <p class="text login-text">This illustrates Quarterly and Daily account performance and asset allocation.</p><br>
-            <p class="text login-text"><span class="bold">Helpful hints on navigating website:</span> The initial page, Market Summary, shows recent market related information.</p>
+            <p class="text login-text login-helpful-cont-middle"><span class="bold">Helpful hints on navigating website:</span> The initial page, Market Summary, shows recent market related information.</p>
             <br>
             <p class="text login-text">The Investment Reports section is where you will find many different reports.</p>
             <br><br>
-            <p class="text login-text">
+            <p class="text login-text login-text-info">
                 <span class="bold">Forgot log-in information?</span><br>
                 Email <a href="mailto:admin@onedegreeadvisors.com?Subject=Forgot%20login" target="_top">admin@onedegreeadvisors.com</a> Or Call 619 282-3288    
             </p>                
         </div>
         <div class="service-module">
-            <button class="login-btn td-ameritrade"  onclick="window.open('https://www.advisorclient.com/advisorclient/p/gridLoin', '_blank');">TD Ameritrade</button><br><br>
+            <button class="login-btn td-ameritrade"  onclick="window.open('https://advisorclient.com/advisorclient/p/gridLogin', '_blank');">TD Ameritrade</button><br><br>
             <p class="text text-login">
                 This provides access to formal account statements, trade confirmations and tax forms for accounts held at TD Ameritrade.
             </p><br>
