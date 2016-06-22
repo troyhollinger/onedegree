@@ -13,7 +13,7 @@ login
 <div class="container content indicator-parent home-services-module-wrapper" data-indicator="Cleint Login" id="client-login">
     <div class="home-service-modules-container">
         <div class="service-module">
-            <button class="login-btn one-view"  onclick="window.open('https://wealth.emaplan.com/ema/Default.aspx?ema/securitiesamerica/onedegree', '_blank');">One View</button><br><br>
+            <button class="login-btn one-view"  onclick="window.open('https://wealth.emaplan.com/ema/SignIn?ema%2fsecuritiesamerica%2fonedegree', '_blank');">One View</button><br><br>
             <p class="text login-text">This provides information on your
             financial plan and net worth and access
             to the secure online vault for document
@@ -41,7 +41,7 @@ login
             <p class="text login-text">This illustrates Quarterly and Daily account performance and asset allocation.</p><br>
             <p class="text login-text login-helpful-cont-middle"><span class="bold">Helpful hints on navigating website:</span> The initial page, Market Summary, shows recent market related information.</p>
             <br>
-            <p class="text login-text">The Investment Reports section is where you will find many different reports.</p>
+            <p class="text login-text investment-reports-text-middle">The Investment Reports section is where you will find many different reports.</p>
             <br><br>
             <p class="text login-text login-text-info">
                 <span class="bold">Forgot log-in information?</span><br>
@@ -53,7 +53,7 @@ login
             <p class="text text-login">
                 This provides access to formal account statements, trade confirmations and tax forms for accounts held at TD Ameritrade.
             </p><br>
-            <p class="text text-login"><span class="bold">Helpful hints on navigating website:</span> From the top of any site page, you can access a <span class="bold">site map</span> for an overview of how the site is organized.</p>
+            <p class="text text-login login-helpful-cont-last"><span class="bold">Helpful hints on navigating website:</span> From the top of any site page, you can access a <span class="bold">site map</span> for an overview of how the site is organized.</p>
             <br>
             <p class="text text-login">In <span class="bold">Accounts</span>, you'll find the <span class="bold">Account Center</span> which displays account information for a single account, including balances, positions, and history.</p>    
         </div>

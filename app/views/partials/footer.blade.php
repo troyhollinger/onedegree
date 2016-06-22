@@ -23,8 +23,8 @@
         <div class="portal-links footer-module">
             <ul>
                 <li class="footer-title"><a href="{{ route('client-login') }}">CLIENT LOGIN</a></li>                    
-                <a href="https://wealth.emaplan.com/ema/SignIn?ema/securitiesamerica/onedegree" target="_blank"><li>One View</li></a>
-                <a href="https://nextgen.advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade</li></a>                
+                <a href="https://wealth.emaplan.com/ema/SignIn?ema%2fsecuritiesamerica%2fonedegree" target="_blank"><li>One View</li></a>
+                <a href="https://advisorclient.com/advisorclient/p/gridLogin" target="_blank"><li>TD Ameritrade</li></a>                
                 <a href="https://advisor.envestnet.com/secure/login/envest.jsp" target="_blank"><li>Performance Reports</li></a>
                 <br>
                 {{-- <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank"><li class="bold">Free, Instant Portfolio Analysis</li></a> --}}
