@@ -413,7 +413,7 @@ body , html{
 	width:22%;
 	width: 22vw;
 	height:100%;
-	height:105vh;
+	height:108vh;
 	background-color: $green;
 	@include transform(translate(100%, 0%));
 	@include transition(all .25s ease);
@@ -2931,6 +2931,7 @@ body , html{
 #mobile-inquire-link {
 
 	//display: none;
+	display: inline-block;
 
 	@include breakpoint(mobile) {
 
@@ -2963,7 +2964,7 @@ button.login-btn {
   margin: 0 10px 0 0;
   width: 100%;
   min-height: 225px;
-  font-size: 24px;
+  font-size: 32px;
   font-family: $verdana;
   font-weight: bold;
   line-height: 1.2;
@@ -2980,6 +2981,8 @@ button.login-btn {
   color: #fff;
   border: none;
   cursor:pointer;
+  text-align: left;
+  padding-left: 60px;
 }
 button.login-btn:focus {
   outline: none;
@@ -3006,9 +3009,9 @@ button.one-view:hover,button.td-ameritrade:hover,button.performance-reports:hove
   -webkit-transition: transform 1s ease-in-out;
   -ms-transition: transform 2s ease-in-out;
   -moz-transition:transform 1s ease-in-out;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   font-family: sans-serif;
 }
 
@@ -3062,14 +3065,23 @@ svg path {
 }
 .login-text-info{
 	font-size: 0.8em;
-	padding-top: 150px;
+	padding-top: 103px;
 	@include breakpoint(mobile) {
 		padding-top: 0px;
 	}
 }
 .login-helpful-cont-middle{
-	padding-top: 25px;
+	padding-top: 48px;
+	@include breakpoint(mobile) {
+		padding-top: 0px;
+	}
 
+}
+.login-helpful-cont-last, .investment-reports-text-middle{
+	padding-top: 24px;
+	@include breakpoint(mobile) {
+		padding-top: 0px;
+	}
 }
 .banner-quote {
     font-size: 1.5rem;
