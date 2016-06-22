@@ -13,7 +13,7 @@ login
 <div class="container content indicator-parent home-services-module-wrapper" data-indicator="Cleint Login" id="client-login">
     <div class="home-service-modules-container">
         <div class="service-module">
-            <button class="login-btn one-view"  onclick="window.open('https://wealth.emaplan.com/ema/SignIn?ema%2fsecuritiesamerica%2fonedegree', '_blank');">One View</button><br><br>
+            <button class="login-btn one-view"  onclick="window.open('https://wealth.emaplan.com/ema/SignIn?ema/securitiesamerica/onedegree', '_blank');">One View</button><br><br>
             <p class="text login-text">This provides information on your
             financial plan and net worth and access
             to the secure online vault for document
