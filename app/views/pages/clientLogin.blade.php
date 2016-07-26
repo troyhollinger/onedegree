@@ -26,7 +26,7 @@ login
             <p class="text login-text">
                 From the <span class="bold">Organizer</span> tab accounts can be connected to the plan.
             </p><br>
-            <p class="text login-text light">
+            <p class="text login-text light-dark">
                 Please contact your advisor when you link an account. Your accounts under our management will be linked.
             </p><br>
             <p class="text login-text">
