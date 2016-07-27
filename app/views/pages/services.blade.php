@@ -301,8 +301,8 @@ Services
 			America, Inc., Member <a href="http://www.finra.org/" target="_blank">FINRA</a>/<a href="http://www.sipc.org/" target="_blank">SIPC</a>. One Degree 
 			Advisors and Securities America are separate 
 			companies. We are registered to sell Securities in the 
-			following states: AE, AP, AR, AZ, CA, CO, FL, GA, HI, ID, IN, MD, ME, 
-			MO, NC, NJ, NV, OR, SC, SD, UT, VA, WA.		
+			following states: AE, AL, AP, AR, AZ, CA, CO, FL, GA, HI, ID, IN, MD, 
+			MO, NC, NJ, NV, OH, OR, SC, SD, UT, VA, WA.		
 		</p>
 
 		<br>
