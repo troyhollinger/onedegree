@@ -2211,7 +2211,7 @@ var SectionIndicators = {
 				
 
 			}else if(anchor === 'client-login'){
-				html += '<a href="' + base + '/client-login"class="indicator-element">' + text + '</a>';
+				html += '<a href="' + base + '/client-login"class="indicator-element inquire-link-login">' + text + '</a>';
 			} else {
 
 				html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';

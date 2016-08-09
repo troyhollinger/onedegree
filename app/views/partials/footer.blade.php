@@ -11,7 +11,8 @@
     <div class="container">
         <img class="footer-logo" src="{{ asset('img/footer-logo.svg') }}">
         <div class="footer-details">
-            <a href="https://www.google.com/maps/place/3131+Camino+Del+Rio+N+%231010,+San+Diego,+CA+92108/@32.7751506,-117.1270346,17z/data=!3m1!4b1!4m2!3m1!1s0x80d955a7fe9ffd0b:0x4a6d5c2f86006b14" target="_blank">
+          <a href="https://www.google.com/maps/place/8880+Rio+San+Diego+Dr,+San+Diego,+CA+92108/@32.7767083,-117.1410224,17z/data=!3m1!4b1!4m5!3m4!1s0x80d95511e5a8cc5d:0x3a6bfd03e790bc0!8m2!3d32.7767083!4d-117.1388284" target="_blank"> 
+          
                 <p>8880 Rio San Diego Drive, 1000</p>
                 <p>San Diego, CA 92108</p>
             </a>
@@ -55,6 +56,11 @@
 
         </div>
          @endif
+         <?php 
+            if ( Agent::isMobile() ) {?>
+             @include('partials.footer-nav')
+         <?php }
+         ?>
         <div class="footer-nav footer-module">
             <ul>
                 <a href="{{ route('home') }}"><li class="{{ Route::currentRouteName() == 'home' ? 'bold': ''}}" >Home</li></a>
@@ -66,18 +72,12 @@
                 <a href="http://www.adviserinfo.sec.gov/IAPD/IAPDFirmSummary.aspx?ORG_PK=170392" target="_blank" class="show-mobile">Broker Check</a>
             </ul>
         </div>
-
-        <div class="footer-nav footer-module">
-            <ul>
-                <!-- <a href="https://twitter.com/onedegreetweets" target="_blank"><li>Twitter</li></a>
-                <a href="https://www.facebook.com/pages/ONE%C2%BA/652730311451932" target="_blank"><li>Facebook</li></a>
-                <a href="https://www.linkedin.com/company/one-degree-advisors-inc" target="_blank">LinkedIn</a> -->
-                <a href="http://www.adviserinfo.sec.gov/IAPD/IAPDFirmSummary.aspx?ORG_PK=170392" target="_blank">Broker Check</a>
-                <a href="{{ route('services') }}#info"><li>Disclosures</li></a>
-                <a href="http://www.letsmakeaplan.org/home" target="_blank"><li>CFP&reg;</li></a>
-                <a href="http://www.plannersearch.org/Pages/Home.aspx" target="_blank"><li>FPA&reg;</li></a>
-            </ul>
-        </div>
+      
+       <?php 
+            if ( Agent::isDesktop() ) {?>
+             @include('partials.footer-nav')
+         <?php }
+         ?>
 
     </div>
 
