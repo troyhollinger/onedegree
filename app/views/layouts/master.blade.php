@@ -48,7 +48,7 @@
         <script> var thisPage = '{{ Route::currentRouteName() }}'</script>
     </head>
     <body ng-app="onedegree" class="@if (!empty($custom_cls)){{ $custom_cls }}@endif">
-
+        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -105,7 +105,7 @@
 
         @if(Route::currentRouteName() !== 'client-login')
         @if(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() !== 'home')
-        <a href="{{ route('client-login') }}"><div class="inquire-link" id="inquire-link">Login</div></a>
+        <a href="{{ route('client-login') }}"><div class="inquire-link inquire-link-login" id="inquire-link">Login</div></a>
       
         @elseif(Route::currentRouteName() !== 'inquiry' && Route::currentRouteName() === 'home')
         <a href="{{ route('client-login') }}"><div class="inquire-link" id="inquire-link"></div></a>
