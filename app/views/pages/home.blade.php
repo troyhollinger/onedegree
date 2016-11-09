@@ -26,7 +26,16 @@ Menu
                 </a>
             </div>
         </div>
-        <div style="background-image:url({{ asset('img/building.jpg') }})">
+        <div style="background-image:url({{ asset('img/team.jpg') }})">
+            <div class="photo-content-container">
+                <p class="photo-content-title">Who we are</p>
+                <p class="photo-content-text">We derive great satisfaction in freeing you up to focus your time and resources on what’s important to you.</p>            
+                <a href="{{ route('team') }}"><div class="photo-content-button">
+                    <p>Our Team</p>
+                </div></a>
+            </div>
+        </div>
+        <div style="background-image:url({{ asset('img/building-2.jpg') }})">
             <div class="photo-content-container">
                 <p class="photo-content-title">Why One Degree</p>
                 <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>            

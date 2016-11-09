@@ -1582,7 +1582,6 @@ body , html{
 
 
 .secondary-team {
-
 	width:77%;
 	height:auto;
 	position: relative;
@@ -1591,10 +1590,8 @@ body , html{
 	margin-left: 23%;
 
 	@include breakpoint(medium) {
-
 		margin-left: 0;
 		width:100%;
-
 	}
 
 }
@@ -1602,7 +1599,7 @@ body , html{
 .secondary-team-member {
 
 	position: relative;
-	width:25%;
+	width:20%;
 	background-size: cover;
 	background-position: center;
 	float:left;

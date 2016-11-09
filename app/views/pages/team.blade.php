@@ -17,7 +17,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/audrey-1.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/audrey-3.png') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -48,7 +48,7 @@ Team
 	<div class="team-member">
 
 		<div class="team-member-image-container">
-			<div class="team-member-image" style="background-image:url({{ asset('img/janice-2.jpg') }})"></div>
+			<div class="team-member-image" style="background-image:url({{ asset('img/janice-3.png') }})"></div>
 		</div>
 
 		<div class="team-member-info-container">
@@ -131,6 +131,15 @@ Team
 				<div class="secondary-team-member-info">
 					<p class="secondary-team-member-name">Alex Okugawa</p>
 					<p class="secondary-team-member-position">Advisor Support Specialist</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="secondary-team-member square" style="background-image:url({{ asset('img/jeff-1.jpg') }})">
+			<div class="overlay">
+				<div class="secondary-team-member-info">
+					<p class="secondary-team-member-name">Jeff Luebe</p>
+					<p class="secondary-team-member-position">Client Services Manager</p>
 				</div>
 			</div>
 		</div>
