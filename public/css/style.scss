@@ -2968,7 +2968,7 @@ button.login-btn {
   width: 100%;
   min-height: 225px;
   font-size: 32px;
-  font-family: $verdana;
+  font-family: $verdana !important;
   font-weight: bold;
   line-height: 1.2;
   vertical-align: bottom;
@@ -2990,32 +2990,10 @@ button.login-btn {
 button.login-btn:focus {
   outline: none;
 }
-button.one-view, button.performance-reports,button.td-ameritrade {
-	-webkit-transition: transform 1s ease-in-out;
-	-moz-transition:transform 1s ease-in-out;
-	 -ms-transition: transform 2s ease-in-out;
-}
 button.one-view{
 	font-family: sans-serif;
 	background-color: rgb(15,109,169);
 	
-}
-button.one-view, button.one-view:hover{
-	-webkit-transform-origin: 30% 100%;
-	-moz-transform-origin: 30% 100%;
-	-ms-transform-origin: 30% 100%;
-}
-button.one-view:hover,button.td-ameritrade:hover,button.performance-reports:hover{
-  -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -webkit-transition: transform 1s ease-in-out;
-  -ms-transition: transform 2s ease-in-out;
-  -moz-transition:transform 1s ease-in-out;
-  -webkit-transform: scale(0.9, 0.9);
-  -ms-transform: scale(0.9, 0.9);
-  transform: scale(0.9, 0.9);
-  font-family: sans-serif;
 }
 
 button.performance-reports{
@@ -3030,20 +3008,16 @@ button.td-ameritrade{
 	background-color: rgb(26,180,47);
 	
 }
-button.td-ameritrade, button.td-ameritrade:hover{
-	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	-ms-transform-origin: 100% 100%;	
-}
-
- 
-
 .login-text{
 	
 	a{
 		font-weight: normal;
 	}
+	
 }
+span.helpful-link{
+		font-family: $verdana;
+	}
 span.bold{
 	font-weight: bold;
 }
@@ -3097,16 +3071,12 @@ svg path {
 /* new css */
 
 .single_page_container .service-module .text, body{
-	font-family: verdana; 
+	font-family: $verdana;; 
 }
 
 .single_page_container{
 	width: 772px; 
 	margin: 0px auto; 
-}
-
-.one_view{
-
 }
 
 .single_page_container .service-module{
@@ -3166,7 +3136,7 @@ svg path {
 .one_view h1 {
     background: #0f6ea9 none repeat scroll 0 0;
     color: #ffffff;
-    font-family: verdana;
+    font-family: $verdana;
     font-size: 50px;
     font-weight: bold;
     padding: 160px 0;
@@ -3177,6 +3147,7 @@ a.quarterly_market{
 	color: #6bbb6f; 
 	font-weight: bold;
 	cursor: pointer;
+	font-family: $verdana !important;
 }
 
 @media (max-width: 979px) {

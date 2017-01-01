@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         cssmin : {
             combine : {
                 files : {
-                    'production/app.css' : ['css/style.css', 'css/reset.css', 'bower_components/angularjs-datepicker/src/css/angular-datepicker.css']
+                    'production/app.css' : ['css/style.css', 'css/reset.css', 'bower_components/angularjs-datepicker/src/css/angular-datepicker.css', 'bower_components/hover/css/hover-min.css']
                 }
             }
         },
