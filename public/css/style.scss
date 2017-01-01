@@ -3094,4 +3094,97 @@ svg path {
     letter-spacing: -1px;
 }
 
+/* new css */
+
+.single_page_container .service-module .text, body{
+	font-family: verdana; 
+}
+
+.single_page_container{
+	width: 772px; 
+	margin: 0px auto; 
+}
+
+.one_view{
+
+}
+
+.single_page_container .service-module{
+	width: 100%; 
+	font-size: 17.75px; 
+	padding: 0px; 
+	margin-bottom: 35px; 
+}
+
+.single_page_container .sub_module{
+	margin-top: 30px; 
+}
+
+.single_page_container .sub_module .service-module{
+	width: 366px;  
+	margin-right: 40px; 
+}
+
+.single_page_container .sub_module .service-module:nth-child(2n){
+	margin-right: 0px; 
+}
+
+.single_page_container .sub_module .service-module button{
+	width: 100%; 
+	font-size: 36px; 
+}
+
+.sub_module .service-module:nth-of-type(2){
+	border: none; 
+}
+
+.single_page_container .service-module button {
+    padding: 140px 0;    
+    text-align: center;
+    width: 772px;
+    margin: 0px auto 15px;  
+    font-size: 50px; 
+    -moz-transition: all .5s ease-out; 
+	-webkit-transition: all .5s ease-out; 
+	-o-transition: all .5s ease-out;
+} 
+
+.single_page_container .service-module p{
+	margin-bottom: 10px; 
+	font-size: 17.75px; 
+	color: #404649; 
+}
+
+.single_page_container .service-module p.shadow{
+	color: #9fa2a4; 
+}
+
+/* .single_page_container .service-module p span , span.bold{
+	color: #404649; 
+}  */
+
+.one_view h1 {
+    background: #0f6ea9 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 160px 0;
+    text-align: center;
+}
+
+a.quarterly_market{
+	color: #6bbb6f; 
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@media (max-width: 979px) {
+	.single_page_container, .single_page_container .service-module button{
+		width: 100%; 
+	}
+}
+
+ 
+
 }
