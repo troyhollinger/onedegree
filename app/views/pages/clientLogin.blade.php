@@ -17,11 +17,11 @@ login
 
         <div class="service-module">
             
-            <button class="login-btn one-view" onclick="window.open('https://wealth.emaplan.com/ema/SignIn?ema/securitiesamerica/onedegree', '_blank');">One View</button> 
+            <button class="login-btn one-view hvr-grow" onclick="window.open('https://wealth.emaplan.com/ema/SignIn?ema/securitiesamerica/onedegree', '_blank');">One View</button> 
 
             <p class="text login-text">This provides information on your financial plan and net worth and access to the secure online vault for document storage and transfer.</p></br> 
              
-            <span class="bold">Helpful hints on navigating website:</span>
+            <span class="bold helpful-link">Helpful hints on navigating website:</span>
 
             <p class="text login-text">From the <span class="bold">Home</span>  tab you can access the Tour Guide video in the bottom right tile. This will give a brief overview of website and access abilities.</p></br> 
 
@@ -37,11 +37,11 @@ login
 
         <div class="sub_module">
             <div class="service-module">
-                <button class="login-btn td-ameritrade" onclick="window.open('https://advisorclient.com/advisorclient/p/gridLogin', '_blank');">TD Ameritrade</button><br>
+                <button class="login-btn td-ameritrade hvr-grow" onclick="window.open('https://advisorclient.com/advisorclient/p/gridLogin', '_blank');">TD Ameritrade</button><br>
                 <p class="text login-text">This provides access to formal account statements, trade confirmations and tax forms for accounts held at TD Ameritrade.</p><br>                
 
                 <p class="text login-text">
-                    <span class="bold">Helpful hints on navigating website:</span>
+                    <span class="bold helpful-link">Helpful hints on navigating website:</span>
 
                     From the top of any site page, you can access a <span class="bold">site map</span> for an overview of how the site is organized.
                 </p><br>
@@ -58,7 +58,7 @@ login
             </div>
 
             <div class="service-module">
-                <button class="login-btn performance-reports" onclick="window.open('https://login.orionadvisor.com/login.html?g=8b306e94-6c6a-4af6-8080-1a3892bf0b1e', '_blank');">Orion</button><br>
+                <button class="login-btn performance-reports hvr-grow" onclick="window.open('https://login.orionadvisor.com/login.html?g=8b306e94-6c6a-4af6-8080-1a3892bf0b1e', '_blank');">Orion</button><br>
                 <p class="text login-text">This provides access to detailed account performance.</p><br>
                 <p class="text login-text"><span class="bold">To request access :</span> <a href="mailto:admin@onedegreeadvisors.com?Subject=Forgot%20login" target="_top">admin@onedegreeadvisors.com</a></p>              
                                  
