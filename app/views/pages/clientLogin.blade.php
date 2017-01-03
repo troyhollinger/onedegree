@@ -29,7 +29,7 @@ login
 
             <p class="text shadow">Please contact your advisor when you link an account. Your accounts under our management will be linked.</p></br>
 
-            <span class="bold">Is this secure? :</span> <br> <br>
+            <span class="bold is_secure">Is this secure? :</span> <br> <br>
 
             <div class="iframe-container"><iframe src="https://www.youtube.com/embed/vruAo__5hMU" allowfullscreen="" width="360" height="200" frameborder="0"></iframe></div>             
         </div>  
