@@ -3114,9 +3114,6 @@ svg path {
     width: 772px;
     margin: 0px auto 15px;  
     font-size: 50px; 
-    -moz-transition: all .5s ease-out; 
-	-webkit-transition: all .5s ease-out; 
-	-o-transition: all .5s ease-out;
 } 
 
 .single_page_container .service-module p{
@@ -3128,11 +3125,6 @@ svg path {
 .single_page_container .service-module p.shadow{
 	color: #9fa2a4; 
 }
-
-/* .single_page_container .service-module p span , span.bold{
-	color: #404649; 
-}  */
-
 .one_view h1 {
     background: #0f6ea9 none repeat scroll 0 0;
     color: #ffffff;
@@ -3147,6 +3139,7 @@ a.quarterly_market{
 	color: #6bbb6f; 
 	font-weight: bold;
 	cursor: pointer;
+	font-size: 19px;
 	font-family: $verdana !important;
 }
 
@@ -3154,6 +3147,14 @@ a.quarterly_market{
 	.single_page_container, .single_page_container .service-module button{
 		width: 100%; 
 	}
+}
+span.is_secure{
+	font-family: $verdana !important;	
+}
+
+.hvr-grow:active, .hvr-grow:focus, .hvr-grow:hover{
+	-webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
  
