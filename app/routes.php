@@ -67,6 +67,8 @@ Route::get('client-login', ['as' => 'client-login', function() {
 
 }]);
 
+Route::get('QMR', ['as' => 'QMR', 'uses' => 'PDFController@QMR']);
+
 Route::post('login', ['as' => 'login.post', function() {
 
 	$email = Input::get('email');
