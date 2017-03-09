@@ -60,7 +60,7 @@ $light : #b7b7b7;
 		border-width: 18px 0 18px 31.2px;
 		border-color: transparent transparent transparent $color;
 	}
-	
+
 }
 
 @mixin breakpoint($point) {
@@ -76,7 +76,7 @@ $light : #b7b7b7;
 	@else {
 		@media (max-width: $point) { @content; }
 	}
-  
+
 }
 
 @mixin change {
@@ -137,7 +137,7 @@ body , html{
 }
 
 .text {
-	
+
 	font-family: $georgia;
 	color:$text-color;
 	line-height: 1.75rem;
@@ -230,7 +230,7 @@ body , html{
 
 	// 	@include breakpoint(mobile) {
 
-	// 		@include transform(translate(-300px, 0));			
+	// 		@include transform(translate(-300px, 0));
 
 	// 	}
 
@@ -277,7 +277,7 @@ body , html{
 
 			bottom: 7%;
 
-		} 
+		}
 
 		@include breakpoint(mobile) {
 
@@ -299,7 +299,7 @@ body , html{
 
 		@include breakpoint(mobile) {
 
-			@include transform(translate(-300px, 0));			
+			@include transform(translate(-300px, 0));
 
 		}
 
@@ -460,7 +460,7 @@ body , html{
 }
 
 .nav {
-	
+
 	text-align: right;
 
 	li {
@@ -539,7 +539,7 @@ body , html{
 	font-size: 1.2rem;
 	font-family: $verdana;
 	@include transition(all .2s linear);
-	
+
 
 	&.above-fold {
 
@@ -620,8 +620,8 @@ body , html{
 	width:100%;
 	height:28vw;
 
-	
-	
+
+
 }
 
 .home-banner {
@@ -657,7 +657,7 @@ body , html{
 	text-align: right;
 	overflow: visible;
 	letter-spacing: -1px;
-	
+
 
 
 	@include breakpoint(mobile) {
@@ -689,7 +689,7 @@ body , html{
 	letter-spacing: -5px;
 	margin-bottom: 10px;
 	text-shadow:0px 0px 15px rgba(0,0,0,0.6);
-	
+
 	@include breakpoint(small) {
 
 		font-size: 2rem;
@@ -817,7 +817,7 @@ body , html{
 }
 
 .intro-blurb-container {
-	
+
 	width:100%;
 	overflow: auto;
 	margin: 50px 0 100px 0;
@@ -1100,8 +1100,8 @@ body , html{
 	}
 
 	&:nth-child(2) {
-		border-left: 2px solid $text-color;	
-		border-right: 2px solid $text-color;	
+		border-left: 2px solid $text-color;
+		border-right: 2px solid $text-color;
 
 		@include breakpoint(mobile) {
 
@@ -1238,7 +1238,7 @@ body , html{
 	height:275px;
 	position: relative;
 	color:white;
-	
+
 	@extend .details;
 
 	.container {
@@ -1258,7 +1258,7 @@ body , html{
 	}
 
 	.footer-details {
-		
+
 		float:left;
 		margin-right: 70px;
 
@@ -1432,7 +1432,7 @@ body , html{
 
 		@include breakpoint(medium) {
 
-			margin-top: 65px;	
+			margin-top: 65px;
 
 		}
 
@@ -1478,7 +1478,7 @@ body , html{
 
 		float:none;
 		width:80%;
-		margin:0 auto;	
+		margin:0 auto;
 
 	}
 
@@ -1572,7 +1572,7 @@ body , html{
 
 	@include breakpoint(mobile) {
 
-		
+
 		font-size: .9rem;
 
 	}
@@ -1659,7 +1659,7 @@ body , html{
 	font-weight: bold;
 	color:$text-color;
 	margin-bottom: 18px;
-	font-size: 1.5rem;	
+	font-size: 1.5rem;
 
 }
 
@@ -1674,7 +1674,7 @@ body , html{
 	// right:100%;
 	text-shadow:1px 1px 8px black;
 	@include transition(all .25s ease);
-	
+
 }
 
 
@@ -1696,7 +1696,7 @@ body , html{
 	@extend .affiliations;
 
 	ul {
-		
+
 		width:300px;
 		margin:0 auto;
 		font-family: $georgia;
@@ -1793,9 +1793,9 @@ body , html{
 		}
 
 		li {
-	
+
 			list-style: decimal outside;
-			margin-left: 27px;			
+			margin-left: 27px;
 
 		}
 
@@ -1817,7 +1817,7 @@ body , html{
 			left: 0;
 			width: 100%;
 			height: 100%;
-		
+
 
 		}
 
@@ -1836,7 +1836,7 @@ body , html{
 	float:left;
 	width:36%;
 	@include box-sizing(border-box);
-	
+
 
 	.text {
 		font-size: .9rem;
@@ -1845,7 +1845,7 @@ body , html{
 
 
 	.section-title {
-		
+
 		@extend .service-module-title;
 
 	}
@@ -1853,7 +1853,7 @@ body , html{
 	&:first-of-type {
 		width:32%;
 		padding:0 30px 0px 0;
-		
+
 
 	}
 
@@ -1868,7 +1868,7 @@ body , html{
 
 		width:32%;
 		padding:0 0 0px 30px;
-		
+
 
 	}
 
@@ -1987,7 +1987,7 @@ body , html{
 		display: none;
 
 	}
-	
+
 }
 
 
@@ -2261,7 +2261,7 @@ body , html{
 
 .blog-thumb-container {
 
-	@extend .medium-container;	
+	@extend .medium-container;
 
 }
 
@@ -2327,7 +2327,7 @@ body , html{
 		bottom:100px;
 
 		@include box-sizing(border-box);
-		
+
 	}
 
 }
@@ -2463,7 +2463,7 @@ body , html{
 	bottom: 0;
 	@include box-sizing(border-box);
 	padding: 0 10px 20px 10px;
-	
+
 
 
 }
@@ -2584,7 +2584,7 @@ body , html{
 
 		font-family: $verdana;
 		color:$text-color;
-		font-size: .7rem;		
+		font-size: .7rem;
 
 	}
 
@@ -2675,15 +2675,12 @@ body , html{
 	}
 
 	p {
-
 		@include center;
 		text-transform: uppercase;
 		font-size: 1.1rem;
 		font-family: $verdana;
 		white-space: nowrap;
-
 	}
-
 }
 
 
@@ -2725,7 +2722,7 @@ body , html{
 	left:2.5vw;
 	top:115px;
 	@extend .indicator;
-	
+
 	@include breakpoint(mobile) {
 
 		display: none;
@@ -2739,7 +2736,7 @@ body , html{
 	left:2.4vw;
 	top:140px;
 	@extend .indicator;
-	
+
 	@include breakpoint(mobile) {
 
 		display: none;
@@ -2821,7 +2818,7 @@ body , html{
 		color: #333333;
 		white-space: nowrap;
 
-	}	
+	}
 
 	& > .active > a {
 
@@ -2945,7 +2942,7 @@ body , html{
  }
 
 .login-page{
-	
+
 	.home-service-modules-container{
 		overflow-x:hidden;
 	}
@@ -2953,7 +2950,7 @@ body , html{
 		color: $light;
 	}
 	#nav-button{
-		color: $light;	
+		color: $light;
 	}
 	.mast-logo-letters{
 		fill: $light;
@@ -2993,27 +2990,27 @@ button.login-btn:focus {
 button.one-view{
 	font-family: sans-serif;
 	background-color: rgb(15,109,169);
-	
+
 }
 
 button.performance-reports{
 	font-family: sans-serif;
 	background-color: rgb(31,156,210);
-	
+
 }
- 
+
 
 button.td-ameritrade{
 	font-family: sans-serif;
 	background-color: rgb(26,180,47);
-	
+
 }
 .login-text{
-	
+
 	a{
 		font-weight: normal;
 	}
-	
+
 }
 span.helpful-link{
 		font-family: $verdana;
@@ -3071,59 +3068,59 @@ svg path {
 /* new css */
 
 .single_page_container .service-module .text, body{
-	font-family: $verdana;; 
+	font-family: $verdana;;
 }
 
 .single_page_container{
-	width: 772px; 
-	margin: 0px auto; 
+	width: 772px;
+	margin: 0px auto;
 }
 
 .single_page_container .service-module{
-	width: 100%; 
-	font-size: 17.75px; 
-	padding: 0px; 
-	margin-bottom: 35px; 
+	width: 100%;
+	font-size: 17.75px;
+	padding: 0px;
+	margin-bottom: 35px;
 }
 
 .single_page_container .sub_module{
-	margin-top: 30px; 
+	margin-top: 30px;
 }
 
 .single_page_container .sub_module .service-module{
-	width: 366px;  
-	margin-right: 40px; 
+	width: 366px;
+	margin-right: 40px;
 }
 
 .single_page_container .sub_module .service-module:nth-child(2n){
-	margin-right: 0px; 
+	margin-right: 0px;
 }
 
 .single_page_container .sub_module .service-module button{
-	width: 100%; 
-	font-size: 36px; 
+	width: 100%;
+	font-size: 36px;
 }
 
 .sub_module .service-module:nth-of-type(2){
-	border: none; 
+	border: none;
 }
 
 .single_page_container .service-module button {
-    padding: 140px 0;    
+    padding: 140px 0;
     text-align: center;
     width: 772px;
-    margin: 0px auto 15px;  
-    font-size: 50px; 
-} 
+    margin: 0px auto 15px;
+    font-size: 50px;
+}
 
 .single_page_container .service-module p{
-	margin-bottom: 10px; 
-	font-size: 17.75px; 
-	color: #404649; 
+	margin-bottom: 10px;
+	font-size: 17.75px;
+	color: #404649;
 }
 
 .single_page_container .service-module p.shadow{
-	color: #9fa2a4; 
+	color: #9fa2a4;
 }
 .one_view h1 {
     background: #0f6ea9 none repeat scroll 0 0;
@@ -3136,7 +3133,7 @@ svg path {
 }
 
 a.quarterly_market{
-	color: #6bbb6f; 
+	color: #6bbb6f;
 	font-weight: bold;
 	cursor: pointer;
 	font-size: 19px;
@@ -3145,11 +3142,11 @@ a.quarterly_market{
 
 @media (max-width: 979px) {
 	.single_page_container, .single_page_container .service-module button{
-		width: 100%; 
+		width: 100%;
 	}
 }
 span.is_secure{
-	font-family: $verdana !important;	
+	font-family: $verdana !important;
 }
 
 .hvr-grow:active, .hvr-grow:focus, .hvr-grow:hover{
@@ -3157,6 +3154,6 @@ span.is_secure{
     transform: scale(1.02);
 }
 
- 
+
 
 }
