@@ -1,8 +1,8 @@
 'use strict';
 
 
-var requestAnimationFrame = window.requestAnimationFrame || 
-                            window.mozRequestAnimationFrame || 
+var requestAnimationFrame = window.requestAnimationFrame ||
+                            window.mozRequestAnimationFrame ||
                             window.webkitRequestAnimationFrame ||
                             window.msRequestAnimationFrame;
 
@@ -26,7 +26,7 @@ app.factory('Email', ['$http', function($http) {
 
 			return $http.post('/email/speaker', data);
 
-		}, 
+		},
 
 		inquiry : function(data) {
 
@@ -63,7 +63,7 @@ app.controller('InquireFormController', ['$scope', 'Email', function($scope, Ema
 
 app.controller('SpeakerFormController', ['$scope', 'focus', 'Email', function($scope, focus, Email) {
 
-	$scope.buttonText = "SUBMIT";
+	$scope.buttonText = "INQUIRE";
 
 	$scope.focusDate = function($event) {
 
@@ -123,10 +123,10 @@ app.controller('VideoController', ['$scope', 'Video', '$sce', function($scope, V
 			$scope.videos = response.data;
 			squarify();
 			ResponsiveVideo.init();
-			$scope.setActiveVideo(0);	
+			$scope.setActiveVideo(0);
 
 			console.log($scope.videos);
-			
+
 
 		}).error(function(response) {
 
@@ -177,11 +177,11 @@ app.controller('MediumController', ['$scope', 'angularLoad', function($scope, an
 	$scope.init = function() {
 
 		angularLoad.loadScript('https://static.medium.com/embed.js').then(function() {
-		    
+
 			$scope.loadPosts();
 
 		}).catch(function() {
-		   
+
 			console.log("there was an error loading the script");
 
 		});
@@ -214,7 +214,7 @@ app.controller('MediumController', ['$scope', 'angularLoad', function($scope, an
 
 			tempArray.push(embeds[pushIndex]);
 
-			// insert closing div tag 
+			// insert closing div tag
 			if (i === $scope.offsetAmount - 1) {
 
 				tempArray.push('</div>');
@@ -224,7 +224,7 @@ app.controller('MediumController', ['$scope', 'angularLoad', function($scope, an
 		}
 
 		html = tempArray.join('');
-    
+
 		mediumContainer.innerHTML += html;
 
 		MediumPosts.init();
@@ -279,7 +279,7 @@ function isIE() {
 }
 
 function mobile() {
-	
+
 	if ($(window) < 1100) {
 
 		return true;
@@ -332,10 +332,10 @@ var Navigation = {
 
 					_.close();
 
-				} 
+				}
 
 			});
-			
+
 		} else {
 
 			_.navButton.click(function() {
@@ -358,7 +358,7 @@ var Navigation = {
 
 					_.close();
 
-				} 
+				}
 
 			});
 		}
@@ -388,7 +388,7 @@ var Navigation = {
 			_.navButton.css('color', 'white');
 
 		}, 50);
-		
+
 
 	},
 
@@ -416,7 +416,7 @@ var Navigation = {
 		}, 150);
 
 		_.element.removeClass('open').addClass('closed');
-				
+
 
 	}
 
@@ -429,7 +429,7 @@ var Mast = {
 	init : function() {
 
 		Mast.internetExplorerFix();
-		
+
 	},
 
 	element : $(".mast"),
@@ -578,10 +578,10 @@ var ProcessLine = {
 		path.style.strokeDashoffset = (length - (distance * 2.65));
 
 		console.log(path.style.strokeDashoffset);
-			
+
 		ProcessLine.loop = requestAnimationFrame(ProcessLine.draw)
 
-	} 
+	}
 }
 
 
@@ -646,7 +646,7 @@ var MediumPosts = {
 var HomeBanner = {
 
 	init : function() {
-	
+
 		this.slideshow();
 
 	},
@@ -757,17 +757,17 @@ var SectionIndicators = {
 	indicatorElements : $(".indicator-element"),
 
 	inquireLink : $("#inquire-link"),
-	
+
 
 	setIndicators : function() {
 
 		var html = '';
-		
+
 		SectionIndicators.elements.each(function() {
 
 			var text = $(this).attr('data-indicator');
 			var anchor = $(this).attr('id');
-		
+
 			// in order to be able to use this code snippet for the single inquiry link
 			// on the home page, this conditional checks for that one instance, else
 			// assigns normal behavior
@@ -775,7 +775,7 @@ var SectionIndicators = {
 			if (anchor === 'inquiry') {
 
 				html += '<a href="' + base + '/inquiry"class="indicator-element">' + text + '</a>';
-				
+
 
 			}else if(anchor === 'client-login'){
 				html += '<a href="' + base + '/client-login"class="indicator-element inquire-link-login">' + text + '</a>';
@@ -784,8 +784,8 @@ var SectionIndicators = {
 				html += '<a href="#' + anchor + '"class="indicator-element">' + text + '</a>';
 
 			}
-		
-		
+
+
 		});
 
 		// For some reason, the code directly below causes errors galore. WHY?
@@ -813,7 +813,7 @@ var SectionIndicators = {
 
 			} else {
 
-				SectionIndicators.indicatorElements.eq(index).css({'position' : 'absolute', 'top': position + 'px'});	
+				SectionIndicators.indicatorElements.eq(index).css({'position' : 'absolute', 'top': position + 'px'});
 
 			}
 
@@ -828,7 +828,7 @@ var SectionIndicators = {
 
 
 $(document).ready(function() {
-	
+
 	Mast.init();
 	squarify();
 	Navigation.init();
@@ -844,14 +844,14 @@ $(document).ready(function() {
 			SectionIndicators.init();
 
 		}
-		
+
 
 	}
 
 	if (thisPage === 'services') {
 
 		EthicsSlideshow.init();
-		
+
 
 		if ($(window).width() > 1100) {
 
@@ -887,7 +887,7 @@ $(document).ready(function() {
         var attributes = $img.prop("attributes");
 
         $.get(imgURL, function(data) {
-        	
+
             var $svg = jQuery(data).find('svg');
             $svg = $svg.removeAttr('xmlns:a');
             $.each(attributes, function() {
@@ -905,7 +905,7 @@ $(document).ready(function() {
 
 	}
 
-	
+
 
 	if (thisPage === 'speaker' || thisPage === 'inquiry') {
 
