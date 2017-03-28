@@ -5,10 +5,11 @@ Route::get('/',['as' => 'home', function() {
 
 	$columns = Column::orderBy('id', 'desc')->take(3)->get();
 
-	$tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2]);
+	// $tweets = Twitter::getUserTimeline(['screen_name' => 'onedegreetweets', 'count' => 2]);
 
-	return View::make('pages.home', ['tweets' => $tweets, 'columns' => $columns]);
-	
+	// return View::make('pages.home', ['tweets' => $tweets, 'columns' => $columns]);
+	return View::make('pages.home', ['columns' => $columns]);
+
 }]);
 
 

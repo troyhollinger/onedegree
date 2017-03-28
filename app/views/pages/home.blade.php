@@ -18,7 +18,7 @@ Menu
         <div style="background-image:url({{ asset('img/building-2.jpg') }})">
             <div class="photo-content-container">
                 <p class="photo-content-title">Why One Degree</p>
-                <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>            
+                <p class="photo-content-text">Our name, One Degree Advisors, reflects the idea that small changes can have a big impact. Think about that 20 foot putt...</p>
                 <a href="{{ route('services') }}#why-one-degree"><div class="photo-content-button">
                     <p>See More</p>
                 </div></a>
@@ -27,9 +27,9 @@ Menu
         <div style="background-image:url({{ asset('img/city.jpg') }})">
             <div class="photo-content-container">
                 <p class="photo-content-title">What We Do</p>
-                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>            
+                <p class="photo-content-text">Financial concerns in a large context for business, retirement, family security, charitable inclinations...</p>
                 <a href="{{ route('services') }}">
-                    <div class="photo-content-button">            
+                    <div class="photo-content-button">
                         <p>Services</p>
                     </div>
                 </a>
@@ -38,7 +38,7 @@ Menu
         <div style="background-image:url({{ asset('img/team-2.jpg') }})">
             <div class="photo-content-container">
                 <p class="photo-content-title">Who we are</p>
-                <p class="photo-content-text">We derive great satisfaction in freeing you up to focus your time and resources on what’s important to you.</p>            
+                <p class="photo-content-text">We derive great satisfaction in freeing you up to focus your time and resources on what’s important to you.</p>
                 <a href="{{ route('team') }}"><div class="photo-content-button">
                     <p>Our Team</p>
                 </div></a>
@@ -48,17 +48,17 @@ Menu
            <div class="photo-content-container">
                 <p class="photo-content-title">We Love What We Do</p>
                 <p class="photo-content-text">We love working with people who are good at what they do and passionate about sharing their gifts...</p>
-               <a href="{{ route('services') }}#about"><div class="photo-content-button">            
-                   <p>About Us</p>               
+               <a href="{{ route('services') }}#about"><div class="photo-content-button">
+                   <p>About Us</p>
                </div></a>
            </div>
         </div>--}}
         <div style="background-image:url({{ asset('img/meeting.jpg') }})">
             <div class="photo-content-container">
                 <p class="photo-content-title">Expect From Us</p>
-                <p class="photo-content-text">Multiple Solutions with a plan that is flexible as life changes. Use our knowledge to meet your...</p>                
-                <a href="{{ route('process') }}"><div class="photo-content-button">            
-                    <p>Our Process</p>            
+                <p class="photo-content-text">Multiple Solutions with a plan that is flexible as life changes. Use our knowledge to meet your...</p>
+                <a href="{{ route('process') }}"><div class="photo-content-button">
+                    <p>Our Process</p>
                 </div></a>
             </div>
         </div>
@@ -69,19 +69,19 @@ Menu
                 <p class="photo-content-title">Our Ideal Client</p>
                 <p class="photo-content-text">Affluent clients that know the importance of evaluating financial strategy, who desire...</p>
 
-                
+
 
                 <a href="{{ route('services') }}#ideal-client"><div class="photo-content-button">
-                
+
                     <p>Ideal Client</p>
-                
+
                 </div></a>
 
             </div>
 
         </div>
          --}}
-       
+
     </div>
 
 </div>
@@ -95,7 +95,7 @@ Menu
         <div class="service-module">
             <p class="section-title uppercase">Financial Planning</p>
             <p class="text">Our focus is on what’s important to you. The overarching goal of our financial planning process is to coordinate the many unique aspects of your financial situation to provide a clear context for making sound financial decisions today. The truth is, we don’t know what the future will hold. We will all be impacted by uncertain factors. Financial planning is not a one-time event; it’s a process that adapts as your life changes. <a href="{{ route('services') }}#whatwedo"><span class="green-text bold">Read more... </span></a></p>
-            
+
             <div class="iframe-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/785xsrLfXp4" frameborder="0" allowfullscreen></iframe></div>
 
         </div>
@@ -103,7 +103,7 @@ Menu
         <div class="service-module">
             <p class="section-title uppercase">Investment Management</p>
             <p class="text">Before determining an investment strategy, we must understand what is important to you. Are you saving for a goal such as retirement or college? Are you looking for ways to turn your assets into income? Is providing for future generations a priority? Is giving more to charity important to you? <br><br>Questions such as these help us determine a “Purpose Allocation.” <a href="{{ route('services') }}#investment-management"><span class="green-text bold">Read more... </span></a> or <a href="https://pro.riskalyze.com/embed/f3d96123615c2ab80d6e" target="_blank" class="green-text bold">What's Your Risk Score?</a></p>
-        
+
             <div class="iframe-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/hteERZ-jZo0" frameborder="0" allowfullscreen></iframe></div>
 
         </div>
@@ -125,7 +125,7 @@ Menu
     <div class="home-medium-container">
 
         <p class="section-title">Recent Columns:</p><br>
-        
+
         <script async src="https://static.medium.com/embed.js"></script>
         {{-- <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/87709bfc4d0b">A Spending Plan</a>
         <a class="m-story" data-collapsed="true" href="https://medium.com/@janicethompson/4827ec319f97">A Game Plan for 2015</a>
@@ -141,10 +141,10 @@ Menu
         <a href="{{ route('blog') }}"><p class="section-title">All Columns <i class="fa fa-angle-right"></i></p></a>
 
     </div>
-   
-    <div class="divider"></div>
 
-    <div class="twitter-container">
+    <div class="divider" style="margin-bottom:50px;"></div>
+
+    {{-- <div class="twitter-container">
 
         @foreach($tweets as $tweet)
 
@@ -165,21 +165,21 @@ Menu
 
         <a href="https://twitter.com/onedegreetweets" target="_blank">
             <div class="twitter-see-more">
-    
+
                 <div class="twitter-circle">
                     <i class="fa fa-angle-right"></i>
                 </div>
-    
+
             </div>
-    
+
             <div class="clear"></div>
         </a>
 
         <twitter></twitter>
 
-    </div>
+    </div> --}}
 
-</div> 
+</div>
 
 <div class="banner footer-banner">
 
