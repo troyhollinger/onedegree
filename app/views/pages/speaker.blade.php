@@ -14,9 +14,8 @@ Speaker
 		<div class="inquiry-form-container" ng-controller="SpeakerFormController">
 			{{ Form::open(['class' => 'inquiry-form']) }}
 				<img class="form-x" src="{{ asset('img/form-x.jpg') }}" onclick="history.go(-1);">
-				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest. Please click the button below to send us an introductory email.</h2>
-				<h3 class="form-secondary-title">Please include your company name, event date, and any other information about your event that we should know!</h3>
-				{{-- <div>
+				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest. Please fill out the form below to proceed:</h2>
+				<div>
 					<p>{{ Form::label('name', 'Name') }}</p>
 					<p>{{ Form::text('name', '', ['placeholder' => 'Requestor Name', 'ng-model' => 'form.name']) }}</p>
 				</div>
@@ -65,11 +64,10 @@ Speaker
 				<div>
 					<p>{{ Form::label('comments', 'Comments') }}</p>
 					<p>{{ Form::textarea('comments', '', ['placeholder' => 'Comments', 'ng-model' => 'form.comments']) }}</p>
-				</div> --}}
-				{{-- <div class="inquiry-form-button" ng-click="submitForm()">
+				</div>
+				<div class="inquiry-form-button" ng-click="submitForm()">
 					<p ng-bind="buttonText"></p>
-				</div> --}}
-				<a class="inquiry-form-button" href="mailto:admin@onedegreeadvisors.com?subject=I am interested in having you speak at my event!"><p ng-bind="buttonText"></p></a>
+				</div>
 			{{ Form::close() }}
 		</div>
 	</div>

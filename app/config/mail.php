@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'onedegreeweb@gmail.com',
+	'username' => 'One Degree Advisors',
 
 	/*
 	|--------------------------------------------------------------------------

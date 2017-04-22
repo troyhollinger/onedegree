@@ -9,9 +9,9 @@ Inquiry
 		<div class="inquiry-form-container" ng-controller="InquireFormController">
 			{{ Form::open(['class' => 'inquiry-form']) }}
 				<img class="form-x" src="{{ asset('img/form-x.jpg') }}" onclick="history.go(-1);">
-				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest in One Degree. To start the process, please click the Inquire button to send us an introductory email.</h2>
+				<h2 class="form-title"><span class="bold bigger">Hello,</span><br>Thank you for your interest in One Degree. To start the process, fill out the form below.</h2>
 				<h3 class="form-secondary-title">We will then contact you to schedule a 15 minute phone call to get acquainted and determine if we are a good fit for your needs.</h3>
-				{{-- <div>
+				<div>
 					<p>{{ Form::label('name', 'NAME') }}</p>
 					<p>{{ Form::text('name', '', ['placeholder' => 'Name', 'ng-model' => 'form.name']) }}</p>
 				</div>
@@ -34,11 +34,10 @@ Inquiry
 				<div>
 					<p>{{ Form::label('reason', 'Brief reason for inquiry') }}</p>
 					<p>{{ Form::textarea('reason', '', ['placeholder' => 'Brief reason for inquiry', 'ng-model' => 'form.reason']) }}</p>
-				</div> --}}
-				{{-- <div class="inquiry-form-button" ng-click="submitForm()">
+				</div>
+				<div class="inquiry-form-button" ng-click="submitForm()">
 					<p ng-bind="buttonText"></p>
-				</div> --}}
-				<a class="inquiry-form-button" href="mailto:admin@onedegreeadvisors.com?subject=Let’s schedule a 15 minute phone call to get acquainted!"><p ng-bind="buttonText"></p></a>
+				</div>
 			{{ Form::close() }}
 		</div>
 	</div>
