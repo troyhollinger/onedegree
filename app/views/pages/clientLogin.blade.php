@@ -65,7 +65,7 @@ login
             </div>
 
             <div class="clear"></div>
-            <a href="{{asset('QMR_Q217_Landscape.pdf')}}" target="_blank" class="quarterly_market">Quarterly Market Review…</a>
+            <a href="{{asset('QMR_Q317_Landscape.pdf')}}" target="_blank" class="quarterly_market">Quarterly Market Review…</a>
         </div>
     </div>
 
